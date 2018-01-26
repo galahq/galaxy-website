@@ -19,10 +19,18 @@ import Stream, {
   StreamSection,
   StreamIcon
 } from '../components/Stream'
+import Premier, {
+  PremierSection,
+  PremierInnerSection,
+  PremierIcon,
+  PremierInfo
+} from '../components/Premier'
 
 const Sunrise: any = require('../assets/sunrise.svg')
 const Windmill: any = require('../assets/windmill.svg')
 const Tree: any = require('../assets/tree.svg')
+const Gemstone: any = require('../assets/gemstone.svg')
+const Trophy: any = require('../assets/Trophy.svg')
 
 const HomePage = () => (
   <main>
@@ -31,11 +39,11 @@ const HomePage = () => (
         <TaglineContainer>
           <Tagline>A sustainability learning exchange</Tagline>
           <p>
-            Organized around real-world case studies, Galaxy invites
-            practitioners, community members, international experts, artists,
-            teachers, and students to work collaboratively on solutions for
-            sustainability challenges and communication innovations to connect
-            research, teaching, and practice.
+            Organized around{' '}
+            <a href="https://www.learngala.com/">real-world case studies</a>,
+            Galaxy convenes professionals, community members, international
+            educators, artists, experts, activists, and students. Together, we
+            transform learning and connect research, teaching, and practice.
           </p>
         </TaglineContainer>
 
@@ -59,23 +67,25 @@ const HomePage = () => (
     <StreamSection>
       <Stream>
         <StreamIcon>
-          <Sunrise />
+          <Windmill />
         </StreamIcon>
-        <StreamTitle>Case Co-creation Studios</StreamTitle>
+        <StreamTitle>Codesign & Policy Charettes</StreamTitle>
         <p>
-          Learn how to blah blah in these hands-on multimedia practica. You’ll
-          leave with a teaching module designed perfectly for your needs.
+          Work through a problem and catch up with the latest science. It’ll be
+          the most fun you’ve ever had getting your ASDF certification.
         </p>
       </Stream>
 
       <Stream>
         <StreamIcon>
-          <Windmill />
+          <Sunrise />
         </StreamIcon>
-        <StreamTitle>Social Design and Policy Charettes</StreamTitle>
+        <StreamTitle>
+          Case Creation<br />Studios
+        </StreamTitle>
         <p>
-          Work through a problem and catch up with the latest science. It’ll be
-          the most fun you’ve ever had getting your ASDF certification.
+          Learn how to blah blah in these hands-on multimedia practica. You’ll
+          leave with a teaching module designed perfectly for your needs.
         </p>
       </Stream>
 

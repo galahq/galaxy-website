@@ -37,8 +37,12 @@ export const TaglineInnerSection = MaxWidthContainer.extend`
 
 export const TaglineContainer = styled.div`
   flex-grow: 1;
-  flex-basis: 500px;
-  margin-right: 1.5rem;
+  flex-basis: 450px;
+  margin-right: 2rem;
+
+  & p {
+    max-width: 520px;
+  }
 `
 
 export const CallToAction = styled.div`
