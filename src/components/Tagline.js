@@ -23,23 +23,23 @@ const Tagline = styled.h1`
   }
 `
 
-Tagline.Section = styled.section`
+export default Tagline
+
+export const TaglineSection = styled.section`
   background-color: #1d3f5e;
   padding-bottom: 0.25rem;
 `
 
-Tagline.InnerSection = MaxWidthContainer.extend`
+export const TaglineInnerSection = MaxWidthContainer.extend`
   display: flex;
   flex-flow: row wrap;
 `
 
-Tagline.Container = styled.div`
+export const TaglineContainer = styled.div`
   flex-grow: 1;
   flex-basis: 500px;
   margin-right: 1.5rem;
 `
-
-export default Tagline
 
 export const CallToAction = styled.div`
   flex: 1;

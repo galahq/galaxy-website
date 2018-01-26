@@ -8,13 +8,18 @@ import styled from 'styled-components'
 import Link from 'gatsby-link'
 
 import Button from '../components/Button'
-import Tagline, { CallToAction } from '../components/Tagline'
+import Tagline, {
+  TaglineSection,
+  TaglineInnerSection,
+  TaglineContainer,
+  CallToAction
+} from '../components/Tagline'
 
 const HomePage = () => (
   <main>
-    <Tagline.Section>
-      <Tagline.InnerSection>
-        <Tagline.Container>
+    <TaglineSection>
+      <TaglineInnerSection>
+        <TaglineContainer>
           <Tagline>A sustainability learning exchange</Tagline>
           <p>
             Organized around real-world case studies, Galaxy invites
@@ -23,7 +28,8 @@ const HomePage = () => (
             sustainability challenges and communication innovations to connect
             research, teaching, and practice.
           </p>
-        </Tagline.Container>
+        </TaglineContainer>
+
         <CallToAction>
           <p>
             <strong>Join</strong> the <strong>conversation</strong>
@@ -36,8 +42,8 @@ const HomePage = () => (
           </p>
           <Button>Register</Button>
         </CallToAction>
-      </Tagline.InnerSection>
-    </Tagline.Section>
+      </TaglineInnerSection>
+    </TaglineSection>
   </main>
 )
 
