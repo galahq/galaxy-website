@@ -7,8 +7,6 @@ html {
 }
 body {
   margin: 0;
-  background-color: #35536f;
-  color: hsla(0, 0%, 100%, 0.9);
 }
 article,
 aside,
@@ -201,7 +199,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  background-color: #35536f;
+
+  color: hsla(0, 0%, 100%, 0.9);
   font-family: tenso, sans-serif;
   font-weight: normal;
   word-wrap: break-word;

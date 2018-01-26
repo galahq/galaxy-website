@@ -14,6 +14,15 @@ import Tagline, {
   TaglineContainer,
   CallToAction
 } from '../components/Tagline'
+import Stream, {
+  StreamTitle,
+  StreamSection,
+  StreamIcon
+} from '../components/Stream'
+
+const Sunrise: any = require('../assets/sunrise.svg')
+const Windmill: any = require('../assets/windmill.svg')
+const Tree: any = require('../assets/tree.svg')
 
 const HomePage = () => (
   <main>
@@ -44,6 +53,43 @@ const HomePage = () => (
         </CallToAction>
       </TaglineInnerSection>
     </TaglineSection>
+
+    {/* ---~~~===~~~--- */}
+
+    <StreamSection>
+      <Stream>
+        <StreamIcon>
+          <Sunrise />
+        </StreamIcon>
+        <StreamTitle>Case Co-creation Studios</StreamTitle>
+        <p>
+          Learn how to blah blah in these hands-on multimedia practica. You’ll
+          leave with a teaching module designed perfectly for your needs.
+        </p>
+      </Stream>
+
+      <Stream>
+        <StreamIcon>
+          <Windmill />
+        </StreamIcon>
+        <StreamTitle>Social Design and Policy Charettes</StreamTitle>
+        <p>
+          Work through a problem and catch up with the latest science. It’ll be
+          the most fun you’ve ever had getting your ASDF certification.
+        </p>
+      </Stream>
+
+      <Stream>
+        <StreamIcon>
+          <Tree />
+        </StreamIcon>
+        <StreamTitle>Digital Innovation Hackathon</StreamTitle>
+        <p>
+          Team up with new friends and hurry to design, implement, and test an
+          exciting idea to improve sustainability teaching.
+        </p>
+      </Stream>
+    </StreamSection>
   </main>
 )
 
