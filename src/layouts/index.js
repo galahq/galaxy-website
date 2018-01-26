@@ -15,7 +15,8 @@ const TemplateWrapper = ({ children }) => (
           content:
             'Information about the Galaxy 2018 sustainability teaching and learning exchange.'
         },
-        { name: 'keywords', content: 'Galaxy, sustainaiblity, conference' }
+        { name: 'keywords', content: 'Galaxy, sustainaiblity, conference' },
+        { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' }
       ]}
     />
     <Header />
