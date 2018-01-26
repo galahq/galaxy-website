@@ -90,7 +90,52 @@ const HomePage = () => (
         </p>
       </Stream>
     </StreamSection>
+
+    {/* ---~~~===~~~--- */}
+
+    <PremierSection>
+      <PremierInnerSection>
+        <Premier>
+          <PremierIcon>
+            <Gemstone />
+          </PremierIcon>
+          <PremierInfo>
+            <h2>Case Premieres</h2>
+            <p>
+              Our first annual Michigan Sustainability Case “Premieres” will
+              feature scientists, CEOs, activists, and artists coming together
+              in celebration of blah blah what even is this? This is presented
+              in concert with <a href="www.cinetopiafestival.org/">Cinetopia</a>.
+            </p>
+          </PremierInfo>
+        </Premier>
+
+        <Premier>
+          <PremierIcon thin>
+            <Trophy />
+          </PremierIcon>
+          <PremierInfo>
+            <h2>Awards Ceremony &&nbsp;Gala</h2>
+            <p>
+              Following the screenings and discussions you are invited to join
+              us for a meal and celebration, overlooking and spilling into the{' '}
+              <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>.
+            </p>
+          </PremierInfo>
+        </Premier>
+      </PremierInnerSection>
+    </PremierSection>
+
+    <Footer>
+      <Button big>Register</Button>
+    </Footer>
   </main>
 )
 
 export default HomePage
+
+const Footer = styled.footer`
+  display: flex;
+  justify-content: center;
+  padding: 2em 0 4em;
+`
