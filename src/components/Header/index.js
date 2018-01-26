@@ -9,6 +9,7 @@ import Link from 'gatsby-link'
 
 import Button from '../shared/Button'
 import MaxWidthContainer from '../shared/MaxWidthContainer'
+import { LabelForScreenReaders } from '../shared/A11y'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
 
 const GalaxyLogo: any = require('../../assets/galaxy-v.svg')
@@ -18,6 +19,7 @@ const Header = () => (
     <InnerContainer>
       <ShadowLink to="/">
         <Logo />
+        <LabelForScreenReaders>Galaxy 2018</LabelForScreenReaders>
       </ShadowLink>
       <Subtitle>Ann Arbor, MI</Subtitle>
       <Subtitle>June 7–9</Subtitle>
