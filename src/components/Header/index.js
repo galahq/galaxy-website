@@ -11,11 +11,13 @@ import Button from '../Button'
 import MaxWidthContainer from '../MaxWidthContainer'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
 
+const GalaxyLogo: any = require('../../assets/galaxy-v.svg')
+
 const Header = () => (
   <Container>
     <InnerContainer>
       <ShadowLink to="/">
-        <Logo alt="Galaxy 2018." src={require('../../assets/galaxy-v.svg')} />
+        <Logo />
       </ShadowLink>
       <Subtitle>Ann Arbor, MI</Subtitle>
       <Subtitle>June 7–9</Subtitle>
@@ -70,7 +72,7 @@ const ShadowLink = styled(Link)`
   }
 `
 
-const Logo = styled.img`
+const Logo = styled(GalaxyLogo)`
   margin: 0;
   height: 130px;
   width: 200px;
