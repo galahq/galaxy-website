@@ -7,8 +7,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import Button from '../Button'
-import MaxWidthContainer from '../MaxWidthContainer'
+import Button from '../shared/Button'
+import MaxWidthContainer from '../shared/MaxWidthContainer'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
 
 const GalaxyLogo: any = require('../../assets/galaxy-v.svg')

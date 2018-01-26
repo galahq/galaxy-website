@@ -6,8 +6,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Button from './Button'
-import MaxWidthContainer from './MaxWidthContainer'
+import Button from './shared/Button'
+import MaxWidthContainer from './shared/MaxWidthContainer'
 
 const Tagline = styled.h1`
   font-size: 3rem;
