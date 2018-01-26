@@ -25,6 +25,11 @@ import Premier, {
   PremierIcon,
   PremierInfo
 } from '../components/Premier'
+import {
+  AudienceSection,
+  AudienceColumns,
+  AudienceColumn
+} from '../components/Audience'
 
 const Sunrise: any = require('../assets/sunrise.svg')
 const Windmill: any = require('../assets/windmill.svg')
@@ -139,6 +144,50 @@ const HomePage = () => (
     <Footer>
       <Button big>Register</Button>
     </Footer>
+    {/* ---~~~===~~~--- */}
+
+    <AudienceSection>
+      <h2>You’re Invited!</h2>
+      <p>Galaxy is perfect for you if you are...</p>
+      <AudienceColumns>
+        <AudienceColumn>
+          <p>
+            A <strong>community member</strong> looking to make an impact.
+            {/* and are searching for expertise and talents to help them. */}
+          </p>
+          <p>
+            A practitioner committed to <strong>cultivating talent</strong> by
+            impacting the curriculum.
+          </p>
+          <p>
+            An early career professional looking to build your{' '}
+            <strong>teaching portfolio</strong>.
+          </p>
+          <p>
+            A practitioner interested in{' '}
+            <strong>public education and outreach</strong>.
+          </p>
+        </AudienceColumn>
+        <AudienceColumn>
+          <p>
+            A students interested in{' '}
+            <strong>learning from professionals</strong> in your chosen field.
+          </p>
+          <p>
+            A grad student looking to build{' '}
+            <strong>science communication & media production</strong> skills.
+          </p>
+          <p>
+            A professor who wants to <strong>improve your teaching</strong>.
+            {/* and build closer connections with the community. */}
+          </p>
+          <p>
+            Interested in <strong>meeting practitioners and faculty</strong>{' '}
+            from different fields.
+          </p>
+        </AudienceColumn>
+      </AudienceColumns>
+    </AudienceSection>
   </main>
 )
 
