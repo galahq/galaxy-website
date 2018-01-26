@@ -14,9 +14,9 @@ import PoissonDiscDistribution from './PoissonDiscDistribution'
 const Header = () => (
   <Container>
     <InnerContainer>
-      <Link to="/">
+      <ShadowLink to="/">
         <Logo alt="Galaxy 2018." src={require('../../assets/galaxy-v.svg')} />
-      </Link>
+      </ShadowLink>
       <Subtitle>Ann Arbor, MI</Subtitle>
       <Subtitle>June 7–9</Subtitle>
     </InnerContainer>
@@ -54,6 +54,19 @@ const InnerContainer = MaxWidthContainer.extend`
 
   @media (max-width: 843px) {
     flex-direction: column;
+  }
+`
+
+const ShadowLink = styled(Link)`
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 75px;
+    width: 50px;
+    box-shadow: 0px 10px 100px 100px #001e38d6;
+    z-index: -1;
   }
 `
 

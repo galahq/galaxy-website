@@ -15,7 +15,7 @@ class PoissonDiscDistribution extends React.Component<{}> {
     const sample = poissonDiscSampler(
       this.svg.clientWidth,
       this.svg.clientHeight,
-      20
+      17
     )
 
     const svg = d3.select(this.svg)
@@ -25,8 +25,8 @@ class PoissonDiscDistribution extends React.Component<{}> {
         const s = sample()
         if (!s) return true
 
-        const size = random(2, 5)
-        const opacity = random(0, 0.7)
+        const size = random(1, 3)
+        const opacity = random(0, 2) ** 3 / 8
         const color = `hsl(256, 76%, ${random(65, 75)}%)`
 
         svg

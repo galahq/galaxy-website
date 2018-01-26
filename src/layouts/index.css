@@ -8,6 +8,7 @@ html {
 body {
   margin: 0;
   background-color: #35536f;
+  color: hsla(0, 0%, 100%, 0.9);
 }
 article,
 aside,

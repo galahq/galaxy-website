@@ -10,12 +10,13 @@ import Button from './Button'
 import MaxWidthContainer from './MaxWidthContainer'
 
 const Tagline = styled.h1`
-  font-style: italic;
   font-size: 3rem;
-  line-height: 0.9;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 0.95;
   margin-top: 2.2rem;
-  margin-bottom: 0.75rem;
-  max-width: 500px;
+  margin-bottom: 1.5rem;
+  max-width: 450px;
 
   @media (max-width: 430px) {
     font-size: 2.5rem;
@@ -25,7 +26,6 @@ const Tagline = styled.h1`
 Tagline.Section = styled.section`
   background-color: #1d3f5e;
   padding-bottom: 0.25rem;
-  color: hsla(0, 0%, 100%, 0.85);
 `
 
 Tagline.InnerSection = MaxWidthContainer.extend`
