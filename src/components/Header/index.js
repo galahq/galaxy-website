@@ -18,6 +18,7 @@ const Header = () => (
       <Subtitle>Ann Arbor, MI</Subtitle>
       <Subtitle>June 7–9</Subtitle>
     </MaxWidthContainer>
+    <PoissonDiscDistribution />
   </Container>
 )
 
