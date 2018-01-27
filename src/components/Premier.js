@@ -48,7 +48,7 @@ export const PremierIcon = styled.figure`
     & path,
     & polygon,
     & polyline {
-      stroke: #1d0561;
+      stroke: #02294b;
       stroke-width: 0.5px;
 
       @media (max-width: 430px) {

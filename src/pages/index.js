@@ -141,9 +141,6 @@ const HomePage = () => (
       </PremierInnerSection>
     </PremierSection>
 
-    <Footer>
-      <Button big>Register</Button>
-    </Footer>
     {/* ---~~~===~~~--- */}
 
     <AudienceSection>
@@ -192,9 +189,3 @@ const HomePage = () => (
 )
 
 export default HomePage
-
-const Footer = styled.footer`
-  display: flex;
-  justify-content: center;
-  padding: 2em 0 4em;
-`

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
@@ -13,7 +14,7 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            'Information about the Galaxy 2018 sustainability teaching and learning exchange.'
+            'Information about the 2018 Galaxy sustainability learning exchange.'
         },
         { name: 'keywords', content: 'Galaxy, sustainaiblity, conference' },
         { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' }
@@ -21,6 +22,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <Header />
     {children()}
+    <Footer />
   </div>
 )
 
