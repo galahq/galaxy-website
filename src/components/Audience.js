@@ -31,6 +31,10 @@ export const AudienceColumn = styled.div`
     margin-left: 1rem;
   }
 
+  & > h3 {
+    font-size: 1.1rem;
+  }
+
   & > p {
     margin-bottom: 1.5rem;
 

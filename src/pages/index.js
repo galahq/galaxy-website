@@ -75,13 +75,11 @@ const HomePage = () => (
         <StreamIcon>
           <Windmill />
         </StreamIcon>
-        <StreamTitle>Charrettes: Codesigned Solutions</StreamTitle>
+        <StreamTitle>Policy in Practice Charrettes</StreamTitle>
         <p>
-          Leverage your experience for problem solving; connect with experts and
-          talents from a range of fields and places to forge solutions for
-          contentious issues in a given context, evaluate performance of
-          previous charrette solutions, and implement collaborative (re)design.
-          Professional accreditations will be offered during the process.
+          Connect with experts from a range of fields and places to forge
+          solutions for contentious issues in a given context and implement
+          collaborative (re)design. Professional accreditation may be available.
         </p>
       </Stream>
 
@@ -89,14 +87,14 @@ const HomePage = () => (
         <StreamIcon>
           <Sunrise />
         </StreamIcon>
-        <StreamTitle>Studios: Case Creation</StreamTitle>
+        <StreamTitle>
+          Case Creation<br />Studios
+        </StreamTitle>
         <p>
-          Built to encourage participation, our modules are built to delight and
-          engage users. Boost your science communication skills, create public
-          outreach materials, build your teaching portfolio and training
-          materials for university or organizational use, at a hands-on Galaxy
-          Studio. You’ll leave with multimedia-rich modules to improve,
-          evaluate, and scale sustainability practices.
+          Arrive with an idea, leave with a powerful tool for science
+          communication, outreach and active learning. Join a community of case
+          and media producers for intensive hands-on design, exchange, and
+          production sessions.
         </p>
       </Stream>
 
@@ -104,13 +102,14 @@ const HomePage = () => (
         <StreamIcon>
           <Tree />
         </StreamIcon>
-        <StreamTitle>Hackathought: Adaptive Development</StreamTitle>
+        <StreamTitle>
+          Inclusive<br />Design Sprint
+        </StreamTitle>
         <p>
           Practice problem-driven, user-oriented, and design-focused software
-          development at the Galaxy Hackathon. We bring together
-          digitally-minded sustainability innovators seeking to build closer
-          connections with the community and scale the impact of sustainability
-          education.
+          development. We’re bringing together sustainability innovators to
+          build connections with the community and scale the impact of
+          sustainability education.
         </p>
       </Stream>
     </StreamSection>
@@ -124,36 +123,27 @@ const HomePage = () => (
             <Gemstone />
           </PremierIcon>
           <PremierInfo>
-            <h2>Case Premières</h2>
+            <h2>Case Premieres</h2>
             <p>
               Presented in concert with{' '}
               <a href="https://www.cinetopiafestival.org/">Cinetopia</a>, Galaxy
-              brings you our first annual{' '}
-              <a href="https://www.teachmsc.org/">
-                MSC/Michigan Sustainability Case
-              </a>{' '}
-              “Premieres”. Premieres introduce each year’s selection of citizen
-              cases, providing deeper dives into issues shaping our lives and
-              our planet. These combine a “gold carpet” event that brings
-              together case production teams of experts, designers, leaders from
-              government, industry, NGOs, Tribal Administrations, prominent
-              spokespeople or advocates. As a public launch of the cases that
-              have been used, assessed, and improved as “betas” in our
-              classrooms, each case will be “screened” and discussed in terms of
-              the conflicts, competing viewpoints, and constructive solutions,
-              fostering both local engagement and global connections with others
-              who are remaking their day-to-day world for a more sustainable
-              future.
+              brings you our first annual MSC Premieres. We’ll introduce this
+              year’s selection of citizen cases: deep dives into issues shaping
+              our lives and our planet. A “gold carpet” event, leaders from
+              government, industry, NGOs, Tribal Administrations, and advocacy
+              will join case producers for a public launch of successful cases.
+              Each case will be screened and discussed, fostering local
+              engagement and global connections for a more sustainable future.
             </p>
           </PremierInfo>
         </Premier>
 
-        <Premier>
+        {/* <Premier>
           <PremierIcon thin>
             <Trophy />
           </PremierIcon>
           <PremierInfo>
-            <h2>Pitch “The case for…” making your case</h2>
+            <h2>Pitch “The Case for…”</h2>
             <p>
               Throughout the{' '}
               <a href="https://www.michigan.org/event/mayor-s-green-fair">
@@ -170,7 +160,7 @@ const HomePage = () => (
             </p>
           </PremierInfo>
         </Premier>
-
+ */}
         <Premier>
           <PremierIcon thin>
             <Trophy />
@@ -178,17 +168,14 @@ const HomePage = () => (
           <PremierInfo>
             <h2>Awards Ceremony &&nbsp;Gala</h2>
             <p>
-              Our Galaxy is not infinite; it ends with a bang. As the{' '}
-              <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>{' '}
-              picks up steam just below us under the trees, we will let some off
-              with drinks and dinner on the roof of the gorgeously resftored art
-              deco Rackham Auditorium. Overlooking (and eventually spilling
-              into) the live music, dancing and outdoor games of A2SF, we will
-              present juried awards for the “best case scenarios” from our year
-              of modules in use, weighing face to face testimonials, evidence of
-              influence on policy and practice, and usage information from our
-              platform. Peer review has never been so pleasurable; professional
-              advancement has rarely made you feel so alive.
+              Galaxy culminates with with drinks and dinner on the roof of the
+              gorgeously resftored art deco Rackham Auditorium. Overlooking—and
+              eventually spilling into—the live music, dancing and outdoor games
+              of the{' '}
+              <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>, we
+              will present juried awards for the best of our year of modules in
+              use, weighing face to face testimonials, impact on policy and
+              practice, and measured performance with students.
             </p>
           </PremierInfo>
         </Premier>
@@ -199,10 +186,10 @@ const HomePage = () => (
 
     <AudienceSection>
       <h2>Join us!</h2>
-      <p>Together at Galaxy, we...</p>
+      <p>Together at Galaxy, we can…</p>
       <AudienceColumns>
         <AudienceColumn>
-          <h3>Generate...</h3>
+          <h3>generate…</h3>
           <p>
             <strong>Curriculum modules</strong> for use in a variety of settings
             to promote sustainability.
@@ -216,7 +203,7 @@ const HomePage = () => (
           </p>
         </AudienceColumn>
         <AudienceColumn>
-          <h3>Form a constellation that...</h3>
+          <h3>form a constellation that…</h3>
           <p>
             <strong>Integrates new knowledge</strong> from different fields for
             sustainability problem-solving.
