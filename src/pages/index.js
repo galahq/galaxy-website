@@ -122,12 +122,34 @@ const HomePage = () => (
             <Gemstone />
           </PremierIcon>
           <PremierInfo>
-            <h2>Case Premieres</h2>
+            <h2>Case Premières</h2>
             <p>
-              Our first annual Michigan Sustainability Case “Premieres” will
-              feature scientists, CEOs, activists, and artists coming together
-              in celebration of blah blah what even is this? This is presented
-              in concert with <a href="www.cinetopiafestival.org/">Cinetopia</a>.
+              Presented in concert with <a href="www.cinetopiafestival.org/">Cinetopia</a>, 
+              Galaxy brings you our first annual <a href="www.teachmsc.org/">MSC/Michigan Sustainability Case</a>
+              “Premieres”. Premieres introduce each year’s selection of citizen cases, providing deeper dives into 
+              issues shaping our lives and our planet. These combine a “gold carpet” 
+              event that brings together case production teams of experts, designers, leaders from government, industry, 
+              NGOs, Tribal Administrations, prominent spokespeople or advocates. As a public launch of the cases that 
+              have been used, assessed, and improved as “betas” in our classrooms, each case will be “screened” and 
+              discussed in terms of the conflicts, competing viewpoints, and constructive solutions, fostering both local 
+              engagement and global connections with others who are remaking their day-to-day world for a more sustainable future.           
+            </p>
+          </PremierInfo>
+        </Premier>
+
+        <Premier>
+          <PremierIcon thin>
+            <Trophy />
+          </PremierIcon>
+          <PremierInfo>
+            <h2>Pitch “The case for…” making your case</h2>
+            <p>
+              Throughout the <a href="https://www.michigan.org/event/mayor-s-green-fair">Ann Arbor Mayor's Green Fair</a>, 
+              case studies from Michigan Sustainability Cases will feature the city's sustainability practiceson our
+              <a href="https://www.learngala.com">interactive learning platform, Gala</a>. The event showcases efforts from 
+              local and state NGOs, agencies, and businesses, providing opportunities for residents to learn about 
+              sustainability practices pertaining to their daily life, including energy, forestry, natural area preservation, 
+              waste treatment, and water. 
             </p>
           </PremierInfo>
         </Premier>
@@ -139,9 +161,12 @@ const HomePage = () => (
           <PremierInfo>
             <h2>Awards Ceremony &&nbsp;Gala</h2>
             <p>
-              Following the screenings and discussions you are invited to join
-              us for a meal and celebration, overlooking and spilling into the{' '}
-              <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>.
+              Our Galaxy is not infinite; it ends with a bang. As the <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>
+              picks up steam just below us under the trees, we will let some off with drinks and dinner on the roof of the gorgeously
+              resftored art deco Rackham Auditorium. Overlooking (and eventually spilling into) the live music, dancing and outdoor 
+              games of A2SF, we will present juried awards for the “best case scenarios” from our year of modules in use, weighing face 
+              to face testimonials, evidence of influence on policy and practice, and usage information from our platform. Peer review 
+              has never been so pleasurable; professional advancement has rarely made you feel so alive. 
             </p>
           </PremierInfo>
         </Premier>
@@ -151,43 +176,34 @@ const HomePage = () => (
     {/* ---~~~===~~~--- */}
 
     <AudienceSection>
-      <h2>You’re Invited!</h2>
-      <p>Galaxy is perfect for you if you are...</p>
+      <h2>Join us!</h2>
+      <p>Together at Galaxy, we...</p>
       <AudienceColumns>
         <AudienceColumn>
+          <h3>Generate...</h3>
           <p>
-            A <strong>community member</strong> looking to make an impact.
-            {/* and are searching for expertise and talents to help them. */}
+            <strong>Curriculum modules</strong> for use in a variety of settings to promote sustainability. 
           </p>
           <p>
-            A practitioner committed to <strong>cultivating talent</strong> by
-            impacting the curriculum.
+            <strong>Collective suggestions</strong> for better policy.
           </p>
           <p>
-            An early career professional looking to build your{' '}
-            <strong>teaching portfolio</strong>.
-          </p>
-          <p>
-            A practitioner interested in{' '}
-            <strong>public education and outreach</strong>.
+            <strong>Creative solutions</strong> for maximizing stakeholder engagement across cultures, scales, and backgrounds.
           </p>
         </AudienceColumn>
         <AudienceColumn>
+          <h3>Form a constellation that...</h3>
           <p>
-            A students interested in{' '}
-            <strong>learning from professionals</strong> in your chosen field.
+            <strong>Integrates new knowledge</strong> from different fields for sustainability problem-solving.
           </p>
           <p>
-            A grad student looking to build{' '}
             <strong>science communication & media production</strong> skills.
           </p>
           <p>
-            A professor who wants to <strong>improve your teaching</strong>.
-            {/* and build closer connections with the community. */}
+            <strong>Increases impact</strong> of sustainability research.
           </p>
           <p>
-            Interested in <strong>meeting practitioners and faculty</strong>{' '}
-            from different fields.
+            <strong>Incorporates science</strong>, community practice, and sustainability principles.
           </p>
         </AudienceColumn>
       </AudienceColumns>
