@@ -46,9 +46,10 @@ const HomePage = () => (
           <p>
             Organized around{' '}
             <a href="https://www.learngala.com/">real-world case studies</a>,
-            Galaxy convenes professionals, community members, international
-            educators, artists, experts, activists, and students. Together, we
-            transform learning and connect research, teaching, and practice.
+            Galaxy convenes sustainability-minded  people from all backgrounds. 
+            Together, we integrate knowledge from different fields; make 
+            sustainabiliity science and practice more inclusive; and connect 
+            research, teaching, and practice for visible impact in communities.
           </p>
         </TaglineContainer>
 
@@ -74,10 +75,13 @@ const HomePage = () => (
         <StreamIcon>
           <Windmill />
         </StreamIcon>
-        <StreamTitle>Codesign & Policy Charettes</StreamTitle>
+        <StreamTitle>Charrettes: Codesigned Solutions</StreamTitle>
         <p>
-          Work through a problem and catch up with the latest science. It’ll be
-          the most fun you’ve ever had getting your ASDF certification.
+          Leverage your experience for problem solving; connect with experts and talents 
+          from a range of fields and places to forge solutions for contentious issues in 
+          a given context, evaluate performance of previous charrette solutions, and 
+          implement collaborative (re)design. Professional accreditations will be offered 
+          during the process.
         </p>
       </Stream>
 
@@ -85,12 +89,13 @@ const HomePage = () => (
         <StreamIcon>
           <Sunrise />
         </StreamIcon>
-        <StreamTitle>
-          Case Creation<br />Studios
-        </StreamTitle>
+        <StreamTitle>Studios: Case Creation</StreamTitle>
         <p>
-          Learn how to blah blah in these hands-on multimedia practica. You’ll
-          leave with a teaching module designed perfectly for your needs.
+          Built to encourage participation, our modules are built to delight and engage users. 
+          Boost your science communication skills, create public outreach materials, build your 
+          teaching portfolio and training materials for university or organizational use, 
+          at a hands-on Galaxy Studio. You’ll leave with multimedia-rich modules to improve, 
+          evaluate, and scale sustainability practices.
         </p>
       </Stream>
 
@@ -98,10 +103,12 @@ const HomePage = () => (
         <StreamIcon>
           <Tree />
         </StreamIcon>
-        <StreamTitle>Digital Innovation Hackathon</StreamTitle>
+        <StreamTitle>Hackathought: Adaptive Development</StreamTitle>
         <p>
-          Team up with new friends and hurry to design, implement, and test an
-          exciting idea to improve sustainability teaching.
+          Practice problem-driven, user-oriented, and design-focused software development at 
+          the Galaxy Hackathon. We bring together digitally-minded sustainability innovators
+          seeking to build closer connections with the community and scale the impact of 
+          sustainability education.
         </p>
       </Stream>
     </StreamSection>
