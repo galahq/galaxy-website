@@ -34,7 +34,7 @@ import {
 const Sunrise: any = require('../assets/sunrise.svg')
 const Windmill: any = require('../assets/windmill.svg')
 const Tree: any = require('../assets/tree.svg')
-const Gemstone: any = require('../assets/gemstone.svg')
+const Moon: any = require('../assets/moon.svg')
 const Trophy: any = require('../assets/Trophy.svg')
 
 const HomePage = () => (
@@ -119,8 +119,8 @@ const HomePage = () => (
     <PremierSection>
       <PremierInnerSection>
         <Premier>
-          <PremierIcon>
-            <Gemstone />
+          <PremierIcon thin>
+            <Moon />
           </PremierIcon>
           <PremierInfo>
             <h2>Case Premieres</h2>
