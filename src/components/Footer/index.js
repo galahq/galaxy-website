@@ -6,7 +6,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Button from '../shared/Button'
+import CallToActionButton from '../CallToActionButton'
 import MaxWidthContainer from '../shared/MaxWidthContainer'
 
 const Stars: any = require('../../assets/footer-stars.svg')
@@ -22,7 +22,7 @@ const Footer = () => (
           <span>Ann Arbor, MI</span>
           <span>June 7–9, 2018</span>
         </Info>
-        <Button big>Register</Button>
+        <CallToActionButton big />
       </InnerContainer>
     </LightContainer>
     <DarkContainer>

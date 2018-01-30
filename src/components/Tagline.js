@@ -70,9 +70,9 @@ export const CallToAction = styled.div`
       font-weight: 500;
       vertical-align: -1px;
     }
-  }
 
-  & ${Button} {
-    margin-top: 0.75rem;
+    &:last-of-type {
+      margin-bottom: 1.25rem;
+    }
   }
 `

@@ -7,7 +7,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import Button from '../shared/Button'
+import CallToActionButton from '../CallToActionButton'
 import MaxWidthContainer from '../shared/MaxWidthContainer'
 import { LabelForScreenReaders } from '../shared/A11y'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
@@ -24,9 +24,10 @@ const Header = () => (
       <Subtitle>Ann Arbor, MI</Subtitle>
       <Subtitle>June 7–9</Subtitle>
     </InnerContainer>
-    <OpticallyCenteredButton big primary href="https://google.com">
-      Register
-    </OpticallyCenteredButton>
+    <OpticallyCenteredCallToActionButton />
+    <SmallText>
+      Registration opens on<br />Monday, February 12, 2018
+    </SmallText>
     <PoissonDiscDistribution />
   </Container>
 )
@@ -101,10 +102,27 @@ const Subtitle = styled.p`
   }
 `
 
-const OpticallyCenteredButton = Button.withComponent('a').extend`
+const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
+  big: true,
+  primary: true
+})`
   margin-top: 22px;
   z-index: 1;
 
   @media (min-width: 843px) {
-    margin-left: 27px
+    margin-left: 27px;
+  }
+`
+
+const SmallText = styled.p`
+  margin-top: 12px;
+  margin-bottom: -12px;
+  opacity: 0.8;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.1;
+
+  @media (min-width: 843px) {
+    margin-left: 27px;
+  }
 `

@@ -22,6 +22,7 @@ const Button = styled.button`
 
   cursor: pointer;
 
+  color: black;
   font-family: tenso;
   font-size: 95%;
   letter-spacing: 0.1px;
@@ -68,6 +69,14 @@ const Button = styled.button`
       &:active {
         background-color: #5636b0;
       }
+    `};
+
+  ${p =>
+    p.disabled &&
+    css`
+      pointer-events: none;
+      cursor: not-allowed;
+      opacity: 0.7;
     `};
 `
 

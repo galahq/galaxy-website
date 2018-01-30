@@ -7,7 +7,6 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import Button from '../components/shared/Button'
 import Tagline, {
   TaglineSection,
   TaglineInnerSection,
@@ -30,6 +29,7 @@ import {
   AudienceColumns,
   AudienceColumn
 } from '../components/Audience'
+import CallToActionButton from '../components/CallToActionButton'
 
 const Sunrise: any = require('../assets/sunrise.svg')
 const Windmill: any = require('../assets/windmill.svg')
@@ -63,7 +63,7 @@ const HomePage = () => (
           <p>
             <strong>Enjoy</strong> the <strong>celebration</strong>
           </p>
-          <Button>Register</Button>
+          <CallToActionButton />
         </CallToAction>
       </TaglineInnerSection>
     </TaglineSection>
