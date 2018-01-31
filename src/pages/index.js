@@ -127,6 +127,7 @@ const HomePage = () => (
             <h2>Case Premieres</h2>
             <p>
               Presented in concert with{' '}
+              <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">Ann Arbor Mayor's Green Fair</a> and {' '}
               <a href="https://www.cinetopiafestival.org/">Cinetopia</a>, Galaxy
               brings you our first annual MSC Premieres. We’ll introduce this
               year’s selection of citizen cases: deep dives into issues shaping
