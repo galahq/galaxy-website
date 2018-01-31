@@ -130,8 +130,9 @@ const HomePage = () => (
               <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
                 Ann Arbor Mayor’s Green Fair
               </a>{' '}
-              and <a href="https://www.cinetopiafestival.org/">Cinetopia</a>,
-              Galaxy brings you our first annual{' '}
+              and <a href="https://www.cinetopiafestival.org/">Cinetopia</a>,{' '}
+              <span style={{ whiteSpace: 'nowrap' }}>Galaxy</span> brings you
+              our first annual{' '}
               <a href="http://www.teachmsc.org/">
                 Michigan Sustainability Case
               </a>{' '}
