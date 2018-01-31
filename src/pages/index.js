@@ -31,9 +31,9 @@ import {
 } from '../components/Audience'
 import CallToActionButton from '../components/CallToActionButton'
 
-const Sunrise: any = require('../assets/sunrise.svg')
-const Windmill: any = require('../assets/windmill.svg')
-const Tree: any = require('../assets/tree.svg')
+const StudiosIcon: any = require('../assets/studios.svg')
+const CharrettesIcon: any = require('../assets/charrettes.svg')
+const DesignSprintIcon: any = require('../assets/design-sprint.svg')
 const Moon: any = require('../assets/moon.svg')
 const Trophy: any = require('../assets/Trophy.svg')
 
@@ -72,8 +72,8 @@ const HomePage = () => (
 
     <StreamSection>
       <Stream>
-        <StreamIcon>
-          <Windmill />
+        <StreamIcon animation="coalesce">
+          <CharrettesIcon />
         </StreamIcon>
         <StreamTitle>Policy in Practice Charrettes</StreamTitle>
         <p>
@@ -84,8 +84,8 @@ const HomePage = () => (
       </Stream>
 
       <Stream>
-        <StreamIcon>
-          <Sunrise />
+        <StreamIcon animation="transit">
+          <StudiosIcon />
         </StreamIcon>
         <StreamTitle>
           Case Creation<br />Studios
@@ -99,8 +99,8 @@ const HomePage = () => (
       </Stream>
 
       <Stream>
-        <StreamIcon>
-          <Tree />
+        <StreamIcon animation="irradiate">
+          <DesignSprintIcon />
         </StreamIcon>
         <StreamTitle>
           Inclusive<br />Design Sprint
