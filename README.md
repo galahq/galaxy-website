@@ -1,13 +1,9 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Galaxy 2018
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+Organized around [real-world case studies](https://www.learngala.com/), Galaxy convenes sustainability-minded people from all backgrounds. Together, we integrate knowledge from different fields; make sustainability science and practice more inclusive; and connect research, teaching, and practice for visible impact in communities.
 
 ## Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+```
+bin/deploy.sh
+```
