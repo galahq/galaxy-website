@@ -26,7 +26,7 @@ const Header = () => (
     </InnerContainer>
     <OpticallyCenteredCallToActionButton />
     <SmallText>
-      Registration opens on<br />Monday, February 12, 2018
+      Registration opens on<br />Wednesday, February 14, 2018
     </SmallText>
     <PoissonDiscDistribution />
   </Container>
