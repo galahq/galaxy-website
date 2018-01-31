@@ -127,15 +127,21 @@ const HomePage = () => (
             <h2>Case Premieres</h2>
             <p>
               Presented in concert with{' '}
-              <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">Ann Arbor Mayor's Green Fair</a> and {' '}
-              <a href="https://www.cinetopiafestival.org/">Cinetopia</a>, Galaxy
-              brings you our first annual <a href="http://www.teachmsc.org/">Michigan Sustainability Cases (MSC)</a> Premieres. 
-              We’ll introduce this year’s selection of citizen cases: deep dives into issues shaping
-              our lives and our planet. A “gold carpet” event, leaders from
-              government, industry, NGOs, Tribal Administrations, and advocacy
-              will join case producers for a public launch of successful cases.
-              Each case will be screened and discussed, fostering local
-              engagement and global connections for a more sustainable future.
+              <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
+                Ann Arbor Mayor’s Green Fair
+              </a>{' '}
+              and <a href="https://www.cinetopiafestival.org/">Cinetopia</a>,
+              Galaxy brings you our first annual{' '}
+              <a href="http://www.teachmsc.org/">
+                Michigan Sustainability Case
+              </a>{' '}
+              Premieres. We’ll introduce this year’s selection of citizen cases:
+              deep dives into issues shaping our lives and our planet. A “gold
+              carpet” event, leaders from government, industry, NGOs, Tribal
+              Administrations, and advocacy will join case producers for a
+              public launch of successful cases. Each case will be screened and
+              discussed, fostering local engagement and global connections for a
+              more sustainable future.
             </p>
           </PremierInfo>
         </Premier>
