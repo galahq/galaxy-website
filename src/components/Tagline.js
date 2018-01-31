@@ -39,6 +39,7 @@ export const TaglineContainer = styled.div`
   flex-grow: 1;
   flex-basis: 450px;
   margin-right: 2rem;
+  margin-left: 1rem;
 
   & p {
     max-width: 520px;

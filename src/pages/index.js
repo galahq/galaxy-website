@@ -75,7 +75,9 @@ const HomePage = () => (
         <StreamIcon animation="coalesce">
           <CharrettesIcon />
         </StreamIcon>
-        <StreamTitle>Policy in Practice Charrettes</StreamTitle>
+        <StreamTitle>
+          Policy in Practice<br />Charrettes
+        </StreamTitle>
         <p>
           Connect with experts from a range of fields and places to forge
           solutions for contentious issues in a given context and implement
@@ -107,9 +109,8 @@ const HomePage = () => (
         </StreamTitle>
         <p>
           Practice problem-driven, user-oriented, and design-focused software
-          development. We’re bringing together sustainability innovators to
-          build connections with the community and scale the impact of
-          sustainability education.
+          development. We’re bringing together innovators to build connections
+          and scale the impact of sustainability education.
         </p>
       </Stream>
     </StreamSection>
@@ -169,13 +170,14 @@ const HomePage = () => (
             <h2>Awards Ceremony &&nbsp;Gala</h2>
             <p>
               Galaxy culminates with with drinks and dinner on the roof of the
-              gorgeously resftored art deco Rackham Auditorium. Overlooking—and
+              gorgeously restored art deco Rackham Auditorium. Overlooking—and
               eventually spilling into—the live music, dancing and outdoor games
               of the{' '}
               <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>, we
-              will present juried awards for the best of our year of modules in
-              use, weighing face to face testimonials, impact on policy and
-              practice, and measured performance with students.
+              will present juried awards for the best from our year of modules
+              in use. Winners will be selected based on measured performance for
+              users, impact on policy and practice, and creativity of immersion,
+              simulation or visualization features.
             </p>
           </PremierInfo>
         </Premier>
@@ -186,30 +188,31 @@ const HomePage = () => (
 
     <AudienceSection>
       <h2>Join us!</h2>
-      <p>Together at Galaxy, we can…</p>
       <AudienceColumns>
         <AudienceColumn>
-          <h3>generate…</h3>
+          <h3>Generate…</h3>
           <p>
-            <strong>Curriculum modules</strong> for use in a variety of settings
-            to promote sustainability.
+            <strong>Curriculum modules</strong> for use across cultures, sectors
+            and scales to promote sustainability.
           </p>
           <p>
-            <strong>Collective suggestions</strong> for better policy.
+            <strong>Collective recommendations</strong> for better policy and
+            implementation.
           </p>
           <p>
-            <strong>Creative solutions</strong> for maximizing stakeholder
-            engagement across cultures, scales, and backgrounds.
+            <strong>Creative solutions</strong> that turn stakeholders into
+            makers and collaborators.
           </p>
         </AudienceColumn>
         <AudienceColumn>
-          <h3>form a constellation that…</h3>
+          <h3>Form a constellation that…</h3>
           <p>
             <strong>Integrates new knowledge</strong> from different fields for
             sustainability problem-solving.
           </p>
           <p>
-            <strong>Increases impact</strong> of sustainability research.
+            <strong>Increases impact</strong> of sustainability research and
+            teaching.
           </p>
           <p>
             <strong>Incorporates science</strong>, community practice, and

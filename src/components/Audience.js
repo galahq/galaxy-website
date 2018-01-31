@@ -27,9 +27,7 @@ export const AudienceColumn = styled.div`
   min-width: 200px;
   text-align: left;
 
-  &:not(:first-child) {
-    margin-left: 1rem;
-  }
+  margin-left: 1rem;
 
   & > h3 {
     font-size: 1.1rem;

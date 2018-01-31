@@ -13,7 +13,7 @@ const CallToActionButton = (props: {
   disabled?: boolean,
   className?: string
 }) => (
-  <Button {...props} href="https://www.learngala.com">
+  <Button {...props} href="https://eepurl.com/di7gKv">
     Learn more
   </Button>
 )
