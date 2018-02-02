@@ -131,8 +131,7 @@ const HomePage = () => (
                 Ann Arbor Mayor’s Green Fair
               </a>{' '}
               and <a href="http://www.cinetopiafestival.org/">Cinetopia</a>,{' '}
-              <span style={{ whiteSpace: 'nowrap' }}>Galaxy</span> brings you
-              our first annual{' '}
+              <NoHyphens>Galaxy</NoHyphens> brings you our first annual{' '}
               <a href="http://www.teachmsc.org/">
                 Michigan Sustainability Case
               </a>{' '}
@@ -233,3 +232,8 @@ const HomePage = () => (
 )
 
 export default HomePage
+
+const NoHyphens = styled.span`
+  white-space: nowrap;
+  hyphens: none;
+`
