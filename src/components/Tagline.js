@@ -4,12 +4,13 @@
  */
 
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import Button from './shared/Button'
 import MaxWidthContainer from './shared/MaxWidthContainer'
 
 const Tagline = styled.h1`
+  font-family: freight-display-pro;
   font-size: 3rem;
   font-style: italic;
   font-weight: 400;
@@ -21,6 +22,12 @@ const Tagline = styled.h1`
   @media (max-width: 430px) {
     font-size: 2.5rem;
   }
+
+  ${p =>
+    p.small &&
+    css`
+      font-size: 2.5rem;
+    `};
 `
 
 export default Tagline
