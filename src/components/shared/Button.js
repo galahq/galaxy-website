@@ -81,3 +81,18 @@ const Button = styled.button`
 `
 
 export default Button
+
+export const UnstyledButton = styled.button`
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+`
