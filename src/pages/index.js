@@ -83,6 +83,9 @@ const HomePage = () => (
           solutions for contentious issues in a given context and implement
           collaborative (re)design. Professional accreditation may be available.
         </p>
+        <p>
+          <Link to="charette">Learn more ›</Link>
+        </p>
       </Stream>
 
       <Stream>
@@ -98,6 +101,9 @@ const HomePage = () => (
           and media producers for intensive hands-on design, exchange, and
           production sessions.
         </p>
+        <p>
+          <Link to="studio">Learn more ›</Link>
+        </p>
       </Stream>
 
       <Stream>
@@ -111,6 +117,9 @@ const HomePage = () => (
           Practice problem-driven, user-oriented, and design-focused software
           development. We’re bringing together innovators to build connections
           and scale the impact of sustainability education.
+        </p>
+        <p>
+          <Link to="sprint">Learn more ›</Link>
         </p>
       </Stream>
     </StreamSection>
