@@ -22,7 +22,7 @@ type Props = {
 }
 
 const Overview = ({ title, tagline, pitch, icon }: Props) => (
-  <TaglineInnerSection>
+  <Section>
     <Container>
       <Tagline small>
         <SmallTitle>{title}</SmallTitle>
@@ -34,10 +34,14 @@ const Overview = ({ title, tagline, pitch, icon }: Props) => (
     <IconContainer>
       <StreamIcon animation="coalesce">{icon}</StreamIcon>
     </IconContainer>
-  </TaglineInnerSection>
+  </Section>
 )
 
 export default Overview
+
+const Section = TaglineInnerSection.extend`
+  margin-bottom: 2rem;
+`
 
 const Container = TaglineContainer.extend`
   margin-top: 1rem;
