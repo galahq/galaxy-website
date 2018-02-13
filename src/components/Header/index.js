@@ -25,9 +25,7 @@ const Header = () => (
       <Subtitle>June 7–9</Subtitle>
     </InnerContainer>
     <OpticallyCenteredCallToActionButton />
-    <SmallText>
-      Registration opens on<br />Wednesday, February 14, 2018
-    </SmallText>
+    <SmallText>Registration opens soon</SmallText>
     <PoissonDiscDistribution />
   </Container>
 )
