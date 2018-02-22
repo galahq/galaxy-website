@@ -27,9 +27,11 @@ const AboutPage = () => (
         <h2>Michigan Sustainability Cases</h2>
         <p>
           <KeySentence>
-            Michigan Sustainability Cases began with a mandate to create a new
-            kind of teaching case, co-designed for contributing solutions to
-            real-world problems.
+            <ExternalLink href="http://www.teachmsc.org">
+              Michigan Sustainability Cases
+            </ExternalLink>{' '}
+            began with a mandate to create a new kind of teaching case,
+            co-designed for contributing solutions to real-world problems.
           </KeySentence>
         </p>
         <p>
@@ -58,9 +60,10 @@ const AboutPage = () => (
         <h2>Gala</h2>
         <p>
           <KeySentence>
-            Gala, our open-access platform hosts not only our MSCs, but also
-            branded cases from our partners, and shared cases from our wider
-            user community.
+            <ExternalLink href="https://www.learngala.com">Gala</ExternalLink>,
+            our open-access platform hosts not only our MSCs, but also branded
+            cases from our partners, and shared cases from our wider user
+            community.
           </KeySentence>
         </p>
         <p>
@@ -93,17 +96,24 @@ const AboutPage = () => (
           which start with The Michigan Theatre “Case Premiere,” which convenes
           artists, activists, scientists, officials and more to open up our
           collaborations to public engagement.The Premiere also brings a new
-          stream of environmental content to the annual Cinetopia Film Festival.
-          Our Premiere will pour out onto iconic Liberty Street in Ann Arbor,
-          closed off that evening for the annual Ann Arbor Mayor’s Green Fair,
-          which we are enriching through our partnerships and across U.S.
-          networks like the Urban Sustainability Directors Network and U.S.
-          Forest Service Urban Forest Labs. Our Awards Ceremony & Gala
+          stream of environmental content to the annual{' '}
+          <ExternalLink href="http://www.cinetopiafestival.org">
+            Cinetopia Film Festival
+          </ExternalLink>. Our Premiere will pour out onto iconic Liberty Street
+          in Ann Arbor, closed off that evening for the annual Ann Arbor{' '}
+          <ExternalLink href="https://www.michigan.org/event/mayor-s-green-fair">
+            Mayor’s Green Fair
+          </ExternalLink>, which we are enriching through our partnerships and
+          across U.S. networks like the Urban Sustainability Directors Network
+          and U.S. Forest Service Urban Forest Labs. Our Awards Ceremony & Gala
           celebrates case winners in three categories: strongest technical
           innovation, inclusivity of non traditional learners, and impact on the
           problems framed in the cases. Winning cases can be recognized across
           all our sites, from the Mountains of Central China to the coasts of
-          West Africa or right here at home. The Ann Arbor Summer Festival
+          West Africa or right here at home. The{' '}
+          <ExternalLink href="http://a2sf.org">
+            Ann Arbor Summer Festival
+          </ExternalLink>{' '}
           (currently developing a case to improve zero waste event practices)
           partners with us so that our Gala, and Galaxy itself, can culminate in
           a summer evening celebration.
@@ -122,3 +132,8 @@ const KeySentence = styled.em`
   letter-spacing: 0.2px;
   line-height: 1.3;
 `
+
+const ExternalLink = styled(Link).attrs({
+  target: '_blank',
+  rel: 'noopener noreferrer',
+})``
