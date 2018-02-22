@@ -13,3 +13,19 @@ export const SmallTitle = styled.span`
   font-weight: 600;
   letter-spacing: 0.3px;
 `
+
+export const StreamLogistics = styled.div`
+  display: flex;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  & > * {
+    flex: 1;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+`

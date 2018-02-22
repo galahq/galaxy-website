@@ -11,16 +11,16 @@ import { UnstyledButton } from '../shared/Button'
 import { SmallTitle } from './shared'
 
 type Personality = {
-  name: string,
-  title: string,
-  description: string,
+  name: React.Node,
+  title: React.Node,
+  description: React.Node,
   photoUrl?: string,
-  links?: { text: string, url: string }[]
+  links?: { text: string, url: string }[],
 }
 
 export default class People extends React.Component<
   {
-    people: Personality[]
+    people: Personality[],
   },
   { selectedIndex: number, rotating: boolean }
 > {
@@ -30,7 +30,7 @@ export default class People extends React.Component<
     () =>
       this.state.rotating &&
       this.setState(({ selectedIndex }) => ({
-        selectedIndex: (selectedIndex + 1) % this.props.people.length
+        selectedIndex: (selectedIndex + 1) % this.props.people.length,
       })),
     5000
   )
@@ -42,6 +42,7 @@ export default class People extends React.Component<
     return (
       <section>
         <MaxWidthContainer>
+          <h2>Who’s who?</h2>
           <PhotosContainer>
             {people.map((person, i) => (
               <Person
@@ -76,7 +77,7 @@ export default class People extends React.Component<
 class Person extends React.Component<{
   active: boolean,
   person: Personality,
-  onClick: () => mixed
+  onClick: () => mixed,
 }> {
   ref: ?HTMLButtonElement
 
@@ -115,6 +116,10 @@ class Person extends React.Component<{
 const MaxWidthContainer = BaseMaxWidthContainer.extend`
   padding-left: 0;
   padding-right: 0;
+
+  & > h2 {
+    padding: 0 1rem;
+  }
 `
 
 const PhotosContainer = styled.div`

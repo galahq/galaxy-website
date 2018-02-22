@@ -9,7 +9,7 @@ import styled from 'styled-components'
 import Tagline, {
   TaglineInnerSection,
   TaglineContainer,
-  CallToAction
+  CallToAction,
 } from '../Tagline'
 import { StreamIcon } from '../Stream'
 import { SmallTitle } from './shared'
@@ -18,7 +18,7 @@ type Props = {
   title: string,
   tagline: string,
   pitch: string,
-  icon: React.Node
+  icon: React.Node,
 }
 
 const Overview = ({ title, tagline, pitch, icon }: Props) => (
