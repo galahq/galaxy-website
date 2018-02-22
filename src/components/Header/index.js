@@ -7,6 +7,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
+import Navigation from '../shared/Navigation'
 import CallToActionButton from '../CallToActionButton'
 import MaxWidthContainer from '../shared/MaxWidthContainer'
 import { LabelForScreenReaders } from '../shared/A11y'
@@ -16,6 +17,8 @@ const GalaxyLogo: any = require('../../assets/galaxy-v.svg')
 
 const Header = () => (
   <Container>
+    <MainNavigation links={{ '': 'Home', about: 'About' }} />
+
     <InnerContainer>
       <ShadowLink to="/">
         <Logo />
@@ -38,10 +41,10 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   background-color: #02284b;
-  padding: 6rem 0 5rem;
+  padding: 7rem 0 5rem;
 
   @media (max-width: 843px) {
-    padding: 5rem 0 4rem;
+    padding: 6rem 0 4rem;
   }
 `
 
@@ -102,7 +105,7 @@ const Subtitle = styled.p`
 
 const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   big: true,
-  primary: true
+  primary: true,
 })`
   margin-top: 22px;
   z-index: 1;
@@ -123,4 +126,15 @@ const SmallText = styled.p`
   @media (min-width: 843px) {
     margin-left: 27px;
   }
+`
+
+const MainNavigation = styled(Navigation)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  background-color: transparent;
+  text-align: right;
+  font-weight: 500;
 `

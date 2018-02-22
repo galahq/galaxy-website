@@ -9,10 +9,15 @@ import BaseLink from 'gatsby-link'
 
 import MaxWidthContainer from './MaxWidthContainer'
 
-type Props = { active: string, label?: string, links: { [string]: string } }
+type Props = {
+  active: string,
+  className?: string,
+  label?: string,
+  links: { [string]: string },
+}
 
-const Navigation = ({ active, label, links }: Props) => (
-  <List>
+const Navigation = ({ active, className, label, links }: Props) => (
+  <List className={className}>
     <MaxWidth>
       {Object.keys(links).map(path => (
         <Link active={active === path} to={path}>
