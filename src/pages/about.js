@@ -7,15 +7,23 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
+import TitleSection from '../components/shared/TitleSection'
 import MaxWidthContainer, {
   RunningTextContainer,
 } from '../components/shared/MaxWidthContainer'
 
 const AboutPage = () => (
   <main>
+    <TitleSection>
+      <MaxWidthContainer>
+        <RunningTextContainer>
+          <h1>About Us</h1>
+        </RunningTextContainer>
+      </MaxWidthContainer>
+    </TitleSection>
+
     <MaxWidthContainer>
       <RunningTextContainer>
-        <h1>About</h1>
         <h2>Michigan Sustainability Cases</h2>
         <p>
           <KeySentence>
@@ -98,7 +106,7 @@ const AboutPage = () => (
           West Africa or right here at home. The Ann Arbor Summer Festival
           (currently developing a case to improve zero waste event practices)
           partners with us so that our Gala, and Galaxy itself, can culminate in
-          a summer evening celebration.{' '}
+          a summer evening celebration.
         </p>
       </RunningTextContainer>
     </MaxWidthContainer>
@@ -108,7 +116,9 @@ const AboutPage = () => (
 export default AboutPage
 
 const KeySentence = styled.em`
+  font-family: freight-text-pro;
   font-size: 20px;
+  font-weight: 600;
   letter-spacing: 0.2px;
   line-height: 1.3;
 `

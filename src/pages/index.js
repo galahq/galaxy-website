@@ -72,9 +72,11 @@ const HomePage = () => (
 
     <StreamSection>
       <Stream>
-        <StreamIcon animation="coalesce">
-          <CharrettesIcon />
-        </StreamIcon>
+        <Link to="charrette">
+          <StreamIcon animation="coalesce">
+            <CharrettesIcon />
+          </StreamIcon>
+        </Link>
         <StreamTitle>
           Policy in Practice<br />Charrettes
         </StreamTitle>
@@ -84,14 +86,16 @@ const HomePage = () => (
           collaborative (re)design. Professional accreditation may be available.
         </p>
         <p>
-          <Link to="charette">Learn more ›</Link>
+          <Link to="charrette">Learn more ›</Link>
         </p>
       </Stream>
 
       <Stream>
-        <StreamIcon animation="transit">
-          <StudiosIcon />
-        </StreamIcon>
+        <Link to="studio">
+          <StreamIcon animation="transit">
+            <StudiosIcon />
+          </StreamIcon>
+        </Link>
         <StreamTitle>
           Case Creation<br />Studios
         </StreamTitle>
@@ -107,9 +111,11 @@ const HomePage = () => (
       </Stream>
 
       <Stream>
-        <StreamIcon animation="irradiate">
-          <DesignSprintIcon />
-        </StreamIcon>
+        <Link to="sprint">
+          <StreamIcon animation="irradiate">
+            <DesignSprintIcon />
+          </StreamIcon>
+        </Link>
         <StreamTitle>
           Inclusive<br />Design Sprint
         </StreamTitle>

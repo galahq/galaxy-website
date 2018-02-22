@@ -8,6 +8,7 @@ import styled, { css } from 'styled-components'
 
 import Button from './shared/Button'
 import MaxWidthContainer from './shared/MaxWidthContainer'
+import TitleSection from './shared/TitleSection'
 
 const Tagline = styled.h1`
   font-family: freight-display-pro;
@@ -32,8 +33,7 @@ const Tagline = styled.h1`
 
 export default Tagline
 
-export const TaglineSection = styled.section`
-  background-color: #1d3f5e;
+export const TaglineSection = TitleSection.extend`
   padding-bottom: 0.25rem;
 `
 
