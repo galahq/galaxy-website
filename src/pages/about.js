@@ -5,12 +5,12 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 
 import TitleSection from '../components/shared/TitleSection'
 import MaxWidthContainer, {
   RunningTextContainer,
 } from '../components/shared/MaxWidthContainer'
+import ExternalLink from '../components/shared/ExternalLink'
 
 const AboutPage = () => (
   <main>
@@ -132,8 +132,3 @@ const KeySentence = styled.em`
   letter-spacing: 0.2px;
   line-height: 1.3;
 `
-
-const ExternalLink = styled(Link).attrs({
-  target: '_blank',
-  rel: 'noopener noreferrer',
-})``
