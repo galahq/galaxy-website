@@ -24,6 +24,7 @@ const Footer = () => (
         </Info>
         <CallToActionButton big />
         <a href="mailto:galaxy-2018@umich.edu">Questions?</a>
+        <a href="http://eepurl.com/di7gKv">Join our Mailing List</a>
       </InnerContainer>
     </LightContainer>
     <DarkContainer>

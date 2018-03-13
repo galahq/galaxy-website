@@ -126,7 +126,7 @@ const HomePage = () => (
           <PremierInfo>
             <h2>Case Premieres</h2>
             <p>
-              Presented in concert with
+              Presented in concert with{' '}
               <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
                 Michigan Sustainability Cases
               </a>
@@ -134,9 +134,9 @@ const HomePage = () => (
               <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
                 Ann Arbor Mayor’s Green Fair
               </a>{' '}
-              and{' '}
+              and the{' '}
               <a href="http://www.michtheater.org/membership-support/">
-                The Michigan Theater Foundation
+                Michigan Theater Foundation
               </a>{' '}
               (with their festival{' '}
               <a href="http://www.cinetopiafestival.org/">Cinetopia</a>), Galaxy

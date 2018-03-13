@@ -82,17 +82,10 @@ const AboutPage = () => (
 
         <h2>Galaxy</h2>
         <p>
-          <KeySentence>
-            Galaxy, our first-ever public event, will convene campus, civic,
-            community, and corporate learners to hone skills that cut across the
-            sectors of learning design, tech innovation, and social change in
-            the context of environmental sustainability.
-          </KeySentence>
-        </p>
-        <p>
-          Join Galaxy! Innovate with us through Case Innovation Studio, and join
-          the dialog with artists, activists, scientists, officials, and more
-          through our engagement events.
+          Galaxy, our first-ever public event, will convene campus, civic,
+          community, and corporate learners to hone skills that cut across the
+          sectors of learning design, tech innovation, and social change in the
+          context of environmental sustainability.
         </p>
       </PaddedRunningTextContainer>
     </MaxWidthContainer>
