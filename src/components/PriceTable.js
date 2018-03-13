@@ -35,7 +35,7 @@ const PriceTable = () => (
         </tr>
       </tbody>
     </Table>
-    <LinkWithArrow to="#">Scholarships available</LinkWithArrow>
+    <LinkWithArrow to="/scholarship">Scholarships available</LinkWithArrow>
   </Container>
 )
 
