@@ -14,16 +14,16 @@ const PriceTable = () => (
         <tr>
           <td />
           <td>
-            Early Bird <Details>before April 10, 2018</Details>
+            Early Bird <Details>before April 10</Details>
           </td>
           <td>
-            Regular <Details>after April 10, 2018</Details>
+            Regular <Details>after April 10</Details>
           </td>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <th>Individual Rate</th>
+          <th>Individual</th>
           <td>$450</td>
           <td>$500</td>
         </tr>
@@ -42,7 +42,7 @@ const PriceTable = () => (
 export default PriceTable
 
 const Container = styled.div`
-  width: 600px;
+  max-width: 600px;
   margin: 2rem auto;
 `
 
@@ -78,6 +78,7 @@ const Details = styled.span`
   font-style: normal;
   font-size: 0.8rem;
   font-weight: normal;
+  white-space: nowrap;
 `
 
 const LinkWithArrow = styled(Link)`

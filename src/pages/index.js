@@ -28,7 +28,7 @@ import {
   AudienceColumns,
   AudienceColumn,
 } from '../components/Audience'
-import CallToActionButton from '../components/CallToActionButton'
+import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import PriceTable from '../components/PriceTable'
 
 const StudiosIcon: any = require('../assets/studios.svg')
@@ -79,9 +79,7 @@ const HomePage = () => (
             <CharrettesIcon />
           </StreamIcon>
         </Link>
-        <StreamTitle>
-          Illuminate<br />the Issue
-        </StreamTitle>
+        <StreamTitle>Illuminate the Issue</StreamTitle>
         <p>
           Acquire powerful tools to deepen understanding, reveal nuance,
           illustrate relevance, and promote substantive exchange on specific
@@ -95,9 +93,7 @@ const HomePage = () => (
             <StudiosIcon />
           </StreamIcon>
         </Link>
-        <StreamTitle>
-          Expand<br />the Toolbox
-        </StreamTitle>
+        <StreamTitle>Expand the Toolbox</StreamTitle>
         <p>
           Discover the full functionality of the open access{' '}
           <a href="https://www.learngala.com/">Gala</a> platform for smarter
@@ -111,9 +107,7 @@ const HomePage = () => (
             <DesignSprintIcon />
           </StreamIcon>
         </Link>
-        <StreamTitle>
-          Amplify<br />the Impact
-        </StreamTitle>
+        <StreamTitle>Amplify the Impact</StreamTitle>
         <p>
           Engage with stakeholder networks, advance policy agendas, and
           communicate complex science to diverse audiences.
@@ -217,8 +211,4 @@ export default HomePage
 const NoHyphens = styled.span`
   white-space: nowrap;
   hyphens: none;
-`
-
-const CenteredCallToActionButton = styled(CallToActionButton)`
-  margin: 3rem auto 1.5rem;
 `

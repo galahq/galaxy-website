@@ -23,6 +23,7 @@ const Footer = () => (
           <span>June 7–9, 2018</span>
         </Info>
         <CallToActionButton big />
+        <a href="mailto:galaxy-2018@umich.edu">Questions?</a>
       </InnerContainer>
     </LightContainer>
     <DarkContainer>
@@ -54,7 +55,7 @@ const DarkContainer = LightContainer.extend`
     margin: 0 4em;
 
     & svg {
-      width: 100px;
+      width: 80px;
       height: 50px;
     }
   }
@@ -64,11 +65,17 @@ const InnerContainer = MaxWidthContainer.extend`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  a[href^='mailto'] {
+    margin-top: 1em;
+    display: inline-block;
+  }
 `
 
 const Info = styled.p`
   margin-top: 2em;
   margin-bottom: 2em;
+  text-align: center;
 
   & > span {
     display: block;

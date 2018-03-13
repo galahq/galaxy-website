@@ -12,10 +12,10 @@ const CallToActionButton = (props: {
   big?: boolean,
   primary?: boolean,
   disabled?: boolean,
-  className?: string
+  className?: string,
 }) => (
   <Button {...props} href="https://eepurl.com/di7gKv">
-    Learn more
+    Register
   </Button>
 )
 export default CallToActionButton

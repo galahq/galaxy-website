@@ -20,7 +20,7 @@ const Navigation = ({ active, className, label, links }: Props) => (
   <List className={className}>
     <MaxWidth>
       {Object.keys(links).map(path => (
-        <Link active={active === path} to={path}>
+        <Link active={active === path} to={`/${path}`}>
           {links[path]}
         </Link>
       ))}
