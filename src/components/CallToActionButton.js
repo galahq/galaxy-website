@@ -4,6 +4,7 @@
  */
 
 import React from 'react'
+import styled from 'styled-components'
 
 import BaseButton from '../components/shared/Button'
 
@@ -20,3 +21,8 @@ const CallToActionButton = (props: {
 export default CallToActionButton
 
 const Button = BaseButton.withComponent('a')
+
+export const CenteredCallToActionButton = styled(CallToActionButton)`
+  margin: 3rem auto 1.5rem;
+  display: inline-block;
+`
