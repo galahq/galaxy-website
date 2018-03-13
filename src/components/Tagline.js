@@ -18,7 +18,6 @@ const Tagline = styled.h1`
   line-height: 0.95;
   margin-top: 2.2rem;
   margin-bottom: 1.5rem;
-  max-width: 450px;
 
   @media (max-width: 430px) {
     font-size: 2.5rem;
@@ -40,16 +39,17 @@ export const TaglineSection = TitleSection.extend`
 export const TaglineInnerSection = MaxWidthContainer.extend`
   display: flex;
   flex-flow: row wrap;
+  max-width: 43em;
 `
 
 export const TaglineContainer = styled.div`
   flex-grow: 1;
   flex-basis: 450px;
-  margin-right: 2rem;
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 
   & p {
-    max-width: 520px;
+    max-width: 42em;
   }
 `
 

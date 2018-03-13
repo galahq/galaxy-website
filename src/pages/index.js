@@ -10,26 +10,26 @@ import Link from 'gatsby-link'
 import Tagline, {
   TaglineSection,
   TaglineInnerSection,
-  TaglineContainer,
-  CallToAction
+  CallToAction,
 } from '../components/Tagline'
 import Stream, {
   StreamTitle,
   StreamSection,
-  StreamIcon
+  StreamIcon,
 } from '../components/Stream'
 import Premier, {
   PremierSection,
   PremierInnerSection,
   PremierIcon,
-  PremierInfo
+  PremierInfo,
 } from '../components/Premier'
 import {
   AudienceSection,
   AudienceColumns,
-  AudienceColumn
+  AudienceColumn,
 } from '../components/Audience'
 import CallToActionButton from '../components/CallToActionButton'
+import PriceTable from '../components/PriceTable'
 
 const StudiosIcon: any = require('../assets/studios.svg')
 const CharrettesIcon: any = require('../assets/charrettes.svg')
@@ -41,30 +41,32 @@ const HomePage = () => (
   <main>
     <TaglineSection>
       <TaglineInnerSection>
-        <TaglineContainer>
-          <Tagline>A sustainability learning exchange</Tagline>
-          <p>
-            Organized around{' '}
-            <a href="https://www.learngala.com/">real-world case studies</a>,
-            Galaxy convenes sustainability-minded people from all backgrounds.
-            Together, we integrate knowledge from different fields; make
-            sustainability science and practice more inclusive; and connect
-            research, teaching, and practice for visible impact in communities.
-          </p>
-        </TaglineContainer>
+        <Tagline>A sustainability learning exchange</Tagline>
+        <p>
+          Organized around{' '}
+          <a href="https://www.learngala.com/">real-world case studies</a>,
+          Galaxy will convene environmentally-minded people from all
+          backgrounds. Together, we will integrate sustainability science and
+          knowledge from different fields, make sustainability solutions and
+          decision-making more inclusive, and connect research, teaching, and
+          practice for visible impact in communities.
+        </p>
 
-        <CallToAction>
-          <p>
-            <strong>Join</strong> the <strong>conversation</strong>
-          </p>
-          <p>
-            <strong>Expand</strong> the <strong>collaboration</strong>
-          </p>
-          <p>
-            <strong>Enjoy</strong> the <strong>celebration</strong>
-          </p>
-          <CallToActionButton />
-        </CallToAction>
+        <h2>Got a case? Make it shine at Galaxy 2018!</h2>
+        <p>
+          The driving force of Galaxy is an intensive hands-on Case Innovation
+          Studio over three days. Improve your research and teaching cases with
+          innovative tools for learning design, communicating complexity,
+          visualizing data, and enhancing public engagement.
+        </p>
+        <p>
+          You will can also engage in dialogue with software developers about
+          tech features that can add depth to or extend the reach of your case.
+          Social events each evening that will expand your knowledge and spark
+          meaningful relationships with your new connections.
+        </p>
+
+        <CenteredCallToActionButton />
       </TaglineInnerSection>
     </TaglineSection>
 
@@ -78,15 +80,12 @@ const HomePage = () => (
           </StreamIcon>
         </Link>
         <StreamTitle>
-          Policy in Practice<br />Charrettes
+          Illuminate<br />the Issue
         </StreamTitle>
         <p>
-          Connect with experts from a range of fields and places to forge
-          solutions for contentious issues in a given context and implement
-          collaborative (re)design. Professional accreditation may be available.
-        </p>
-        <p>
-          <Link to="charrette">Learn more ›</Link>
+          Acquire powerful tools to deepen understanding, reveal nuance,
+          illustrate relevance, and promote substantive exchange on specific
+          environmental issues.
         </p>
       </Stream>
 
@@ -97,16 +96,12 @@ const HomePage = () => (
           </StreamIcon>
         </Link>
         <StreamTitle>
-          Case Creation<br />Studios
+          Expand<br />the Toolbox
         </StreamTitle>
         <p>
-          Arrive with an idea, leave with a powerful tool for science
-          communication, outreach and active learning. Join a community of case
-          and media producers for intensive hands-on design, exchange, and
-          production sessions.
-        </p>
-        <p>
-          <Link to="studio">Learn more ›</Link>
+          Discover the full functionality of the open access{' '}
+          <a href="https://www.learngala.com/">Gala</a> platform for smarter
+          content delivery, built-in analytics, and learning progression design.
         </p>
       </Stream>
 
@@ -117,15 +112,11 @@ const HomePage = () => (
           </StreamIcon>
         </Link>
         <StreamTitle>
-          Inclusive<br />Design Sprint
+          Amplify<br />the Impact
         </StreamTitle>
         <p>
-          Practice problem-driven, user-oriented, and design-focused software
-          development. We’re bringing together innovators to build connections
-          and scale the impact of sustainability education.
-        </p>
-        <p>
-          <Link to="sprint">Learn more ›</Link>
+          Engage with stakeholder networks, advance policy agendas, and
+          communicate complex science to diverse audiences.
         </p>
       </Stream>
     </StreamSection>
@@ -141,65 +132,39 @@ const HomePage = () => (
           <PremierInfo>
             <h2>Case Premieres</h2>
             <p>
-              Presented in concert with{' '}
+              Presented in concert with
+              <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
+                Michigan Sustainability Cases
+              </a>
+              , the{' '}
               <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
                 Ann Arbor Mayor’s Green Fair
               </a>{' '}
-              and <a href="http://www.cinetopiafestival.org/">Cinetopia</a>,{' '}
-              <NoHyphens>Galaxy</NoHyphens> brings you our first annual{' '}
-              <a href="http://www.teachmsc.org/">
-                Michigan Sustainability Case
+              and{' '}
+              <a href="http://www.michtheater.org/membership-support/">
+                The Michigan Theater Foundation
               </a>{' '}
-              Premieres. We’ll introduce this year’s selection of citizen cases:
-              deep dives into issues shaping our lives and our planet. A “gold
-              carpet” event, leaders from government, industry, NGOs, Tribal
-              Administrations, and advocacy will join case producers for a
-              public launch of successful cases. Each case will be screened and
-              discussed, fostering local engagement and global connections for a
-              more sustainable future.
+              (with their festival{' '}
+              <a href="http://www.cinetopiafestival.org/">Cinetopia</a>), Galaxy
+              brings you our first annual Gold Carpet Case Premieres for a pilot
+              program in Citizen Sustainability Certification.
             </p>
           </PremierInfo>
         </Premier>
 
-        {/* <Premier>
-          <PremierIcon thin>
-            <Trophy />
-          </PremierIcon>
-          <PremierInfo>
-            <h2>Pitch “The Case for…”</h2>
-            <p>
-              Throughout the{' '}
-              <a href="https://www.michigan.org/event/mayor-s-green-fair">
-                Ann Arbor Mayor’s Green Fair
-              </a>, case studies from Michigan Sustainability Cases will feature
-              the city’s sustainability practices on our{' '}
-              <a href="https://www.learngala.com">
-                interactive learning platform, Gala
-              </a>. The event showcases efforts from local and state NGOs,
-              agencies, and businesses, providing opportunities for residents to
-              learn about sustainability practices pertaining to their daily
-              life, including energy, forestry, natural area preservation, waste
-              treatment, and water.
-            </p>
-          </PremierInfo>
-        </Premier>
- */}
         <Premier>
           <PremierIcon thin>
             <Trophy />
           </PremierIcon>
           <PremierInfo>
-            <h2>Awards Ceremony &&nbsp;Gala</h2>
+            <h2>The Gala Awards Ceremony & Dinner</h2>
             <p>
-              Galaxy culminates with with drinks and dinner on the roof of the
-              gorgeously restored art deco Rackham Auditorium. Overlooking—and
-              eventually spilling into—the live music, dancing and outdoor games
-              of the{' '}
+              Galaxy culminates with dinner and drinks on the roof of the
+              gorgeously restored art deco Rackham Auditorium. Overlooking the
+              live music, dancing and outdoor games of the{' '}
               <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>, we
-              will present juried awards for the best from our year of modules
-              in use. Winners will be selected based on measured performance for
-              users, impact on policy and practice, and creativity of immersion,
-              simulation or visualization features.
+              will present “best-of” awards for case modules currently in use on
+              our platform.
             </p>
           </PremierInfo>
         </Premier>
@@ -242,6 +207,7 @@ const HomePage = () => (
           </p>
         </AudienceColumn>
       </AudienceColumns>
+      <PriceTable />
     </AudienceSection>
   </main>
 )
@@ -251,4 +217,8 @@ export default HomePage
 const NoHyphens = styled.span`
   white-space: nowrap;
   hyphens: none;
+`
+
+const CenteredCallToActionButton = styled(CallToActionButton)`
+  margin: 3rem auto 1.5rem;
 `
