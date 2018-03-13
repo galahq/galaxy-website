@@ -54,16 +54,16 @@ const HomePage = () => (
 
         <h2>Got a case? Make it shine at Galaxy 2018!</h2>
         <p>
-          The driving force of Galaxy is an intensive hands-on Case Innovation
-          Studio over three days. Improve your research and teaching cases with
-          innovative tools for learning design, communicating complexity,
-          visualizing data, and enhancing public engagement.
+          The driving force of Galaxy is an intensive, hands-on Case Innovation
+          Studio over three days. Improve your existing case studies with
+          innovative tools for learning design, media curation and production,
+          and communicating complexity.
         </p>
         <p>
-          You will can also engage in dialogue with software developers about
-          tech features that can add depth to or extend the reach of your case.
-          Social events each evening that will expand your knowledge and spark
-          meaningful relationships with your new connections.
+          You will also engage in dialogue with software developers about tech
+          features that can extend the reach of your case or add depth. Social
+          events each evening will expand your networks and spark meaningful
+          relationships.
         </p>
 
         <CenteredCallToActionButton />

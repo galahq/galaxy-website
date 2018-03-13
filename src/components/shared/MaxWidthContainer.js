@@ -22,6 +22,21 @@ const MaxWidthContainer = styled.div`
 
 export default MaxWidthContainer
 
-export const RunningTextContainer = styled.div`
+export const RunningTextContainer = MaxWidthContainer.extend`
   max-width: 740px;
+
+  p {
+    margin-bottom: 1em;
+  }
+`
+
+export const UnpaddedRunningTextContainer = RunningTextContainer.extend`
+  margin-top: 0em;
+  margin-bottom: 0em;
+  padding: 0;
+`
+
+export const PaddedRunningTextContainer = RunningTextContainer.extend`
+  margin-top: 3em;
+  margin-bottom: 3em;
 `

@@ -17,7 +17,13 @@ const GalaxyLogo: any = require('../../assets/galaxy-v.svg')
 
 const Header = () => (
   <Container>
-    <MainNavigation links={{ '': 'Home', about: 'About' }} />
+    <MainNavigation
+      links={{
+        '': 'Home',
+        about: 'About',
+        logistics: 'Location',
+      }}
+    />
 
     <InnerContainer>
       <ShadowLink to="/">

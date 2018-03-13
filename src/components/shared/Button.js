@@ -74,9 +74,19 @@ const Button = styled.button`
   ${p =>
     p.disabled &&
     css`
-      pointer-events: none;
       cursor: not-allowed;
       opacity: 0.7;
+
+      &:hover {
+        background-color: white;
+      }
+
+      &:active {
+        /* Reset */
+        background-color: white;
+        box-shadow: inset 0 0 0 1px rgba(16, 22, 26, 0.2),
+          inset 0 -1px 0 rgba(16, 22, 26, 0.1);
+      }
     `};
 `
 

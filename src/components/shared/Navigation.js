@@ -44,6 +44,14 @@ const Link = styled(BaseLink)`
 
   text-decoration: none;
 
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+
   ${p =>
     p.active &&
     css`

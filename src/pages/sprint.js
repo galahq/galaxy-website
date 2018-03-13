@@ -13,7 +13,7 @@ import { StreamLogistics } from '../components/streams/shared'
 import MaxWidthContainer, {
   RunningTextContainer,
 } from '../components/shared/MaxWidthContainer'
-import ExternalLink from '../components/shared/ExternalLink'
+import { ExternalLink } from '../components/shared/Link'
 
 const SprintIcon: any = require('../assets/design-sprint.svg')
 

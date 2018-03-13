@@ -624,3 +624,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.o-card > *:first-child {
+  margin-top: 0 !important;
+}
+
+.o-card > *:last-child {
+  margin-bottom: 0 !important;
+}

@@ -5,7 +5,8 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
+
+import { LinkWithArrow } from './shared/Link'
 
 const PriceTable = () => (
   <Container>
@@ -79,14 +80,4 @@ const Details = styled.span`
   font-size: 0.8rem;
   font-weight: normal;
   white-space: nowrap;
-`
-
-const LinkWithArrow = styled(Link)`
-  position: relative;
-
-  &::after {
-    content: ' ›';
-    position: absolute;
-    right: -0.75em;
-  }
 `
