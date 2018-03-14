@@ -3,39 +3,28 @@
  * @flow
  */
 
-import React from 'react'
-import styled from 'styled-components'
-import Link from 'gatsby-link'
+import React from 'react';
+import styled from 'styled-components';
+import Link from 'gatsby-link';
 
-import Tagline, {
-  TaglineSection,
-  TaglineInnerSection,
-  CallToAction,
-} from '../components/Tagline'
-import Stream, {
-  StreamTitle,
-  StreamSection,
-  StreamIcon,
-} from '../components/Stream'
+import Tagline, { TaglineSection, TaglineInnerSection, CallToAction } from '../components/Tagline';
+import Stream, { StreamTitle, StreamSection, StreamIcon } from '../components/Stream';
 import Premier, {
   PremierSection,
   PremierInnerSection,
   PremierIcon,
   PremierInfo,
-} from '../components/Premier'
-import {
-  AudienceSection,
-  AudienceColumns,
-  AudienceColumn,
-} from '../components/Audience'
-import { CenteredCallToActionButton } from '../components/CallToActionButton'
-import PriceTable from '../components/PriceTable'
+} from '../components/Premier';
+import { ExternalLink } from '../components/shared/Link';
+import { AudienceSection, AudienceColumns, AudienceColumn } from '../components/Audience';
+import { CenteredCallToActionButton } from '../components/CallToActionButton';
+import PriceTable from '../components/PriceTable';
 
-const StudiosIcon: any = require('../assets/studios.svg')
-const CharrettesIcon: any = require('../assets/charrettes.svg')
-const DesignSprintIcon: any = require('../assets/design-sprint.svg')
-const Moon: any = require('../assets/moon.svg')
-const Trophy: any = require('../assets/Trophy.svg')
+const StudiosIcon: any = require('../assets/studios.svg');
+const CharrettesIcon: any = require('../assets/charrettes.svg');
+const DesignSprintIcon: any = require('../assets/design-sprint.svg');
+const Moon: any = require('../assets/moon.svg');
+const Trophy: any = require('../assets/Trophy.svg');
 
 const HomePage = () => (
   <main>
@@ -44,26 +33,23 @@ const HomePage = () => (
         <Tagline>A sustainability learning exchange</Tagline>
         <p>
           Organized around{' '}
-          <a href="https://www.learngala.com/">real-world case studies</a>,
-          Galaxy will convene environmentally-minded people from all
-          backgrounds. Together, we will integrate sustainability science and
-          knowledge from different fields, make sustainability solutions and
-          decision-making more inclusive, and connect research, teaching, and
-          practice for visible impact in communities.
+          <ExternalLink href="https://www.learngala.com/">real-world case studies</ExternalLink>,
+          Galaxy will convene environmentally-minded people from all backgrounds. Together, we will
+          integrate sustainability science and knowledge from different fields, make sustainability
+          solutions and decision-making more inclusive, and connect research, teaching, and practice
+          for visible impact in communities.
         </p>
 
         <h2>Got a case? Make it shine at Galaxy 2018!</h2>
         <p>
-          The driving force of Galaxy is an intensive, hands-on Case Innovation
-          Studio over three days. Improve your existing case studies with
-          innovative tools for learning design, media curation and production,
-          and communicating complexity.
+          The driving force of Galaxy is an intensive, hands-on Case Innovation Studio over three
+          days. Improve your existing case studies with innovative tools for learning design, media
+          curation and production, and communicating complexity.
         </p>
         <p>
-          You will also engage in dialogue with software developers about tech
-          features that can extend the reach of your case or add depth. Social
-          events each evening will expand your networks and spark meaningful
-          relationships.
+          You will also engage in dialogue with software developers about tech features that can
+          extend the reach of your case or add depth. Social events each evening will expand your
+          networks and spark meaningful relationships.
         </p>
 
         <CenteredCallToActionButton />
@@ -81,9 +67,8 @@ const HomePage = () => (
         </Link>
         <StreamTitle>Illuminate the Issue</StreamTitle>
         <p>
-          Acquire powerful tools to deepen understanding, reveal nuance,
-          illustrate relevance, and promote substantive exchange on specific
-          environmental issues.
+          Acquire powerful tools to deepen understanding, reveal nuance, illustrate relevance, and
+          promote substantive exchange on specific issues.
         </p>
       </Stream>
 
@@ -96,8 +81,8 @@ const HomePage = () => (
         <StreamTitle>Expand the Toolbox</StreamTitle>
         <p>
           Discover the full functionality of the open access{' '}
-          <a href="https://www.learngala.com/">Gala</a> platform for smarter
-          content delivery, built-in analytics, and learning progression design.
+          <ExternalLink href="https://www.learngala.com/">Gala platform</ExternalLink> for modular
+          teaching, integrated multimedia, and outcome assessment.
         </p>
       </Stream>
 
@@ -109,7 +94,7 @@ const HomePage = () => (
         </Link>
         <StreamTitle>Amplify the Impact</StreamTitle>
         <p>
-          Engage with stakeholder networks, advance policy agendas, and
+          Engage with stakeholder networks, advance policy agendas, build learning communities, and
           communicate complex science to diverse audiences.
         </p>
       </Stream>
@@ -127,21 +112,21 @@ const HomePage = () => (
             <h2>Case Premieres</h2>
             <p>
               Presented in concert with{' '}
-              <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
+              <ExternalLink href="http://www.teachmsc.org">
                 Michigan Sustainability Cases
-              </a>
+              </ExternalLink>
               , the{' '}
-              <a href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair2009.aspx">
+              <ExternalLink href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair.aspx">
                 Ann Arbor Mayor’s Green Fair
-              </a>{' '}
+              </ExternalLink>{' '}
               and the{' '}
-              <a href="http://www.michtheater.org/membership-support/">
+              <ExternalLink href="http://www.michtheater.org/membership-support/">
                 Michigan Theater Foundation
-              </a>{' '}
+              </ExternalLink>{' '}
               (with their festival{' '}
-              <a href="http://www.cinetopiafestival.org/">Cinetopia</a>), Galaxy
-              brings you our first annual Gold Carpet Case Premieres for a pilot
-              program in Citizen Sustainability Certification.
+              <ExternalLink href="http://www.cinetopiafestival.org/">Cinetopia</ExternalLink>),
+              Galaxy brings you our first annual Gold Carpet Case Premieres for a pilot program in
+              Citizen Sustainability Certification.
             </p>
           </PremierInfo>
         </Premier>
@@ -153,12 +138,10 @@ const HomePage = () => (
           <PremierInfo>
             <h2>The Gala Awards Ceremony & Dinner</h2>
             <p>
-              Galaxy culminates with dinner and drinks on the roof of the
-              gorgeously restored art deco Rackham Auditorium. Overlooking the
-              live music, dancing and outdoor games of the{' '}
-              <a href="https://www.a2sf.org/">Ann Arbor Summer Festival</a>, we
-              will present “best-of” awards for case modules currently in use on
-              our platform.
+              Galaxy culminates with dinner and drinks on the roof of the gorgeously restored art
+              deco Rackham Auditorium. Overlooking the live music, dancing and outdoor games of the{' '}
+              <ExternalLink href="https://www.a2sf.org/">Ann Arbor Summer Festival</ExternalLink>,
+              we will present “best-of” awards for case modules currently in use on our platform.
             </p>
           </PremierInfo>
         </Premier>
@@ -173,42 +156,40 @@ const HomePage = () => (
         <AudienceColumn>
           <h3>Generate…</h3>
           <p>
-            <strong>Curriculum modules</strong> for use across cultures, sectors
-            and scales to promote sustainability.
+            <strong>Curriculum modules</strong> for use across cultures, sectors, and scales to
+            promote sustainability.
           </p>
           <p>
-            <strong>Collective recommendations</strong> for better policy and
-            implementation.
+            <strong>Collective recommendations</strong> for better policy and implementation.
           </p>
           <p>
-            <strong>Creative solutions</strong> that turn stakeholders into
-            makers and collaborators.
+            <strong>Creative solutions</strong> that turn stakeholders into makers and
+            collaborators.
           </p>
         </AudienceColumn>
         <AudienceColumn>
           <h3>Form a constellation that…</h3>
           <p>
-            <strong>Integrates new knowledge</strong> from different fields for
-            sustainability problem-solving.
+            <strong>Integrates new knowledge</strong> from different fields for sustainability
+            problem-solving.
           </p>
           <p>
-            <strong>Increases impact</strong> of sustainability research and
-            teaching.
+            <strong>Increases impact</strong> of sustainability research and teaching.
           </p>
           <p>
-            <strong>Incorporates science</strong>, community practice, and
-            sustainability principles.
+            <strong>Incorporates science</strong>, community practice, and sustainability
+            principles.
           </p>
         </AudienceColumn>
       </AudienceColumns>
       <PriceTable />
     </AudienceSection>
   </main>
-)
+);
 
-export default HomePage
+export default HomePage;
 
 const NoHyphens = styled.span`
   white-space: nowrap;
   hyphens: none;
-`
+`;

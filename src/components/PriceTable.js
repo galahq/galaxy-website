@@ -3,10 +3,10 @@
  * @flow
  */
 
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import { LinkWithArrow } from './shared/Link'
+import { LinkWithArrow } from './shared/Link';
 
 const PriceTable = () => (
   <Container>
@@ -32,20 +32,21 @@ const PriceTable = () => (
           <th>
             Student Rate <Details>limited availability</Details>
           </th>
-          <td colSpan="2">$400</td>
+          <td>$400</td>
+          <td>$400</td>
         </tr>
       </tbody>
     </Table>
     <LinkWithArrow to="/scholarship">Scholarships available</LinkWithArrow>
   </Container>
-)
+);
 
-export default PriceTable
+export default PriceTable;
 
 const Container = styled.div`
   max-width: 600px;
   margin: 2rem auto;
-`
+`;
 
 const Table = styled.table`
   td,
@@ -71,7 +72,7 @@ const Table = styled.table`
     font-weight: bold;
     line-height: 1.3;
   }
-`
+`;
 
 const Details = styled.span`
   display: block;
@@ -80,4 +81,4 @@ const Details = styled.span`
   font-size: 0.8rem;
   font-weight: normal;
   white-space: nowrap;
-`
+`;
