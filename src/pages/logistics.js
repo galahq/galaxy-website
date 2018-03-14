@@ -3,18 +3,18 @@
  * @flow
  */
 
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import TitleSection from '../components/shared/TitleSection';
+import TitleSection from '../components/shared/TitleSection'
 import MaxWidthContainer, {
   UnpaddedRunningTextContainer,
   RunningTextContainer,
   PaddedRunningTextContainer,
-} from '../components/shared/MaxWidthContainer';
-import PriceTable from '../components/PriceTable';
-import { ExternalLink, ExternalButton } from '../components/shared/Link';
-import Card from '../components/shared/Card';
+} from '../components/shared/MaxWidthContainer'
+import PriceTable from '../components/PriceTable'
+import { ExternalLink, ExternalButton } from '../components/shared/Link'
+import Card from '../components/shared/Card'
 
 const LogisticsPage = () => (
   <main>
@@ -27,17 +27,19 @@ const LogisticsPage = () => (
     <RunningTextContainer>
       <h2>Accomodations</h2>
       <p>
-        Galaxy has room blocks at three hotels offering discounted rates for participants. You can
-        make your reservation online or via phone by calling the hotels. Please do so as soon as
-        possible.
+        Galaxy has room blocks at three hotels offering discounted rates for
+        participants. You can make your reservation online or via phone by
+        calling the hotels. Please do so as soon as possible.
       </p>
       <p>
-        The Hyatt Place and Holiday Inn both have complimentary shuttles available to bring you to
-        Central Campus and back to your hotel. We will arrange with the hotels ahead of time to have
-        shuttles take you and other Galaxy participants to downtown Ann Arbor for Galaxy events. You
-        can schedule extra shuttles if needed by speaking with the concierge desk at your hotel. The
-        Holiday Inn also has an Avis/Budget car rental service if you decide you want to rent a car
-        later. Both hotels offer free parking.
+        The Hyatt Place and Holiday Inn both have complimentary shuttles
+        available to bring you to Central Campus and back to your hotel. We will
+        arrange with the hotels ahead of time to have shuttles take you and
+        other Galaxy participants to downtown Ann Arbor for Galaxy events. You
+        can schedule extra shuttles if needed by speaking with the concierge
+        desk at your hotel. The Holiday Inn also has an Avis/Budget car rental
+        service if you decide you want to rent a car later. Both hotels offer
+        free parking.
       </p>
     </RunningTextContainer>
 
@@ -53,7 +55,8 @@ const LogisticsPage = () => (
           </p>
           <Details>Use code G-GALA when booking.</Details>
           <Details>
-            Or call (734) 995-1234 and mention “University of Michigan Galaxy Block”
+            Or call (734) 995-1234 and mention “University of Michigan Galaxy
+            Block”
           </Details>
           <Details>Reserve by May 6, 2018 for the group rate.</Details>
           <Button href="https://annarbor.place.hyatt.com/en/hotel/home.html?corp_id=G-GALA">
@@ -69,9 +72,12 @@ const LogisticsPage = () => (
           <p>
             $114 + taxes per night.<br />
           </p>
-          <Details>Enter dates and you will automatically be given the special rate.</Details>
           <Details>
-            Or call (734) 769-9800 and mention “University of Michigan Galaxy Block”
+            Enter dates and you will automatically be given the special rate.
+          </Details>
+          <Details>
+            Or call (734) 769-9800 and mention “University of Michigan Galaxy
+            Block”
           </Details>
           <Details>Reserve by May 23, 2018 for the group rate.</Details>
           <Button href="http://ichotelsgroup.com/redirect?path=rates&brandCode=HI&GPC=GR6&hotelCode=ARBNC&_PMID=99801505">
@@ -87,7 +93,9 @@ const LogisticsPage = () => (
           <p>
             $114 + taxes per night.<br />
           </p>
-          <Details>Call (734) 761-7800 and mention “Galaxy room block.”</Details>
+          <Details>
+            Call (734) 761-7800 and mention “Galaxy room block.”
+          </Details>
           <Details>Reserve by May 6, 2018 for the group rate.</Details>
           <Details>
             <strong>Note:</strong> This hotel does not have a shuttle service.
@@ -99,8 +107,8 @@ const LogisticsPage = () => (
 
     <RunningTextContainer>
       <p>
-        In addition, if you wish to stay in other hotels, here are some options: Downtown (walkable
-        to the event):
+        In addition, if you wish to stay in other hotels, here are some options:
+        Downtown (walkable to the event):
       </p>
       <ul>
         <li>
@@ -114,7 +122,9 @@ const LogisticsPage = () => (
           </ExternalLink>
         </li>
         <li>
-          <ExternalLink href="https://www.belltowerhotel.com/">The Bell Tower Hotel</ExternalLink>{' '}
+          <ExternalLink href="https://www.belltowerhotel.com/">
+            The Bell Tower Hotel
+          </ExternalLink>{' '}
           might have limited availability. Reserve as soon as possible.
         </li>
       </ul>
@@ -122,7 +132,10 @@ const LogisticsPage = () => (
 
     <UnpaddedRunningTextContainer>
       <h2>Location</h2>
-      <p>The Rackham Building, University of Michigan Central Campus; and Downtown Ann Arbor</p>
+      <p>
+        The Rackham Building, University of Michigan Central Campus; and
+        Downtown Ann Arbor
+      </p>
     </UnpaddedRunningTextContainer>
     <Map>
       <iframe
@@ -134,12 +147,14 @@ const LogisticsPage = () => (
     <RunningTextContainer>
       <h2>Transportation</h2>
       <p>
-        We suggest flying into Detroit Metropolitan Airport (DTW). The University of Michigan is
-        located 24.4 miles from the DTW airport. From there, you can take a taxi, uber, or lyft. You
-        can also take{' '}
-        <ExternalLink href="http://www.michiganflyer.com/">the Michigan Flyer</ExternalLink>
-        , which is $12 one way/$22 round-trip. The Michigan Flyer will pick you up at the Detroit
-        Metropolitan Airport and drop you off at the{' '}
+        We suggest flying into Detroit Metropolitan Airport (DTW). The
+        University of Michigan is located 24.4 miles from the DTW airport. From
+        there, you can take a taxi, uber, or lyft. You can also take{' '}
+        <ExternalLink href="http://www.michiganflyer.com/">
+          the Michigan Flyer
+        </ExternalLink>
+        , which is $12 one way/$22 round-trip. The Michigan Flyer will pick you
+        up at the Detroit Metropolitan Airport and drop you off at the{' '}
         <ExternalLink href="https://www.google.com/maps/place/Blake+Transit+Center/@42.2782899,-83.749522,17z/data=!3m1!4b1!4m5!3m4!1s0x883cae3c0e2e90e5:0x763af70363920c82!8m2!3d42.278286!4d-83.747328">
           Blake Transit Center
         </ExternalLink>{' '}
@@ -147,20 +162,20 @@ const LogisticsPage = () => (
       </p>
     </RunningTextContainer>
   </main>
-);
+)
 
-export default LogisticsPage;
+export default LogisticsPage
 
 const Button = ExternalButton.extend`
   margin-top: auto;
-`;
+`
 
 const Row = styled.div`
   display: grid;
   grid-gap: 1.5em;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   margin-bottom: 2rem;
-`;
+`
 
 const Details = styled.p`
   font-size: 0.8rem;
@@ -170,13 +185,13 @@ const Details = styled.p`
   &:last-of-type {
     margin-bottom: 1em;
   }
-`;
+`
 
 const Location = ExternalLink.extend`
   position: absolute;
   top: 20px;
   right: 20px;
-`;
+`
 
 const Map = styled.div`
   width: 100vw;
@@ -187,4 +202,4 @@ const Map = styled.div`
     margin: 0;
     opacity: 0.9;
   }
-`;
+`
