@@ -32,28 +32,28 @@ const AboutPage = () => (
               <ExternalLink href="http://www.teachmsc.org">
                 Michigan Sustainability Cases
               </ExternalLink>{' '}
-              (MSC) began with the ambition to create a new kind of teaching
+              (MSC) began with the mandate to create a new kind of teaching
               case, co-designed for contributing solutions to real-world
-              challenges.
+              Sustainability challenges.
             </KeySentence>
           </p>
           <p>
-            Cases are widely used in Law, Medicine, Policy, Business, and other
+            Cases are widely used in law, medicine, policy, business, and other
             professional education settings, most often sold to instructors and
             students as PDF files to download and discuss. We wanted something
-            different for the sustainability field: ours would be open access,
+            different for the sustainability field: our cases would be open access,
             and they would empower teams of professors, practitioners, and
             students to tell the story of a real-world problem and a challenging
             decision. As we piloted case co-creation in locations ranging from
-            Ann Arbor to Accra, from Baltimore to Beijing, and from Kathmandu to
+            Ann Arbor to Accra, Baltimore to Beijing, and Kathmandu to
             Kalamazoo, we realized these cases could be used across communities
             and organizations where lifelong learners confront sustainability
             challenges.
           </p>
           <p>
             But we also recognized that we could not innovate alone. To scale
-            sustainability, we needed reach across our campus and world. And we
-            needed a tool to help us foster generous collaborations and make
+            sustainability impact, we needed reach across our campus and world.
+            And we needed a tool to help us foster generous collaborations and make
             them shine. Enter Gala.
           </p>
         </Card>
@@ -65,22 +65,22 @@ const AboutPage = () => (
               Our open access platform{' '}
               <ExternalLink href="https://www.learngala.com">Gala</ExternalLink>{' '}
               hosts sustainability cases created by the MSC team, our partner
-              institutions, and our wider user community.
+              institutions, and our user community on UM campus and beyond.
             </KeySentence>
           </p>
           <p>
-            The platform supports media-rich content and offers a wide range of
-            tools: built-in pre- and post-tests and user behavior data analytics
-            (so that we can foster inclusivity through the understanding of use
-            patterns by generation, gender, and other metrics), inline
-            discussion forums (a conversation board sits on top of each case for
-            learning exchange and nuanced, updated information), Caselog (an
-            open exchange of teaching insights to allow creative implementation
-            and effective learning interactions), and more.
+            The platform offers tools to support media-rich content modules for
+            immersive learning. Pre- and post- tests and user behavior statistics
+            enable data-driven improvements for inclusive teaching. Public and
+            private discussion boards embedded in each case allow for exchange of
+            teaching insights, user commentary, and case updates. These tools
+            enable creative case deployment and implementation to suit different
+            learning styles and teaching needs, resulting in a delightful user
+            experience for case creators, learners, and instructors.
           </p>
           <p>
             We are constantly innovating with Gala to facilitate a wider network
-            of learners and problem-solvers. Combining media skills, new modes
+            of learners and problem solvers. Combining media skills, new modes
             of data analysis, and emerging experiential learning techniques, we
             foster local engagement and global connections for a more
             sustainable future.
