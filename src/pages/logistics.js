@@ -27,19 +27,53 @@ const LogisticsPage = () => (
     <RunningTextContainer>
       <h2>Accomodations</h2>
       <p>
-        Galaxy has room blocks at three hotels offering discounted rates for
-        participants. You can make your reservation online or via phone by
-        calling the hotels. Please do so as soon as possible.
+      Below are three local hotels that we often support and support us. Because
+      they are small businesses, they don't offer group rate, but we recommend
+      them as they are walkable to our events.
       </p>
+    </RunningTextContainer>
+
+    <MaxWidthContainer>
+      <Row>
+        <Card>
+          <h3>The Stone Chalet</h3>
+          <p>
+            Starting at $159 + taxes per night.
+          </p>
+          <Button href="https://www.stonechalet.com/">
+            Website
+          </Button>
+        </Card>
+
+        <Card>
+          <h3>The Burnt Toast Inn and Washington Street Inn</h3>
+          <p>
+            Starting at $135 + taxes per night.
+          </p>
+          <Button href="https://www.burnttoastinn.com/">
+            Website
+          </Button>
+        </Card>
+
+        <Card>
+          <h3>The Bell Tower Hotel</h3>
+          <p>
+            Starting at $255 + taxes per night.
+          </p>
+          <Button href="https://www.belltowerhotel.com/">
+            Website
+          </Button>
+        </Card>
+      </Row>
+    </MaxWidthContainer>
+    <RunningTextContainer>
       <p>
-        The Hyatt Place and Holiday Inn both have complimentary shuttles
-        available to bring you to Central Campus and back to your hotel. We will
-        arrange with the hotels ahead of time to have shuttles take you and
-        other Galaxy participants to downtown Ann Arbor for Galaxy events. You
-        can schedule extra shuttles if needed by speaking with the concierge
-        desk at your hotel. The Holiday Inn also has an Avis/Budget car rental
-        service if you decide you want to rent a car later. Both hotels offer
-        free parking.
+        In addition, Galaxy has room blocks at three branded hotels offering
+        discounted rates for participants. We will arrange with the hotels ahead
+        of time to have shuttles for Galaxy events. You can schedule extra
+        complimentary shuttles if needed by speaking with the concierge desk at
+        your hotel. The Holiday Inn also has an Avis/Budget car rental service.
+        Both hotels offer free parking.
       </p>
     </RunningTextContainer>
 
@@ -53,7 +87,7 @@ const LogisticsPage = () => (
           <p>
             $139 + taxes per night.<br />
           </p>
-          <Details>Use code G-GALA when booking.</Details>
+          <Details>Use code G-GALA when booking online.</Details>
           <Details>
             Or call (734) 995-1234 and mention “University of Michigan Galaxy
             Block”
@@ -77,7 +111,7 @@ const LogisticsPage = () => (
           </Details>
           <Details>
             Or call (734) 769-9800 and mention “University of Michigan Galaxy
-            Block”
+            Block.”
           </Details>
           <Details>Reserve by May 23, 2018 for the group rate.</Details>
           <Button href="http://ichotelsgroup.com/redirect?path=rates&brandCode=HI&GPC=GR6&hotelCode=ARBNC&_PMID=99801505">
@@ -94,41 +128,21 @@ const LogisticsPage = () => (
             $114 + taxes per night.<br />
           </p>
           <Details>
-            Call (734) 761-7800 and mention “Galaxy room block.”
+            Use group code “Galaxy” to book online.
+          </Details>
+          <Details>
+            Or call (734) 761-7800 and mention “Galaxy room block.”
           </Details>
           <Details>Reserve by May 6, 2018 for the group rate.</Details>
           <Details>
             <strong>Note:</strong> This hotel does not have a shuttle service.
           </Details>
-          <Button disabled>Call (734) 761-7800</Button>
+          <Button href="https://gc.synxis.com/rez.aspx?Hotel=69682&Chain=19265&arrive=6/6/2018&depart=6/9/2018&adult=1&child=0&group=Galaxy">
+            Book now
+          </Button>
         </Card>
       </Row>
     </MaxWidthContainer>
-
-    <RunningTextContainer>
-      <p>
-        In addition, if you wish to stay in other hotels, here are some options:
-        Downtown (walkable to the event):
-      </p>
-      <ul>
-        <li>
-          <ExternalLink href="https://www.stonechalet.com/?gclid=Cj0KCQiAzrTUBRCnARIsAL0mqcwweQrzPzeGmYFpIchyL3eOxuWDlpEcXrhqJpeUSKOLVU9TB0MicvcaArN_EALw_wcB">
-            The Stone Chalet
-          </ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://www.burnttoastinn.com/">
-            The Burnt Toast Inn and Washington Street Inn
-          </ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://www.belltowerhotel.com/">
-            The Bell Tower Hotel
-          </ExternalLink>{' '}
-          might have limited availability. Reserve as soon as possible.
-        </li>
-      </ul>
-    </RunningTextContainer>
 
     <UnpaddedRunningTextContainer>
       <h2>Location</h2>
