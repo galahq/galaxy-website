@@ -41,20 +41,19 @@ const AboutPage = () => (
             Cases are widely used in law, medicine, policy, business, and other
             professional education settings, most often sold to instructors and
             students as PDF files to download and discuss. We wanted something
-            different for the sustainability field: our cases would be open access,
-            and they would empower teams of professors, practitioners, and
-            students to tell the story of a real-world problem and a challenging
-            decision. As we piloted case co-creation in locations ranging from
-            Ann Arbor to Accra, Baltimore to Beijing, and Kathmandu to
-            Kalamazoo, we realized these cases could be used across communities
-            and organizations where lifelong learners confront sustainability
-            challenges.
+            different for sustainability: our cases would be open access to allow
+            anyone to contribute, use, and discuss stories about real-world
+            problems. As we piloted case co-creation with teams of professors,
+            practitioners, and students, in locations ranging from Ann Arbor to
+            Accra, Baltimore to Beijing, and Kathmandu to Kalamazoo, we realized
+            these cases could be used <i>across</i> communities and organizations
+            where lifelong learners confront sustainability challenges.
           </p>
           <p>
-            But we also recognized that we could not innovate alone. To scale
-            sustainability impact, we needed reach across our campus and world.
-            And we needed a tool to help us foster generous collaborations and make
-            them shine. Enter Gala.
+            But we also recognized that we could not innovate alone. To further
+            our sustainability efforts, we needed reach across our campus and
+            the world. And we needed a tool to help us foster generous
+            collaborations. Enter Gala.
           </p>
         </Card>
 
@@ -91,9 +90,9 @@ const AboutPage = () => (
           <h2>Galaxy</h2>
           <p>
             Galaxy, our annual public event, will convene campus, civic,
-            community, and corporate learners to hone skills that cut across the
-            sectors of learning design, tech innovation, and social change in
-            the context of environmental sustainability.
+            community, and corporate learners to hone skills that cut across
+            learning design, tech innovation, and social change in the context
+            of environmental sustainability.
           </p>
         </Card>
       </Grid>
