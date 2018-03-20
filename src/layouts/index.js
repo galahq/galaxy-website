@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './index.css'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ location, children }) => (
   <div>
     <Helmet
       title="Galaxy 2018"
@@ -14,20 +14,23 @@ const TemplateWrapper = ({ children }) => (
         {
           name: 'description',
           content:
-            'Information about the 2018 Galaxy sustainability learning exchange.'
+            'Information about the 2018 Galaxy sustainability learning exchange.',
         },
         { name: 'keywords', content: 'Galaxy, sustainaiblity, conference' },
-        { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' }
+        { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' },
       ]}
-    />
-    <Header />
+    >
+      <html lang="en" />
+    </Helmet>
+
+    <Header withCallToAction={!location.pathname.match(/register/)} />
     {children()}
     <Footer />
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 }
 
 export default TemplateWrapper

@@ -3,7 +3,7 @@
  * @flow
  */
 
-import React from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
 
 const MaxWidthContainer = styled.div`
@@ -21,3 +21,23 @@ const MaxWidthContainer = styled.div`
 `
 
 export default MaxWidthContainer
+
+export const RunningTextContainer = MaxWidthContainer.extend`
+  max-width: 740px;
+
+  p {
+    margin-bottom: 1em;
+  }
+`
+
+export const UnpaddedRunningTextContainer = RunningTextContainer.extend`
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+`
+
+export const PaddedRunningTextContainer = RunningTextContainer.extend`
+  margin-top: 3em;
+  margin-bottom: 3em;
+`

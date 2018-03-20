@@ -210,6 +210,7 @@ body {
   -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -623,4 +624,12 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.o-card > *:first-child {
+  margin-top: 0 !important;
+}
+
+.o-card > *:last-child {
+  margin-bottom: 0 !important;
 }

@@ -95,7 +95,7 @@ export const PremierIcon = styled.figure`
 
 export const PremierInfo = styled.div`
   margin-left: 4rem;
-  max-width: 600px;
+  max-width: 590px;
 
   & h2 {
     margin-top: 0rem;

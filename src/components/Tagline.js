@@ -4,45 +4,52 @@
  */
 
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import Button from './shared/Button'
 import MaxWidthContainer from './shared/MaxWidthContainer'
+import TitleSection from './shared/TitleSection'
 
 const Tagline = styled.h1`
+  font-family: freight-display-pro;
   font-size: 3rem;
   font-style: italic;
   font-weight: 400;
   line-height: 0.95;
   margin-top: 2.2rem;
   margin-bottom: 1.5rem;
-  max-width: 450px;
 
   @media (max-width: 430px) {
     font-size: 2.5rem;
   }
+
+  ${p =>
+    p.small &&
+    css`
+      font-size: 2.5rem;
+    `};
 `
 
 export default Tagline
 
-export const TaglineSection = styled.section`
-  background-color: #1d3f5e;
+export const TaglineSection = TitleSection.extend`
   padding-bottom: 0.25rem;
 `
 
 export const TaglineInnerSection = MaxWidthContainer.extend`
   display: flex;
   flex-flow: row wrap;
+  max-width: 43em;
 `
 
 export const TaglineContainer = styled.div`
   flex-grow: 1;
   flex-basis: 450px;
-  margin-right: 2rem;
-  margin-left: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 
   & p {
-    max-width: 520px;
+    max-width: 42em;
   }
 `
 
