@@ -29,25 +29,26 @@ const AboutPage = () => (
           <h2>Michigan Sustainability Cases</h2>
           <p>
             <KeySentence>
+              MSC began with the mandate to create a{' '}
               <ExternalLink href="http://www.teachmsc.org">
-                Michigan Sustainability Cases
-              </ExternalLink>{' '}
-              (MSC) began with the mandate to create a new kind of teaching
-              case, co-designed for contributing solutions to real-world
-              Sustainability challenges.
+                new kind of teaching case
+              </ExternalLink>
+              , co-designed for contributing solutions to real-world
+              sustainability challenges.
             </KeySentence>
           </p>
           <p>
             Cases are widely used in law, medicine, policy, business, and other
             professional education settings, most often sold to instructors and
             students as PDF files to download and discuss. We wanted something
-            different for sustainability: our cases would be open access to allow
-            anyone to contribute, use, and discuss stories about real-world
-            problems. As we piloted case co-creation with teams of professors,
-            practitioners, and students, in locations ranging from Ann Arbor to
-            Accra, Baltimore to Beijing, and Kathmandu to Kalamazoo, we realized
-            these cases could be used <i>across</i> communities and organizations
-            where lifelong learners confront sustainability challenges.
+            different for sustainability: our cases would be open access to
+            allow anyone to contribute, use, and discuss stories about
+            real-world problems. As we piloted case co-creation with teams of
+            professors, practitioners, and students, in locations ranging from
+            Ann Arbor to Accra, Baltimore to Beijing, and Kathmandu to
+            Kalamazoo, we realized these cases could be used <i>across</i>{' '}
+            communities and organizations where lifelong learners confront
+            sustainability challenges.
           </p>
           <p>
             But we also recognized that we could not innovate alone. To further
@@ -69,13 +70,14 @@ const AboutPage = () => (
           </p>
           <p>
             The platform offers tools to support media-rich content modules for
-            immersive learning. Pre- and post- tests and user behavior statistics
-            enable data-driven improvements for inclusive teaching. Public and
-            private discussion boards embedded in each case allow for exchange of
-            teaching insights, user commentary, and case updates. These tools
-            enable creative case deployment and implementation to suit different
-            learning styles and teaching needs, resulting in a delightful user
-            experience for case creators, learners, and instructors.
+            immersive learning. Pre- and post- tests and user behavior
+            statistics enable data-driven improvements for inclusive teaching.
+            Public and private discussion boards embedded in each case allow for
+            exchange of teaching insights, user commentary, and case updates.
+            These tools enable creative case deployment and implementation to
+            suit different learning styles and teaching needs, resulting in a
+            delightful user experience for case creators, learners, and
+            instructors.
           </p>
           <p>
             We are constantly innovating with Gala to facilitate a wider network
@@ -89,10 +91,12 @@ const AboutPage = () => (
         <Card>
           <h2>Galaxy</h2>
           <p>
-            Galaxy, our annual public event, will convene campus, civic,
-            community, and corporate learners to hone skills that cut across
-            learning design, tech innovation, and social change in the context
-            of environmental sustainability.
+            <KeySentence>A constellation of events.</KeySentence>
+          </p>
+          <p>
+            Galaxy will convene campus, civic, community, and corporate learners
+            to hone skills that cut across learning design, tech innovation, and
+            social change in the context of environmental sustainability.
           </p>
         </Card>
       </Grid>

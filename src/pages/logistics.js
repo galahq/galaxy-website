@@ -27,59 +27,67 @@ const LogisticsPage = () => (
     <RunningTextContainer>
       <h2>Accomodations</h2>
       <p>
-      Below are three local hotels that we often support and support us. Because
-      they are small businesses, they don't offer group rate, but we recommend
-      them as they are walkable to our events.
+        We suggest three local hotels and B&Bs that we often support and who
+        support us. Because they are small businesses, they don't offer group
+        rate, but we recommend them as they are walkable to our events.
       </p>
     </RunningTextContainer>
 
     <MaxWidthContainer>
       <Row>
-        <Card>
-          <h3>The Stone Chalet</h3>
-          <p>
-            Starting at $159 + taxes per night.
-          </p>
-          <Button href="https://www.stonechalet.com/">
-            Website
-          </Button>
-        </Card>
+        <BareExternalLink href="https://www.stonechalet.com/">
+          <Card>
+            <h3>The Stone Chalet</h3>
+            <Location href="https://www.google.com/maps/dir/Stone+Chalet+Bed+and+Breakfast+Inn+and+Event+Center,+1917+Washtenaw+Ave,+Ann+Arbor,+MI+48104/Rackham+Auditorium,+915+E+Washington+St,+Ann+Arbor,+MI+48109/@42.2744971,-83.7346294,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883cae56f8223a45:0x33ae5a4e1bcf5b26!2m2!1d-83.722327!2d42.2684559!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e2">
+              1 mi
+            </Location>
+            <Details>
+              Located in a quiet residential neighborhood near the University of
+              Michigan's Ann Arbor Central Campus
+            </Details>
+          </Card>
+        </BareExternalLink>
 
-        <Card>
-          <h3>The Burnt Toast Inn and Washington Street Inn</h3>
-          <p>
-            Starting at $135 + taxes per night.
-          </p>
-          <Button href="https://www.burnttoastinn.com/">
-            Website
-          </Button>
-        </Card>
+        <BareExternalLink href="https://www.belltowerhotel.com/">
+          <Card>
+            <h3>Burnt Toast Inn</h3>
+            <Location href="https://www.google.com/maps/dir/Burnt+Toast+Inn,+415+W+William+St,+Ann+Arbor,+MI+48103/Rackham+Auditorium,+915+E+Washington+St,+Ann+Arbor,+MI+48109/@42.2792995,-83.7498665,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883cae23586e337f:0x7096d929cf547999!2m2!1d-83.752998!2d42.27781!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e2">
+              1 mi
+            </Location>
+            <Details>
+              A small, family owned and operated bed and breakfast established
+              in 2004 in downtown Ann Arbor
+            </Details>
+          </Card>
+        </BareExternalLink>
 
-        <Card>
-          <h3>The Bell Tower Hotel</h3>
-          <p>
-            Starting at $255 + taxes per night.
-          </p>
-          <Button href="https://www.belltowerhotel.com/">
-            Website
-          </Button>
-        </Card>
+        <BareExternalLink href="https://www.belltowerhotel.com/">
+          <Card>
+            <h3>Bell Tower Hotel</h3>
+            <Location href="https://www.google.com/maps/dir/Bell+Tower+Hotel,+300+S+Thayer+St,+Ann+Arbor,+MI+48104/Rackham+Auditorium,+915+E+Washington+St,+Ann+Arbor,+MI+48109/@42.2800158,-83.7411187,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883cae40fddeb7b9:0x597a9dcf3d549001!2m2!1d-83.739903!2d42.2792424!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e2">
+              0 mi
+            </Location>
+            <Details>
+              A charming hotel located in the heart of downtown Ann Arbor on the
+              University of Michigan’s main campus
+            </Details>
+          </Card>
+        </BareExternalLink>
       </Row>
     </MaxWidthContainer>
     <RunningTextContainer>
       <p>
         In addition, Galaxy has room blocks at three branded hotels offering
         discounted rates for participants. We will arrange with the hotels ahead
-        of time to have shuttles for Galaxy events. You can schedule extra
-        complimentary shuttles if needed by speaking with the concierge desk at
-        your hotel. The Holiday Inn also has an Avis/Budget car rental service.
-        Both hotels offer free parking.
+        of time to have shuttles for Galaxy events, and you can schedule extra
+        complimentary shuttles with the hotel concierge. The Holiday Inn also
+        has an Avis/Budget car rental service, and all offer free parking.
       </p>
     </RunningTextContainer>
 
     <MaxWidthContainer>
       <Row>
-        <Card>
+        <Card minimal>
           <h3>Hyatt Place</h3>
           <Location href="https://www.google.com/maps/dir/Hyatt+Place+Ann+Arbor,+South+State+Street,+Ann+Arbor,+MI/Rackham+Auditorium,+East+Washington+Street,+Ann+Arbor,+MI/@42.2594116,-83.7960496,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883caf95ac8c8abd:0xa3a133323db08ad3!2m2!1d-83.7381025!2d42.2404887!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e0">
             3 mi
@@ -98,7 +106,7 @@ const LogisticsPage = () => (
           </Button>
         </Card>
 
-        <Card>
+        <Card minimal>
           <h3>Holiday Inn</h3>
           <Location href="https://www.google.com/maps/dir/Holiday+Inn+Near+the+University+of+Michigan,+3600+Plymouth+Rd,+Ann+Arbor,+MI+48105/Rackham+Auditorium,+East+Washington+Street,+Ann+Arbor,+MI/@42.3022153,-83.7515064,13z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883cac1b75a197f1:0xbc6750e4373aaf8d!2m2!1d-83.689737!2d42.304177!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e0">
             4 mi
@@ -119,7 +127,7 @@ const LogisticsPage = () => (
           </Button>
         </Card>
 
-        <Card>
+        <Card minimal>
           <h3>Kensington Hotel</h3>
           <Location href="https://www.google.com/maps/dir/The+Kensington+Hotel,+South+State+Street,+Ann+Arbor,+MI/Rackham+Auditorium,+East+Washington+Street,+Ann+Arbor,+MI/@42.2587246,-83.7960496,13z/data=!4m14!4m13!1m5!1m1!1s0x883cafeb34b26bed:0xe2cbfb9a5e565358!2m2!1d-83.7405497!2d42.2389335!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e0">
             4 mi
@@ -127,9 +135,7 @@ const LogisticsPage = () => (
           <p>
             $114 + taxes per night.<br />
           </p>
-          <Details>
-            Use group code “Galaxy” to book online.
-          </Details>
+          <Details>Use group code “Galaxy” to book online.</Details>
           <Details>
             Or call (734) 761-7800 and mention “Galaxy room block.”
           </Details>
@@ -147,14 +153,23 @@ const LogisticsPage = () => (
     <UnpaddedRunningTextContainer>
       <h2>Location</h2>
       <p>
-        The Rackham Building, University of Michigan Central Campus; and
-        Downtown Ann Arbor
+        Galaxy takes place in three gorgeously restored historic buildings, the
+        Michigan Theater, the art deco Rackham Auditorium, and the School for
+        Environment and Sustainability. All are located on the University of
+        Michigan Central Campus in Downtown Ann Arbor.
+      </p>
+      <p>
+        All are also within walking distance of two open-air festival events
+        which run during Galaxy—the Mayor’s Green Fair, which will close Liberty
+        and Main Streets, and the Ann Arbor Summer Festival, which closes
+        Washington Street—for pedestrian flow between environmental and cultural
+        events.
       </p>
     </UnpaddedRunningTextContainer>
     <Map>
       <iframe
         frameBorder="0"
-        src="//www.google.com/maps/embed/v1/place?q=Rackham+Auditorium,+Ann+Arbor,+MI&zoom=16&attribution_source=Galaxy+2018&key=AIzaSyDouu-GEt2EFH0HeqoMRFVV4-rX18eY8Tw"
+        src="//www.google.com/maps/d/u/0/embed?mid=1x2cJRHxrZovA_eFdHe8uKH_ThZnQBrrO"
       />
     </Map>
 
@@ -179,6 +194,19 @@ const LogisticsPage = () => (
 )
 
 export default LogisticsPage
+
+const BareExternalLink = ExternalLink.extend`
+  text-decoration: none;
+
+  &:hover .o-card {
+    box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.2), 0 2px 4px rgba(16, 22, 26, 0.4),
+      0 8px 24px rgba(16, 22, 26, 0.4);
+  }
+
+  & a {
+    text-decoration: underline;
+  }
+`
 
 const Button = ExternalButton.extend`
   margin-top: auto;

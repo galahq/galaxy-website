@@ -54,7 +54,10 @@ const HomePage = () => (
           teaching, and practice for visible impact in communities.
         </p>
 
-        <h2>Got a case? Make it shine at Galaxy 2018!</h2>
+        <h2>
+          <Kicker>Got a case?</Kicker>
+          Make it shine at Galaxy 2018!
+        </h2>
         <p>
           The driving force of Galaxy is an intensive, three-day, hands-on Case
           Innovation Studio. Improve your existing case studies with innovative
@@ -76,11 +79,9 @@ const HomePage = () => (
 
     <StreamSection>
       <Stream>
-        <Link to="charrette">
-          <StreamIcon animation="coalesce">
-            <CharrettesIcon />
-          </StreamIcon>
-        </Link>
+        <StreamIcon animation="coalesce">
+          <CharrettesIcon />
+        </StreamIcon>
         <StreamTitle>Illuminate the Issue</StreamTitle>
         <p>
           Acquire powerful tools to deepen understanding, reveal nuance,
@@ -90,11 +91,9 @@ const HomePage = () => (
       </Stream>
 
       <Stream>
-        <Link to="studio">
-          <StreamIcon animation="transit">
-            <StudiosIcon />
-          </StreamIcon>
-        </Link>
+        <StreamIcon animation="transit">
+          <StudiosIcon />
+        </StreamIcon>
         <StreamTitle>Expand the Toolbox</StreamTitle>
         <p>
           Discover the full functionality of the open access{' '}
@@ -107,11 +106,9 @@ const HomePage = () => (
       </Stream>
 
       <Stream>
-        <Link to="sprint">
-          <StreamIcon animation="irradiate">
-            <DesignSprintIcon />
-          </StreamIcon>
-        </Link>
+        <StreamIcon animation="irradiate">
+          <DesignSprintIcon />
+        </StreamIcon>
         <StreamTitle>Amplify the Impact</StreamTitle>
         <p>
           Engage with stakeholder networks, advance policy agendas, build
@@ -216,6 +213,11 @@ const HomePage = () => (
 )
 
 export default HomePage
+
+const Kicker = styled.span`
+  display: block;
+  font-style: italic;
+`
 
 const NoHyphens = styled.span`
   white-space: nowrap;

@@ -39,10 +39,9 @@ const ScholarshipPage = () => (
         </li>
         <li>
           Priority given to:<ul>
-            <li>Faculty, student, and staff from under-represented groups.</li>
+            <li>Faculty, students, and staff from under-represented groups.</li>
             <li>Staff from sustainability-oriented NGOs.</li>
             <li>Participants facing expensive travel or visa budgets.</li>
-            <li>People who have an existing case.</li>
           </ul>
         </li>
       </ul>

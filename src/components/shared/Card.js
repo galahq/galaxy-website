@@ -4,13 +4,13 @@
  */
 
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const Card = styled.div.attrs({ className: 'o-card' })`
   position: relative;
   border-radius: 3px;
-  box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.1), 0 1px 1px rgba(16, 22, 26, 0.2),
-    0 2px 6px rgba(16, 22, 26, 0.2);
+  box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.4), 0 0 0 rgba(16, 22, 26, 0),
+    0 0 0 rgba(16, 22, 26, 0);
   background-color: hsla(0, 0%, 100%, 0.8);
   color: black;
   padding: 20px;
@@ -19,6 +19,12 @@ const Card = styled.div.attrs({ className: 'o-card' })`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  ${p =>
+    p.minimal &&
+    css`
+      background-color: hsla(0, 0%, 100%, 0.5);
+    `};
 `
 
 export default Card

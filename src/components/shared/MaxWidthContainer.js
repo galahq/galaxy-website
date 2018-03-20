@@ -31,9 +31,10 @@ export const RunningTextContainer = MaxWidthContainer.extend`
 `
 
 export const UnpaddedRunningTextContainer = RunningTextContainer.extend`
-  margin-top: 0em;
-  margin-bottom: 0em;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 `
 
 export const PaddedRunningTextContainer = RunningTextContainer.extend`
