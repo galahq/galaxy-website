@@ -15,7 +15,8 @@ import PoissonDiscDistribution from './PoissonDiscDistribution'
 
 const GalaxyLogo: any = require('../../assets/galaxy-v.svg')
 
-const Header = () => (
+type Props = { withCallToAction: boolean }
+const Header = ({ withCallToAction }: Props) => (
   <Container>
     <MainNavigation
       links={{
@@ -33,7 +34,8 @@ const Header = () => (
       <Subtitle>Ann Arbor, MI</Subtitle>
       <Subtitle>June 7–9</Subtitle>
     </InnerContainer>
-    <OpticallyCenteredCallToActionButton />
+    {withCallToAction && <OpticallyCenteredCallToActionButton />}
+
     <PoissonDiscDistribution />
   </Container>
 )

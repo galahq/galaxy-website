@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import './index.css'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ location, children }) => (
   <div>
     <Helmet
       title="Galaxy 2018"
@@ -23,7 +23,7 @@ const TemplateWrapper = ({ children }) => (
       <html lang="en" />
     </Helmet>
 
-    <Header />
+    <Header withCallToAction={!location.pathname.match(/register/)} />
     {children()}
     <Footer />
   </div>
