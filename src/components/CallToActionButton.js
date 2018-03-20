@@ -14,7 +14,7 @@ const CallToActionButton = (props: {
   disabled?: boolean,
   className?: string,
 }) => (
-  <Button {...props} href="https://umich.irisregistration.com/Form/Galaxy2018">
+  <Button {...props} href="https://umich.irisregistration.com/Form/Galaxy2018" target="_blank">
     Register
   </Button>
 )
