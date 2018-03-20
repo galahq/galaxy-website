@@ -4,7 +4,7 @@
  */
 
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Link from 'gatsby-link'
 
 import Navigation from '../shared/Navigation'
@@ -34,7 +34,7 @@ const Header = ({ withCallToAction }: Props) => (
       <Subtitle>Ann Arbor, MI</Subtitle>
       <Subtitle>June 7–9</Subtitle>
     </InnerContainer>
-    {withCallToAction && <OpticallyCenteredCallToActionButton />}
+    <OpticallyCenteredCallToActionButton invisible={!withCallToAction} />
 
     <PoissonDiscDistribution />
   </Container>
@@ -120,6 +120,12 @@ const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   @media (min-width: 843px) {
     margin-left: 27px;
   }
+
+  ${p =>
+    p.invisible &&
+    css`
+      visibility: hidden;
+    `};
 `
 
 const SmallText = styled.p`
