@@ -15,15 +15,12 @@ const CallToActionButton = (props: {
   disabled?: boolean,
   className?: string,
   to: string,
+  href?: string,
   text: string,
-}) => (
-  <Button
-    {...props}
-    onClick={() => props.to.startsWith('//') && (window.location = props.to)}
-  >
-    {props.text}
-  </Button>
-)
+}) => {
+  const Button = getButtonComponent(props)
+  return <Button {...props}>{props.text}</Button>
+}
 
 CallToActionButton.defaultProps = {
   to: '/register',
@@ -32,7 +29,13 @@ CallToActionButton.defaultProps = {
 
 export default CallToActionButton
 
-const Button = BaseButton.withComponent(Link)
+function getButtonComponent(props) {
+  if (props.href) {
+    return BaseButton.withComponent('a')
+  } else {
+    return BaseButton.withComponent(Link)
+  }
+}
 
 export const CenteredCallToActionButton = styled(CallToActionButton)`
   margin: 3rem auto 1.5rem;

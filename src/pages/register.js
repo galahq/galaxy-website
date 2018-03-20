@@ -32,7 +32,7 @@ const LogisticsPage = () => (
       <RunningTextContainer>
         <CallToActionButton
           big
-          to="//umich.irisregistration.com/Form/Galaxy2018"
+          href="//umich.irisregistration.com/Form/Galaxy2018"
           text="Register with Iris"
         />
       </RunningTextContainer>
