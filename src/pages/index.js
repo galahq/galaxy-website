@@ -36,7 +36,7 @@ const StudiosIcon: any = require('../assets/studios.svg')
 const CharrettesIcon: any = require('../assets/charrettes.svg')
 const DesignSprintIcon: any = require('../assets/design-sprint.svg')
 const Moon: any = require('../assets/moon.svg')
-const Trophy: any = require('../assets/Trophy.svg')
+const Trophy: any = require('../assets/trophy.svg')
 
 const HomePage = () => (
   <main>
