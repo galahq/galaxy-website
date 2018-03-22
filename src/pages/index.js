@@ -138,7 +138,7 @@ const HomePage = () => (
                 Ann Arbor Mayor’s Green Fair
               </ExternalLink>{' '}
               and the{' '}
-              <ExternalLink href="http://www.michtheater.org/membership-support/">
+              <ExternalLink href="http://www.michtheater.org/about">
                 Michigan Theater Foundation
               </ExternalLink>{' '}
               (with their festival{' '}
