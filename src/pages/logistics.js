@@ -40,9 +40,9 @@ const LogisticsPage = () => (
               <h3>The Stone Chalet</h3>
               <Details>
                 Located in a quiet residential neighborhood near the University
-                of Michigan’s Ann Arbor Central Campus.<br />
-                <p>Group rate not available. </p>
+                of Michigan’s Ann Arbor Central Campus.
               </Details>
+              <Details>Group rate not available. </Details>
             </Card>
           </BareExternalLink>
           <Location href="https://www.google.com/maps/dir/Stone+Chalet+Bed+and+Breakfast+Inn+and+Event+Center,+1917+Washtenaw+Ave,+Ann+Arbor,+MI+48104/Rackham+Auditorium,+915+E+Washington+St,+Ann+Arbor,+MI+48109/@42.2744971,-83.7346294,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883cae56f8223a45:0x33ae5a4e1bcf5b26!2m2!1d-83.722327!2d42.2684559!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e2">
@@ -56,9 +56,9 @@ const LogisticsPage = () => (
               <h3>Burnt Toast Inn</h3>
               <Details>
                 A small, family owned and operated bed and breakfast established
-                in 2004 in downtown Ann Arbor. <br />
-                <p>Group rate not available. </p>
+                in 2004 in downtown Ann Arbor.
               </Details>
+              <Details>Group rate not available.</Details>   
             </Card>
           </BareExternalLink>
           <Location href="https://www.google.com/maps/dir/Burnt+Toast+Inn,+415+W+William+St,+Ann+Arbor,+MI+48103/Rackham+Auditorium,+915+E+Washington+St,+Ann+Arbor,+MI+48109/@42.2792995,-83.7498665,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883cae23586e337f:0x7096d929cf547999!2m2!1d-83.752998!2d42.27781!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e2">
@@ -72,10 +72,10 @@ const LogisticsPage = () => (
               <h3>Bell Tower Hotel</h3>
               <Details>         
                 A charming hotel located in the heart of downtown Ann Arbor on
-                the University of Michigan’s main campus.<br />
-                <p>Group rate: $199 + taxes per night, breakfast included.<br />
-                Use code 331374 when booking online.</p>
+                the University of Michigan’s main campus.
               </Details>
+              <Details>Group rate: $199 + taxes per night, breakfast included.</Details> 
+              <Details>Use code 331374 when booking online.</Details>
             </Card>
           </BareExternalLink>
           <Location href="https://www.google.com/maps/dir/Bell+Tower+Hotel,+300+S+Thayer+St,+Ann+Arbor,+MI+48104/Rackham+Auditorium,+915+E+Washington+St,+Ann+Arbor,+MI+48109/@42.2800158,-83.7411187,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x883cae40fddeb7b9:0x597a9dcf3d549001!2m2!1d-83.739903!2d42.2792424!1m5!1m1!1s0x883cae41b17e2f4d:0xd7199f2dad45bc94!2m2!1d-83.7381556!2d42.2807892!3e2">
