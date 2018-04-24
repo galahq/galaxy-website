@@ -28,7 +28,7 @@ const LogisticsPage = () => (
       <h2>Accomodations</h2>
       <p>
         We suggest three local hotels and B&Bs that we often support and who
-        support us.
+        support us. We recommend them as they are walkable to our events.
       </p>
     </RunningTextContainer>
 
@@ -40,9 +40,8 @@ const LogisticsPage = () => (
               <h3>The Stone Chalet</h3>
               <Details>
                 Located in a quiet residential neighborhood near the University
-                of Michigan’s Ann Arbor Central Campus.
-                Because they are small businesses, they don’t offer group rate, 
-                but we recommend them as they are walkable to our events.
+                of Michigan’s Ann Arbor Central Campus.<br />
+                * Group rate not available. 
               </Details>
             </Card>
           </BareExternalLink>
@@ -57,9 +56,8 @@ const LogisticsPage = () => (
               <h3>Burnt Toast Inn</h3>
               <Details>
                 A small, family owned and operated bed and breakfast established
-                in 2004 in downtown Ann Arbor.
-                Because they are small businesses, they don’t offer group rate, 
-                but we recommend them as they are walkable to our events.
+                in 2004 in downtown Ann Arbor. <br />
+                * Group rate not available. 
               </Details>
             </Card>
           </BareExternalLink>
@@ -74,7 +72,7 @@ const LogisticsPage = () => (
               <h3>Bell Tower Hotel</h3>
               <Details>         
                 A charming hotel located in the heart of downtown Ann Arbor on
-                the University of Michigan’s main campus.
+                the University of Michigan’s main campus.<br />
                 $199 + taxes per night, breakfast included.
               </Details>
             </Card>
