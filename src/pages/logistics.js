@@ -73,7 +73,8 @@ const LogisticsPage = () => (
               <Details>         
                 A charming hotel located in the heart of downtown Ann Arbor on
                 the University of Michigan’s main campus.<br />
-                $199 + taxes per night, breakfast included.
+                Group rate: $199 + taxes per night, breakfast included.<br />
+                Use code 331374 when booking online.
               </Details>
             </Card>
           </BareExternalLink>
