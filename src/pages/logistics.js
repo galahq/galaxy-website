@@ -40,7 +40,7 @@ const LogisticsPage = () => (
               <h3>The Stone Chalet</h3>
               <Details>
                 Located in a quiet residential neighborhood near the University
-                of Michigan's Ann Arbor Central Campus.
+                of Michigan’s Ann Arbor Central Campus.
                 Because they are small businesses, they don’t offer group rate, 
                 but we recommend them as they are walkable to our events.
               </Details>
