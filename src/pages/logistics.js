@@ -41,7 +41,7 @@ const LogisticsPage = () => (
               <Details>
                 Located in a quiet residential neighborhood near the University
                 of Michigan’s Ann Arbor Central Campus.<br />
-                * Group rate not available. 
+                <p>Group rate not available. </p>
               </Details>
             </Card>
           </BareExternalLink>
@@ -57,7 +57,7 @@ const LogisticsPage = () => (
               <Details>
                 A small, family owned and operated bed and breakfast established
                 in 2004 in downtown Ann Arbor. <br />
-                * Group rate not available. 
+                <p>Group rate not available. </p>
               </Details>
             </Card>
           </BareExternalLink>
@@ -73,8 +73,8 @@ const LogisticsPage = () => (
               <Details>         
                 A charming hotel located in the heart of downtown Ann Arbor on
                 the University of Michigan’s main campus.<br />
-                Group rate: $199 + taxes per night, breakfast included.<br />
-                Use code 331374 when booking online.
+                <p>Group rate: $199 + taxes per night, breakfast included.<br />
+                Use code 331374 when booking online.</p>
               </Details>
             </Card>
           </BareExternalLink>
