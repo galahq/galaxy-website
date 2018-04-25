@@ -27,8 +27,8 @@ const ScholarshipPage = () => (
         We are able to offer a limited number of scholarships for individuals
         with demonstrated need. You must apply to be considered. We will select
         scholarship recipients based on the criteria below on a rolling basis.
-        Recipients of the Galaxy scholarship will receive a waived individual
-        registration fee.
+        Galaxy scholarship recipients will have their registration fee
+        partially or fully waived.
       </p>
       <h2>Scholarship criteria</h2>
       <ul>
