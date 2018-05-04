@@ -22,6 +22,7 @@ const Header = ({ withCallToAction }: Props) => (
       links={{
         '': 'Home',
         about: 'About',
+        schedule: 'Schedule',
         logistics: 'Location',
       }}
     />
