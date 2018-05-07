@@ -28,4 +28,8 @@ export const StreamLogistics = styled.div`
       margin-right: 1rem;
     }
   }
+
+  li {
+    margin: 0;
+  }
 `

@@ -30,12 +30,12 @@ export default class People extends React.Component<
     () =>
       this.state.rotating &&
       this.setState(({ selectedIndex }) => ({
-        selectedIndex: (selectedIndex + 1) % this.props.people.length,
+        selectedIndex: (selectedIndex + 1) % this.props.people.length
       })),
     5000
   )
 
-  render() {
+  render () {
     const { people } = this.props
     const { selectedIndex } = this.state
     const selectedPerson = people[selectedIndex]
@@ -81,7 +81,7 @@ class Person extends React.Component<{
 }> {
   ref: ?HTMLButtonElement
 
-  componentDidUpdate() {
+  componentDidUpdate () {
     if (!this.props.active) return
 
     if (this.ref == null) return
@@ -98,7 +98,7 @@ class Person extends React.Component<{
     }
   }
 
-  render() {
+  render () {
     const { active, onClick, person } = this.props
     return (
       <PersonButton
@@ -154,7 +154,7 @@ const PersonButton = UnstyledButton.extend`
 
   & img {
     width: 8rem;
-    height: calc(8rem / 3 * 4);
+    height: calc(8rem / 4 * 5);
     margin: 0 0 0.25rem;
     object-fit: cover;
     background-color: hsla(0, 0%, 100%, 0.1);
