@@ -10,27 +10,28 @@ import Link from 'gatsby-link'
 import Tagline, {
   TaglineSection,
   TaglineInnerSection,
-  CallToAction,
+  CallToAction
 } from '../components/Tagline'
 import Stream, {
   StreamTitle,
   StreamSection,
-  StreamIcon,
+  StreamIcon
 } from '../components/Stream'
 import Premier, {
   PremierSection,
   PremierInnerSection,
   PremierIcon,
-  PremierInfo,
+  PremierInfo
 } from '../components/Premier'
 import { ExternalLink } from '../components/shared/Link'
 import {
   AudienceSection,
   AudienceColumns,
-  AudienceColumn,
+  AudienceColumn
 } from '../components/Audience'
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import PriceTable from '../components/PriceTable'
+import MaxWidthContainer from '../components/shared/MaxWidthContainer'
 
 const StudiosIcon: any = require('../assets/studios.svg')
 const CharrettesIcon: any = require('../assets/charrettes.svg')
@@ -117,6 +118,10 @@ const HomePage = () => (
         </p>
       </Stream>
     </StreamSection>
+
+    <MaxWidthContainer style={{ display: 'flex' }}>
+      <CenteredCallToActionButton text="Learn More" to="/studio" />
+    </MaxWidthContainer>
 
     {/* ---~~~===~~~--- */}
 
