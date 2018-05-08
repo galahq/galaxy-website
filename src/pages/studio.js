@@ -4,12 +4,10 @@
  */
 
 import React from 'react'
-import Link from 'gatsby-link'
 
 import StreamOverview from '../components/streams/Overview'
 import StreamPeople from '../components/streams/People'
-import StreamNavigation from '../components/streams/Navigation'
-import { StreamLogistics } from '../components/streams/shared'
+import { StreamLogistics, TitleSection } from '../components/streams/shared'
 import MaxWidthContainer, {
   RunningTextContainer,
   UnpaddedRunningTextContainer
@@ -21,13 +19,15 @@ const StudioPage = () => (
   <main>
     {/* <StreamNavigation active="studio" /> */}
 
-    <StreamOverview
-      title="Case Design Studios"
-      tagline="Come create with us"
-      pitch="Arrive with your case-in-production, leave with powerful tools for
-      science communication, outreach and active learning."
-      icon={<StudiosIcon />}
-    />
+    <TitleSection>
+      <StreamOverview
+        title="Case Design Studios"
+        tagline="Come create with us"
+        pitch="Arrive with your case-in-production. Leave with powerful tools for
+      science communication, outreach, and active learning."
+        icon={<StudiosIcon />}
+      />
+    </TitleSection>
 
     <UnpaddedRunningTextContainer>
       <p>
@@ -60,7 +60,7 @@ const StudioPage = () => (
             Studio sessions cover:
             <ul>
               <li>Case design and storytelling</li>
-              <li>Co-production by case makers from different sectors</li>
+              <li>Working across academic and non-academic communities</li>
               <li>Media curation & production for cases</li>
             </ul>
           </p>

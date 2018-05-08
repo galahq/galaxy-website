@@ -26,15 +26,6 @@ export default class People extends React.Component<
 > {
   state = { selectedIndex: 0, rotating: true }
 
-  interval = setInterval(
-    () =>
-      this.state.rotating &&
-      this.setState(({ selectedIndex }) => ({
-        selectedIndex: (selectedIndex + 1) % this.props.people.length
-      })),
-    5000
-  )
-
   render () {
     const { people } = this.props
     const { selectedIndex } = this.state
@@ -46,6 +37,7 @@ export default class People extends React.Component<
           <PhotosContainer>
             {people.map((person, i) => (
               <Person
+                key={i}
                 active={selectedIndex === i}
                 person={person}
                 onClick={() =>
@@ -62,8 +54,10 @@ export default class People extends React.Component<
             <p>{selectedPerson.description}</p>
             {selectedPerson.links && (
               <p>
-                {selectedPerson.links.map(link => (
-                  <Link href={link.url}>{link.text}</Link>
+                {selectedPerson.links.map((link, i) => (
+                  <Link key={i} href={link.url}>
+                    {link.text}
+                  </Link>
                 ))}
               </p>
             )}

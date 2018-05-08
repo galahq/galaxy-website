@@ -7,7 +7,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import StreamOverview from '../components/streams/Overview'
-import BaseTitleSection from '../components/shared/TitleSection'
+import { TitleSection } from '../components/streams/shared'
 import MaxWidthContainer, {
   RunningTextContainer
 } from '../components/shared/MaxWidthContainer'
@@ -30,7 +30,7 @@ const CharrettePage = () => (
             <dfn>char•rette</dfn>
             <span>ʃəˈɹɛt</span>
             <p>
-              a meeting in which all stakeholders in a project attempt to
+              a meeting in which all stake&shy;holders in a project attempt to
               resolve conflicts and map solutions
             </p>
           </Definition>
@@ -83,10 +83,6 @@ const CharrettePage = () => (
 )
 
 export default CharrettePage
-
-const TitleSection = BaseTitleSection.extend`
-  margin-bottom: 3em;
-`
 
 const Definition = styled.section`
   margin-left: 2em;
