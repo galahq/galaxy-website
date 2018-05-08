@@ -26,16 +26,7 @@ export default class People extends React.Component<
 > {
   state = { selectedIndex: 0, rotating: true }
 
-  interval = setInterval(
-    () =>
-      this.state.rotating &&
-      this.setState(({ selectedIndex }) => ({
-        selectedIndex: (selectedIndex + 1) % this.props.people.length,
-      })),
-    5000
-  )
-
-  render() {
+  render () {
     const { people } = this.props
     const { selectedIndex } = this.state
     const selectedPerson = people[selectedIndex]
@@ -46,6 +37,7 @@ export default class People extends React.Component<
           <PhotosContainer>
             {people.map((person, i) => (
               <Person
+                key={i}
                 active={selectedIndex === i}
                 person={person}
                 onClick={() =>
@@ -62,8 +54,10 @@ export default class People extends React.Component<
             <p>{selectedPerson.description}</p>
             {selectedPerson.links && (
               <p>
-                {selectedPerson.links.map(link => (
-                  <Link href={link.url}>{link.text}</Link>
+                {selectedPerson.links.map((link, i) => (
+                  <Link key={i} href={link.url}>
+                    {link.text}
+                  </Link>
                 ))}
               </p>
             )}
@@ -81,7 +75,7 @@ class Person extends React.Component<{
 }> {
   ref: ?HTMLButtonElement
 
-  componentDidUpdate() {
+  componentDidUpdate () {
     if (!this.props.active) return
 
     if (this.ref == null) return
@@ -98,7 +92,7 @@ class Person extends React.Component<{
     }
   }
 
-  render() {
+  render () {
     const { active, onClick, person } = this.props
     return (
       <PersonButton
@@ -154,7 +148,7 @@ const PersonButton = UnstyledButton.extend`
 
   & img {
     width: 8rem;
-    height: calc(8rem / 3 * 4);
+    height: calc(8rem / 4 * 5);
     margin: 0 0 0.25rem;
     object-fit: cover;
     background-color: hsla(0, 0%, 100%, 0.1);

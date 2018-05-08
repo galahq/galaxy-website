@@ -39,7 +39,7 @@ export const TaglineSection = TitleSection.extend`
 export const TaglineInnerSection = MaxWidthContainer.extend`
   display: flex;
   flex-flow: row wrap;
-  max-width: 43em;
+  max-width: 45em;
 `
 
 export const TaglineContainer = styled.div`

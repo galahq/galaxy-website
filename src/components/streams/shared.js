@@ -3,6 +3,11 @@
  */
 
 import styled from 'styled-components'
+import BaseTitleSection from '../shared/TitleSection'
+
+export const TitleSection = BaseTitleSection.extend`
+  margin-bottom: 3em;
+`
 
 export const SmallTitle = styled.span`
   display: block;
@@ -27,5 +32,9 @@ export const StreamLogistics = styled.div`
     &:not(:last-child) {
       margin-right: 1rem;
     }
+  }
+
+  li {
+    margin: 0;
   }
 `

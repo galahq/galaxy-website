@@ -13,30 +13,40 @@ import MaxWidthContainer from '../shared/MaxWidthContainer'
 import { LabelForScreenReaders } from '../shared/A11y'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
 
-const GalaxyLogo: any = require('../../assets/galaxy-v.svg')
+const BaseVerticalLogo: any = require('../../assets/galaxy-v.svg')
+const BaseHorizontalLogo: any = require('../../assets/galaxy-h.svg')
 
-type Props = { withCallToAction: boolean }
-const Header = ({ withCallToAction }: Props) => (
-  <Container>
+type Props = { full: boolean }
+const Header = ({ full }: Props) => (
+  <Container full={full}>
     <MainNavigation
       links={{
         '': 'Home',
         about: 'About',
-        logistics: 'Location',
+        schedule: 'Schedule',
+        logistics: 'Location'
       }}
     />
 
-    <InnerContainer>
-      <ShadowLink to="/">
-        <Logo />
-        <LabelForScreenReaders>Galaxy 2018</LabelForScreenReaders>
-      </ShadowLink>
-      <Subtitle>Ann Arbor, MI</Subtitle>
-      <Subtitle>June 7–9</Subtitle>
-    </InnerContainer>
-    <OpticallyCenteredCallToActionButton invisible={!withCallToAction} />
+    {full ? (
+      <InnerContainer>
+        <ShadowLink to="/">
+          <VerticalLogo />
+          <LabelForScreenReaders>Galaxy 2018</LabelForScreenReaders>
+        </ShadowLink>
+        <Subtitle>Ann Arbor, MI</Subtitle>
+        <Subtitle>June 7–9</Subtitle>
+      </InnerContainer>
+    ) : (
+      <InnerContainer>
+        <Link to="/">
+          <HorizontalLogo />
+        </Link>
+      </InnerContainer>
+    )}
+    {full && <OpticallyCenteredCallToActionButton />}
 
-    <PoissonDiscDistribution />
+    <PoissonDiscDistribution key={full ? 'true' : 'false'} />
   </Container>
 )
 
@@ -48,18 +58,28 @@ const Container = styled.div`
   flex-direction: column;
   position: relative;
   background-color: #02284b;
-  padding: 7rem 0 5rem;
 
-  @media (max-width: 843px) {
-    padding: 6rem 0 4rem;
-  }
+  ${p =>
+    p.full
+      ? css`
+          padding: 7rem 0 5rem;
+
+          @media (max-width: 843px) {
+            padding: 6rem 0 4rem;
+          }
+        `
+      : css`
+          padding: 1em;
+        `};
 `
 
 const InnerContainer = MaxWidthContainer.extend`
+  align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  width: 100%;
 
   & > * {
     z-index: 1;
@@ -83,7 +103,7 @@ const ShadowLink = styled(Link)`
   }
 `
 
-const Logo = styled(GalaxyLogo)`
+const VerticalLogo = styled(BaseVerticalLogo)`
   margin: 0;
   height: 130px;
   width: 200px;
@@ -91,6 +111,14 @@ const Logo = styled(GalaxyLogo)`
   @media (max-width: 843px) {
     margin-left: 14px;
   }
+`
+
+const HorizontalLogo = styled(BaseHorizontalLogo)`
+  height: 52px;
+  left: 0px;
+  position: absolute;
+  top: -11px;
+  width: 180px;
 `
 
 const Subtitle = styled.p`
@@ -112,7 +140,7 @@ const Subtitle = styled.p`
 
 const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   big: true,
-  primary: true,
+  primary: true
 })`
   margin-top: 22px;
   z-index: 1;
@@ -120,12 +148,6 @@ const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   @media (min-width: 843px) {
     margin-left: 27px;
   }
-
-  ${p =>
-    p.invisible &&
-    css`
-      visibility: hidden;
-    `};
 `
 
 const SmallText = styled.p`
