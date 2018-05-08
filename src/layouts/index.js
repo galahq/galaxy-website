@@ -14,23 +14,23 @@ const TemplateWrapper = ({ location, children }) => (
         {
           name: 'description',
           content:
-            'Information about the 2018 Galaxy sustainability learning exchange.',
+            'Information about the 2018 Galaxy sustainability learning exchange.'
         },
         { name: 'keywords', content: 'Galaxy, sustainaiblity, conference' },
-        { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' },
+        { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' }
       ]}
     >
       <html lang="en" />
     </Helmet>
 
-    <Header withCallToAction={!location.pathname.match(/register/)} />
+    <Header full={location.pathname === '/'} />
     {children()}
     <Footer />
   </div>
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.func
 }
 
 export default TemplateWrapper
