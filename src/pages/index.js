@@ -10,24 +10,24 @@ import Link from 'gatsby-link'
 import Tagline, {
   TaglineSection,
   TaglineInnerSection,
-  CallToAction
+  CallToAction,
 } from '../components/Tagline'
 import Stream, {
   StreamTitle,
   StreamSection,
-  StreamIcon
+  StreamIcon,
 } from '../components/Stream'
 import Premier, {
   PremierSection,
   PremierInnerSection,
   PremierIcon,
-  PremierInfo
+  PremierInfo,
 } from '../components/Premier'
 import { ExternalLink } from '../components/shared/Link'
 import {
   AudienceSection,
   AudienceColumns,
-  AudienceColumn
+  AudienceColumn,
 } from '../components/Audience'
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import PriceTable from '../components/PriceTable'
@@ -132,7 +132,9 @@ const HomePage = () => (
             <Moon />
           </PremierIcon>
           <PremierInfo>
-            <h2>Case Premieres</h2>
+            <h2>
+              <Link to="/premiere">Case Premiere</Link>
+            </h2>
             <p>
               Presented in concert with{' '}
               <ExternalLink href="http://www.teachmsc.org">
