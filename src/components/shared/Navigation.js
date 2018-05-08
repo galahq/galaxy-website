@@ -70,9 +70,7 @@ class Hamburger extends React.Component<
   }
 }
 
-const List = styled.nav`
-  background-color: #1d3f5e;
-`
+const List = styled.nav``
 
 const HorizontalList = styled(MaxWidthContainer)`
   padding-bottom: 0;
