@@ -33,7 +33,7 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Introducing Gala',
-        times: '8:30 AM – 10 PM',
+        times: '8:30 AM – 10 AM',
         duration: 1.5,
         color: 'purple',
       },
@@ -75,7 +75,7 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Media: Refining Your Process',
-        times: '8:30 AM – 10 PM',
+        times: '8:30 AM – 10 AM',
         duration: 1.5,
         color: 'purple',
       },
@@ -122,7 +122,7 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Putting Your Case on Gala',
-        times: '8:30 AM – 10 PM',
+        times: '8:30 AM – 10 AM',
         duration: 1.5,
         color: 'purple',
       },
