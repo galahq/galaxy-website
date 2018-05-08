@@ -17,12 +17,13 @@ import { SmallTitle } from './shared'
 type Props = {
   title: string,
   tagline: string,
-  pitch: string,
+  pitch: string | React.Node,
   icon: React.Node,
+  className?: string,
 }
 
-const Overview = ({ title, tagline, pitch, icon }: Props) => (
-  <Section>
+const Overview = ({ className, title, tagline, pitch, icon }: Props) => (
+  <Section className={className}>
     <Container>
       <Tagline small>
         <SmallTitle>{title}</SmallTitle>
@@ -47,6 +48,6 @@ const Container = TaglineContainer.extend`
   margin-top: 1rem;
 `
 
-const IconContainer = CallToAction.extend`
+export const IconContainer = CallToAction.extend`
   margin-top: 1em;
 `

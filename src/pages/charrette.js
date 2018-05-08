@@ -7,13 +7,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 import StreamOverview from '../components/streams/Overview'
-import { TitleSection } from '../components/streams/shared'
-import MaxWidthContainer, {
-  RunningTextContainer
-} from '../components/shared/MaxWidthContainer'
+import { TitleSection, Quotation } from '../components/streams/shared'
+import { RunningTextContainer } from '../components/shared/MaxWidthContainer'
 import { ExternalLink } from '../components/shared/Link'
-
-const CharretteIcon: any = require('../assets/design-sprint.svg')
 
 const CharrettePage = () => (
   <main>
@@ -123,38 +119,7 @@ const Definition = styled.section`
   }
 `
 
-const Quotation = styled.blockquote`
-  font-family: freight-text-pro;
-  font-size: 140%;
-  font-style: italic;
-  line-height: 1.3;
-  margin: 2em 1em;
-
-  &::before {
-    content: open-quote;
-  }
-
-  &::after {
-    content: close-quote;
-  }
-`
-
 const Audio = styled.audio`
   margin-top: 1em;
   width: 100%;
-`
-
-const Callout = styled.aside`
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  font-size: 90%;
-  line-height: 1.4;
-  margin-top: 2em;
-  padding: 0.75em 1em;
-
-  h2 {
-    font-family: tenso;
-    font-size: 120%;
-    margin: 0.2em 0 0.5em;
-  }
 `
