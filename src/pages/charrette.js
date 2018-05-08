@@ -78,6 +78,18 @@ const CharrettePage = () => (
           controls={true}
         />
       </p>
+      <Callout>
+        <h2>
+          Continuing Education Units for Nursing and Public Health Practitioners
+        </h2>
+        We are working with the Michigan Public Health Training Center at the
+        University of Michigan’s School of Public Health to create the Charrette
+        that will allow nursing and health educator professionals to develop
+        skills in stakeholder analysis, risk assessment, and community
+        consultation and gain specialized knowledge in water issues and
+        sustainability problem-solving. Continuing education credits are
+        pending.
+      </Callout>
     </RunningTextContainer>
   </main>
 )
@@ -130,4 +142,19 @@ const Quotation = styled.blockquote`
 const Audio = styled.audio`
   margin-top: 1em;
   width: 100%;
+`
+
+const Callout = styled.aside`
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  font-size: 90%;
+  line-height: 1.4;
+  margin-top: 2em;
+  padding: 0.75em 1em;
+
+  h2 {
+    font-family: tenso;
+    font-size: 120%;
+    margin: 0.2em 0 0.5em;
+  }
 `
