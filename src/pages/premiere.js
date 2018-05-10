@@ -25,8 +25,8 @@ const PremierePage = () => (
           <div>
             <p>
               Seen through the eyes of two American communities, this is the
-              story of widespread water contamination, the state corporate
-              crimes that caused it and the erosion of democracy.
+              story of widespread water contamination, the ensuing breach of
+              public trust, and the erosion of democracy.
             </p>
             <p>Friday, June 8 from 4–6 PM at the Michigan Theater</p>
           </div>
