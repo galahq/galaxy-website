@@ -4,7 +4,8 @@
  */
 
 import React from 'react'
-import styled from 'styled-components'
+import Link from 'gatsby-link'
+import styled, { css } from 'styled-components'
 
 import TitleSection from '../components/shared/TitleSection'
 import MaxWidthContainer, {
@@ -13,18 +14,33 @@ import MaxWidthContainer, {
 
 const colors = {
   purple: '#7F5FDC',
-  yellow: '#F9A825CC',
-  green: '#68CC7099',
+  gold: '#F9A825CC',
+  green: 'transparent',
 }
+const greenStripes = css`
+  background-image: linear-gradient(
+    135deg,
+    #68cc7099 25%,
+    #5ebd6688 25%,
+    #5ebd6688 50%,
+    #68cc7099 50%,
+    #68cc7099 75%,
+    #5ebd6688 75%,
+    #5ebd6688 100%
+  );
+  background-size: 28.28px 28.28px;
+`
 
 const schedule: {
   date: string,
   events: {
     name?: string,
     subtitle?: string,
+    location?: string,
     times?: string,
     duration?: number,
     color?: $Keys<typeof colors>,
+    to?: string,
   }[],
 }[] = [
   {
@@ -33,6 +49,7 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Introducing Gala',
+        location: 'Rackham Building',
         times: '8:30 AM – 10 AM',
         duration: 1.5,
         color: 'purple',
@@ -40,14 +57,21 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Elements of Case Design',
+        location: 'Rackham Building',
         times: '10:15 AM – 12:15 PM',
         duration: 1.5,
         color: 'purple',
       },
-      { name: 'Lunch', times: '12:15 PM – 1:45 PM', duration: 1.5 },
+      {
+        name: 'Lunch',
+        subtitle: 'on your own',
+        times: '12:15 PM – 1:45 PM',
+        duration: 1.5,
+      },
       {
         name: 'Case Innovation Studio',
         subtitle: 'Collaboration with Practitioners',
+        location: 'Rackham Building',
         times: '1:45 PM – 3 PM',
         duration: 1.5,
         color: 'purple',
@@ -55,6 +79,7 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Media: Curation and Pocket Production',
+        location: 'Rackham Building',
         times: '3:15 PM – 5 PM',
         duration: 1.5,
         color: 'purple',
@@ -64,7 +89,7 @@ const schedule: {
         name: 'Welcome Dinner',
         times: '6 PM – 8 PM',
         duration: 2,
-        color: 'yellow',
+        color: 'gold',
       },
     ],
   },
@@ -75,6 +100,7 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Media: Refining Your Process',
+        location: 'Rackham Building',
         times: '8:30 AM – 10 AM',
         duration: 1.5,
         color: 'purple',
@@ -82,14 +108,21 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Narrative and Storytelling',
+        location: 'Rackham Building',
         times: '10:15 AM – 12:15 PM',
         duration: 1.5,
         color: 'purple',
       },
-      { name: 'Lunch', times: '12:15 PM – 1:45 PM', duration: 1.5 },
+      {
+        name: 'Lunch',
+        subtitle: 'on your own',
+        times: '12:15 PM – 1:45 PM',
+        duration: 1.5,
+      },
       {
         name: 'Case Innovation Studio',
         subtitle: 'Developer Dialogue',
+        location: 'Rackham Building',
         times: '1:45 PM – 3:45 PM',
         duration: 2,
         color: 'purple',
@@ -97,9 +130,11 @@ const schedule: {
       {
         name: 'Thirst for Justice',
         subtitle: 'The premiere of a new documentary film\nby Leana Hosea',
+        location: 'Michigan Theater',
         times: '4 PM – 6 PM',
         duration: 2,
         color: 'green',
+        to: '/premiere',
       },
       {
         name: 'Dinner while enjoying the Ann Arbor Mayor’s Green Fair',
@@ -108,6 +143,7 @@ const schedule: {
       },
       {
         name: 'Sustainability Social',
+        location: 'The Pretzel Bell',
         times: '8 PM – 9:30 PM',
         duration: 1.5,
         importance: 2,
@@ -122,6 +158,7 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Putting Your Case on Gala',
+        location: 'Rackham Building',
         times: '8:30 AM – 10 AM',
         duration: 1.5,
         color: 'purple',
@@ -129,28 +166,36 @@ const schedule: {
       {
         name: 'Case Innovation Studio',
         subtitle: 'Engagement Strategies',
+        location: 'Rackham Building',
         times: '10:15 AM – 12:15 PM',
         duration: 1.5,
         color: 'purple',
       },
-      { name: 'Lunch', times: '12:15 PM – 1:45 PM', duration: 1.5 },
+      {
+        name: 'Lunch',
+        subtitle: 'on your own',
+        times: '12:15 PM – 1:45 PM',
+        duration: 1.5,
+      },
       {
         name: 'Charrette: 1,4-Dioxane',
         times: '1:45 PM – 5 PM',
+        location: 'Assembly Hall, Rackham',
         duration: 3,
         color: 'green',
+        to: '/charrette',
       },
       {
         name: 'Cocktail Hour & Outcome Showcase',
         times: '5 PM – 7 PM',
         duration: 2,
-        color: 'yellow',
+        color: 'gold',
       },
       {
         name: 'Gala Awards Ceremony & Dinner',
         times: '7 PM – 9 PM',
         duration: 2,
-        color: 'yellow',
+        color: 'gold',
       },
     ],
   },
@@ -169,17 +214,34 @@ const SchedulePage = () => (
         {schedule.map(({ date, events }) => (
           <Day key={date}>
             <h2>{date}</h2>
-            {events.map(({ name, times, duration, color, subtitle }) => (
-              <Event key={times} color={color} span={duration}>
-                <Times>{times}</Times>
-                <Name>{name}</Name>
-                {subtitle && <Subtitle>{subtitle}</Subtitle>}
-              </Event>
-            ))}
+            {events.map(
+              ({ name, times, duration, color, subtitle, location, to }) => (
+                <Event key={times} color={color} span={duration} to={to}>
+                  <Times>
+                    {times}
+                    {location && `: ${location}`}
+                  </Times>
+                  <Name>{name}</Name>
+                  {subtitle && <Subtitle>{subtitle}</Subtitle>}
+                </Event>
+              )
+            )}
           </Day>
         ))}
       </ScheduleContainer>
     </MaxWidthContainer>
+    <RunningTextContainer>
+      <p>
+        <Block color="purple" />
+        <Block color="green" />
+        <Block color="gold" />
+        <span> Included with Galaxy registration</span>
+      </p>
+      <p>
+        <Block color="green" />
+        <span> Open to the public</span>
+      </p>
+    </RunningTextContainer>
   </main>
 )
 
@@ -211,14 +273,6 @@ const Day = styled.section`
   }
 `
 
-const Event = styled.div`
-  background-color: ${p => (p.color ? colors[p.color] : '#FFFFFF11')};
-  color: ${p => (p.color === 'yellow' ? 'black' : 'inherit')};
-  grid-row: span ${p => p.span * 2 || 2};
-  line-height: 1.1;
-  padding: 0.4em 0.6em;
-`
-
 const Times = styled.p`
   font-size: 0.7em;
   margin: 0;
@@ -237,3 +291,43 @@ const Subtitle = styled.p`
   margin: 0;
   white-space: pre-line;
 `
+
+const Block = styled.span`
+  background-color: ${p => (p.color ? colors[p.color] : '#FFFFFF11')};
+  ${p => p.color === 'green' && greenStripes};
+
+  border-radius: 2px;
+  display: inline-block;
+  height: 1.25em;
+  margin: 0 0.25em -4px;
+  width: 1.25em;
+`
+
+const BaseEvent = styled.div`
+  background-color: ${p => (p.color ? colors[p.color] : '#FFFFFF11')};
+  ${p => p.color === 'green' && greenStripes};
+  box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.15), 0 0 0 rgba(16, 22, 26, 0),
+    0 0 0 rgba(16, 22, 26, 0);
+  color: ${p => (p.color === 'gold' ? 'black' : 'inherit')};
+  grid-row: span ${p => p.span * 2 || 2};
+  line-height: 1.1;
+  padding: 0.4em 0.6em;
+  transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.75, 0.9);
+`
+
+const LinkEvent = BaseEvent.withComponent(Link).extend`
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 0 0 1px rgba(16,22,26,.1),0 2px 4px rgba(16,22,26,.2),0 8px 24px rgba(16,22,26,.2);
+  }
+
+  & ${Name} {
+    text-decoration: underline;
+  }
+`
+
+const Event = props => {
+  const Component = props.to ? LinkEvent : BaseEvent
+  return <Component {...props} />
+}
