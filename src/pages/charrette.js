@@ -7,7 +7,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import StreamOverview from '../components/streams/Overview'
-import { TitleSection, Quotation } from '../components/streams/shared'
+import { TitleSection, Quotation, Callout } from '../components/streams/shared'
 import { RunningTextContainer } from '../components/shared/MaxWidthContainer'
 import { ExternalLink } from '../components/shared/Link'
 
@@ -18,9 +18,17 @@ const CharrettePage = () => (
         title="Policy in Practice: The Scio Township Dioxane Plume"
         tagline="Groundwater contamination has plagued Ann Arbor for more than
       three decades."
-        pitch="Join educators, stakeholders, concerned citizens, and student
-      activists as they use a Michigan Sustainability Case on the Gala platform
-      to unite for real progress in this open problem-solving session."
+        pitch={
+          <div>
+            <p>
+              Join educators, stakeholders, concerned citizens, and student
+              activists as they use a Michigan Sustainability Case on the Gala
+              platform to unite for real progress in this open problem-solving
+              session.
+            </p>
+            <p>Saturday, June 9 from 1:45–5 PM in the Rackham Assembly Hall</p>
+          </div>
+        }
         icon={
           <Definition>
             <dfn>char•rette</dfn>
@@ -86,6 +94,7 @@ const CharrettePage = () => (
         sustainability problem-solving. Continuing education credits are
         pending.
       </Callout>
+      <p>Saturday, June 9 from 1:45–5 PM in the Rackham Assembly Hall</p>
     </RunningTextContainer>
   </main>
 )
