@@ -14,6 +14,7 @@ import BaseStreamOverview, {
   IconContainer,
 } from '../components/streams/Overview'
 import { RunningTextContainer } from '../components/shared/MaxWidthContainer'
+import { ExternalButton } from '../components/shared/Link'
 
 const PremierePage = () => (
   <main>
@@ -29,6 +30,9 @@ const PremierePage = () => (
               public trust, and the erosion of democracy.
             </p>
             <p>Friday, June 8 from 4–6 PM at the Michigan Theater</p>
+            <ExternalButton href="https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=374642~32b7c91a-bad8-4291-a5b6-85f27f20501a&epguid=0159a9a3-f678-45c0-979b-ab3326c7383b&">
+              Purchase Tickets
+            </ExternalButton>
           </div>
         }
         icon={<Billboard />}
@@ -101,6 +105,9 @@ const PremierePage = () => (
       </LongQuote>
 
       <p>Friday, June 8 from 4–6 PM at the Michigan Theater</p>
+      <ExternalButton href="https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=374642~32b7c91a-bad8-4291-a5b6-85f27f20501a&epguid=0159a9a3-f678-45c0-979b-ab3326c7383b&">
+        Purchase Tickets
+      </ExternalButton>
     </RunningTextContainer>
   </main>
 )
