@@ -4,6 +4,7 @@
 
 import styled from 'styled-components'
 import BaseTitleSection from '../shared/TitleSection'
+import { RunningTextContainer } from '../shared/MaxWidthContainer'
 
 export const TitleSection = BaseTitleSection.extend`
   margin-bottom: 3em;
@@ -62,8 +63,11 @@ export const Callout = styled.aside`
   border-radius: 2px;
   font-size: 90%;
   line-height: 1.4;
-  margin: 2em 0;
   padding: 0.75em 1em;
+
+  ${RunningTextContainer} & {
+    margin: 2em 0;
+  }
 
   h2 {
     font-family: tenso;

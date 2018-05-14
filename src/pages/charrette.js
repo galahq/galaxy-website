@@ -10,6 +10,7 @@ import StreamOverview from '../components/streams/Overview'
 import { TitleSection, Quotation, Callout } from '../components/streams/shared'
 import { RunningTextContainer } from '../components/shared/MaxWidthContainer'
 import { ExternalLink } from '../components/shared/Link'
+import { ExternalButton } from '../components/shared/Link'
 
 const CharrettePage = () => (
   <main>
@@ -26,7 +27,13 @@ const CharrettePage = () => (
               platform to unite for real progress in this open problem-solving
               session.
             </p>
-            <p>Saturday, June 9 from 1:45–5 PM in the Rackham Assembly Hall</p>
+            <p>
+              <strong>Free and open to the public,</strong> Saturday, June 9
+              from 1:45–5 PM in the Rackham Assembly Hall.
+            </p>
+            <ExternalButton href="https://www.eventbrite.com/e/charrette-codesign-tools-for-public-education-on-ann-arbors-dioxane-plume-tickets-46083216140">
+              Register for Charrette
+            </ExternalButton>
           </div>
         }
         icon={
@@ -94,7 +101,13 @@ const CharrettePage = () => (
         sustainability problem-solving. Continuing education credits are
         pending.
       </Callout>
-      <p>Saturday, June 9 from 1:45–5 PM in the Rackham Assembly Hall</p>
+      <p>
+        <strong>Free and open to the public.</strong>
+        <br />Saturday, June 9 from 1:45–5 PM in the Rackham Assembly Hall.
+      </p>
+      <ExternalButton href="https://www.eventbrite.com/e/charrette-codesign-tools-for-public-education-on-ann-arbors-dioxane-plume-tickets-46083216140">
+        Register for Charrette
+      </ExternalButton>
     </RunningTextContainer>
   </main>
 )
