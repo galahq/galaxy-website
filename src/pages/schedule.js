@@ -183,7 +183,7 @@ const schedule: {
         to: '/charrette',
       },
       {
-        name: 'Cocktail Hour & Outcome Showcase',
+        name: 'Reception & Outcome Showcase',
         times: '5–7 PM',
         duration: 2,
         color: 'gold',
