@@ -63,13 +63,8 @@ const HomePage = () => (
           The driving force of Galaxy is an intensive, three-day, hands-on Case
           Innovation Studio. Improve your existing case studies with innovative
           tools for learning design, media curation and production, and
-          communicating complexity.
-        </p>
-        <p>
-          You will also engage in dialogue with software developers about tech
-          features that can extend the reach of your case or add depth. Social
-          events each evening will expand your networks and spark meaningful
-          relationships.
+          communicating complexity. Social events each evening will expand your
+          networks and spark meaningful relationships.
         </p>
 
         <CenteredCallToActionButton />
@@ -133,7 +128,7 @@ const HomePage = () => (
           </PremierIcon>
           <PremierInfo>
             <h2>
-              <Link to="/premiere">Case Premiere</Link>
+              <Link to="/premiere">Film Screening</Link>
             </h2>
             <p>
               Presented in concert with{' '}
@@ -151,9 +146,8 @@ const HomePage = () => (
               (with their festival{' '}
               <ExternalLink href="http://www.cinetopiafestival.org/">
                 Cinetopia
-              </ExternalLink>), Galaxy brings you our first annual Gold Carpet
-              Case Premieres for a pilot program in Citizen Sustainability
-              Certification.
+              </ExternalLink>), Galaxy brings you a rough cut screening of a
+              documentary film about water issues.
             </p>
           </PremierInfo>
         </Premier>
