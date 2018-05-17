@@ -127,12 +127,13 @@ const schedule: {
       },
       {
         name: 'Thirst for Justice',
-        subtitle: 'The premiere of a new documentary film\nby Leana Hosea',
+        subtitle:
+          'A rough cut screening of a new documentary film by Leana Hosea',
         location: 'Michigan Theater',
         times: '4–6 PM',
         duration: 2,
         color: 'green',
-        to: '/premiere',
+        to: '/screening',
       },
       {
         name: 'Dinner while enjoying the Ann Arbor Mayor’s Green Fair',

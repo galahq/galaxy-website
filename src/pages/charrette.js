@@ -9,8 +9,7 @@ import styled from 'styled-components'
 import StreamOverview from '../components/streams/Overview'
 import { TitleSection, Quotation, Callout } from '../components/streams/shared'
 import { RunningTextContainer } from '../components/shared/MaxWidthContainer'
-import { ExternalLink } from '../components/shared/Link'
-import { ExternalButton } from '../components/shared/Link'
+import { ExternalLink, ExternalButton } from '../components/shared/Link'
 
 const CharrettePage = () => (
   <main>
@@ -22,10 +21,12 @@ const CharrettePage = () => (
         pitch={
           <div>
             <p>
-              Join educators, stakeholders, concerned citizens, and student
-              activists as they use a Michigan Sustainability Case on the Gala
-              platform to unite for real progress in this open problem-solving
-              session.
+              The city of Ann Arbor is looking for a more effective way of
+              educating new and old residents about the contamination of
+              groundwater with 1,4-Dioxane. Join educators, stakeholders,
+              concerned citizens, and student activists to brainstorm in small
+              teams about the form and content of an interactive tool for public
+              education.
             </p>
             <p>
               <strong>Free and open to the public,</strong> Saturday, June 9

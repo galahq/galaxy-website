@@ -20,7 +20,7 @@ const PremierePage = () => (
   <main>
     <TitleSection>
       <StreamOverview
-        title="Documentary Film Premiere"
+        title="Documentary Film Screening"
         tagline="Thirst for Justice"
         pitch={
           <div>
@@ -41,9 +41,11 @@ const PremierePage = () => (
 
     <RunningTextContainer>
       <p>
-        At the Galaxy Case Premiere, join filmmaker Leana Hosea for the premiere
-        of her documentary on water justice. Q&A with the audience will follow.
-        This event is presented in conjunction with the Cinetopia Film Festival.
+        Join filmmaker Leana Hosea for a rough cut screening of her documentary
+        on water justice. An expert panel on water issues will follow, offering
+        you the chance to ask questions and give feedback to shape a film in
+        progress. This event is presented in conjunction with the Cinetopia Film
+        Festival.
       </p>
 
       <Quotation>
