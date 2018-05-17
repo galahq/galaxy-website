@@ -232,7 +232,6 @@ const SchedulePage = () => (
       <p>
         <Block color="purple" />
         <Block color="green" />
-        <Block color="gold" />
         <span> Included with Galaxy registration</span>
       </p>
       <p>
