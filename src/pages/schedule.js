@@ -235,12 +235,12 @@ const SchedulePage = () => (
         <span> Included with Galaxy registration</span>
       </p>
       <p>
-        <Block color="gold" />
-        <span> By invitation only</span>
-      </p>
-      <p>
         <Block color="green" />
         <span> Open to the public</span>
+      </p>
+      <p>
+        <Block color="gold" />
+        <span> By invitation only</span>
       </p>
     </RunningTextContainer>
   </main>
