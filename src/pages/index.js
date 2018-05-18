@@ -161,7 +161,7 @@ const HomePage = () => (
             <p>
               Galaxy culminates with a complementary dinner on the roof of the
               gorgeously restored art deco Rackham Auditorium. Overlooking the
-              live music, dancing and outdoor games of the{' '}
+              live music and dancing of the{' '}
               <ExternalLink href="https://www.a2sf.org/">
                 Ann Arbor Summer Festival
               </ExternalLink>, we will present “best-of” awards for innovative
