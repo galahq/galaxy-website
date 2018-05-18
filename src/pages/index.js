@@ -159,9 +159,9 @@ const HomePage = () => (
           <PremierInfo>
             <h2>The Gala Awards Ceremony & Dinner</h2>
             <p>
-              Galaxy culminates with dinner and drinks on the roof of the
-              gorgeously restored art deco Rackham Auditorium. Overlooking the
-              live music, dancing and outdoor games of the{' '}
+              Galaxy culminates with dinner on the roof of the gorgeously
+              restored art deco Rackham Auditorium. Overlooking the live music,
+              dancing and outdoor games of the{' '}
               <ExternalLink href="https://www.a2sf.org/">
                 Ann Arbor Summer Festival
               </ExternalLink>, we will present “best-of” awards for innovative
