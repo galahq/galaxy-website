@@ -69,7 +69,7 @@ const schedule: {
       },
       {
         name: 'Case Innovation Studio',
-        subtitle: 'Collaboration with Practitioners',
+        subtitle: 'Working Across Communities',
         location: 'Rackham Building',
         times: '1:45–3 PM',
         duration: 1.5,
@@ -77,7 +77,7 @@ const schedule: {
       },
       {
         name: 'Case Innovation Studio',
-        subtitle: 'Media: Curation and Pocket Production',
+        subtitle: 'Media: Pocket Production',
         location: 'Rackham Building',
         times: '3:15–5 PM',
         duration: 1.5,
@@ -98,7 +98,7 @@ const schedule: {
     events: [
       {
         name: 'Case Innovation Studio',
-        subtitle: 'Media: Refining Your Process',
+        subtitle: 'Narrative and Storytelling',
         location: 'Rackham Building',
         times: '8:30–10 AM',
         duration: 1.5,
@@ -106,7 +106,7 @@ const schedule: {
       },
       {
         name: 'Case Innovation Studio',
-        subtitle: 'Narrative and Storytelling',
+        subtitle: 'Media: Interview Techniques',
         location: 'Rackham Building',
         times: '10:15 AM–12:15 PM',
         duration: 1.5,
@@ -119,7 +119,7 @@ const schedule: {
       },
       {
         name: 'Case Innovation Studio',
-        subtitle: 'Developer Dialogue',
+        subtitle: 'Media: Curation & Visualization',
         location: 'Rackham Building',
         times: '1:45–3:45 PM',
         duration: 2,
@@ -139,14 +139,6 @@ const schedule: {
         name: 'Dinner while enjoying the Ann Arbor Mayor’s Green Fair',
         times: '6–8 PM',
         duration: 2,
-      },
-      {
-        name: 'Sustainability Social',
-        location: 'The Pretzel Bell',
-        times: '8–9:30 PM',
-        duration: 1.5,
-        importance: 2,
-        color: 'green',
       },
     ],
   },
@@ -183,15 +175,10 @@ const schedule: {
         color: 'green',
         to: '/charrette',
       },
-      {
-        name: 'Reception & Outcome Showcase',
-        times: '5–7 PM',
-        duration: 2,
-        color: 'gold',
-      },
+      { duration: 1 },
       {
         name: 'Gala Awards Ceremony & Dinner',
-        times: '7–9 PM',
+        times: '6–8 PM',
         duration: 2,
         color: 'gold',
       },
