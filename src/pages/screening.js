@@ -27,7 +27,8 @@ const PremierePage = () => (
             <p>
               Seen through the eyes of two American communities, this is the
               story of widespread water contamination, the ensuing breach of
-              public trust, and the erosion of democracy.
+              public trust that has inspired connection and action, protecting
+              our water for the future.
             </p>
             <p>Friday, June 8 from 4–6 PM at the Michigan Theater</p>
             <ExternalButton href="https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=374642~32b7c91a-bad8-4291-a5b6-85f27f20501a&epguid=0159a9a3-f678-45c0-979b-ab3326c7383b&">
@@ -41,11 +42,11 @@ const PremierePage = () => (
 
     <RunningTextContainer>
       <p>
-        Join filmmaker Leana Hosea for a rough cut screening of her documentary
-        on water justice. An expert panel on water issues will follow, offering
-        you the chance to ask questions and give feedback to shape a film in
-        progress. This event is presented in conjunction with the Cinetopia Film
-        Festival.
+        Join filmmaker Leana Hosea for a screening of the director’s cut of her
+        new documentary on water justice. An expert panel on water issues will
+        follow, offering you the chance to ask questions and give feedback to
+        shape a film in progress. This event is presented in conjunction with
+        the Cinetopia Film Festival.
       </p>
 
       <Quotation>

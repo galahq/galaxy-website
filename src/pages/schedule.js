@@ -128,7 +128,7 @@ const schedule: {
       {
         name: 'Thirst for Justice',
         subtitle:
-          'A rough cut screening of a new documentary film by Leana Hosea',
+          'A director’s cut screening of a new documentary film by Leana Hosea',
         location: 'Michigan Theater',
         times: '4–6 PM',
         duration: 2,
