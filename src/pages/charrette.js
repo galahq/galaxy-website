@@ -56,7 +56,7 @@ const CharrettePage = () => (
         learning, building problem-driven, solution-focused, multi-modal
         approaches emphasizing experiential learning. See this game-changing
         pedagogy at work at the Galaxy Charette, where diverse stakeholders will
-        address the hot-button issue of groundwater contaminaton.
+        address the hot-button issue of groundwater contamination.
       </p>
 
       <Quotation>
