@@ -227,7 +227,7 @@ const SchedulePage = () => (
       </p>
       <p>
         <Block color="gold" />
-        <span> Complementary, by invitation only</span>
+        <span> Complimentary, by invitation only</span>
       </p>
     </RunningTextContainer>
   </main>

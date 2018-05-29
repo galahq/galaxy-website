@@ -159,7 +159,7 @@ const HomePage = () => (
           <PremierInfo>
             <h2>The Gala Awards Ceremony & Dinner</h2>
             <p>
-              Galaxy culminates with a complementary dinner on the roof of the
+              Galaxy culminates with a complimentary dinner on the roof of the
               gorgeously restored art deco Rackham Auditorium. Overlooking the
               live music and dancing of the{' '}
               <ExternalLink href="https://www.a2sf.org/">
