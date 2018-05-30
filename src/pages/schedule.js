@@ -59,7 +59,7 @@ const schedule: {
         subtitle: 'Elements of Case Design',
         location: 'Rackham Building',
         times: '10:15 AM–12:15 PM',
-        duration: 1.5,
+        duration: 2,
         color: 'purple',
       },
       {
@@ -108,8 +108,16 @@ const schedule: {
         name: 'Case Innovation Studio',
         subtitle: 'Media: Interview Techniques',
         location: 'Rackham Building',
-        times: '10:15 AM–12:15 PM',
-        duration: 1.5,
+        times: '10:15–11:15 AM',
+        duration: 1,
+        color: 'purple',
+      },
+      {
+        name: 'Case Innovation Studio',
+        subtitle: 'Media: Visualization',
+        location: 'Rackham Building',
+        times: '11:15 AM–12:15 PM',
+        duration: 1,
         color: 'purple',
       },
       {
@@ -119,7 +127,7 @@ const schedule: {
       },
       {
         name: 'Case Innovation Studio',
-        subtitle: 'Media: Curation & Visualization',
+        subtitle: 'Media Workshop',
         location: 'Rackham Building',
         times: '1:45–3:45 PM',
         duration: 2,
@@ -156,10 +164,18 @@ const schedule: {
       },
       {
         name: 'Case Innovation Studio',
+        subtitle: 'Media: Using Maps',
+        location: 'Rackham Building',
+        times: '10:15–11:15 AM',
+        duration: 1,
+        color: 'purple',
+      },
+      {
+        name: 'Case Innovation Studio',
         subtitle: 'Engagement Strategies',
         location: 'Rackham Building',
-        times: '10:15 AM–12:15 PM',
-        duration: 1.5,
+        times: '11:15 AM–12:15 PM',
+        duration: 1,
         color: 'purple',
       },
       {
@@ -248,14 +264,14 @@ const ScheduleContainer = styled.div`
 
 const Day = styled.section`
   display: grid;
-  grid-auto-rows: 1.25em;
+  grid-auto-rows: 1.85em;
   grid-gap: 0.25em;
 
   h2 {
     border-top: 3px solid rgba(255, 255, 255, 0.6);
     font-family: tenso;
     font-size: 1rem;
-    grid-row: span 4;
+    grid-row: span 3;
     letter-spacing: 0.2px;
     padding-top: 1em;
   }
