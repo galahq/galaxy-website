@@ -12,6 +12,8 @@ import MaxWidthContainer from '../shared/MaxWidthContainer'
 const Stars: any = require('../../assets/footer-stars.svg')
 const GalaLogo: any = require('../../assets/gala-logo.svg')
 const BlockM: any = require('../../assets/block-m.svg')
+const SesyncLogo: any = require('../../assets/sesync-logo.png')
+const IsbLogo: any = require('../../assets/isb-logo.png')
 
 const Footer = () => (
   <footer>
@@ -32,12 +34,20 @@ const Footer = () => (
       </InnerContainer>
     </LightContainer>
     <DarkContainer>
-      <a href="https://www.learngala.com">
-        <GalaLogo />
-      </a>
-      <a href="https://www.umich.edu">
-        <BlockM />
-      </a>
+      <Grid>
+        <a href="https://www.learngala.com">
+          <GalaLogo />
+        </a>
+        <a href="https://www.umich.edu">
+          <BlockM />
+        </a>
+        <a href="http://www.isb.edu">
+          <img src={IsbLogo} />
+        </a>
+        <a href="https://www.sesync.org">
+          <img src={SesyncLogo} />
+        </a>
+      </Grid>
     </DarkContainer>
   </footer>
 )
@@ -51,19 +61,32 @@ const LightContainer = styled.div`
   padding: 2em 0;
 `
 
-const DarkContainer = LightContainer.extend`
+const DarkContainer = styled.div`
   background-color: #02284b;
-
   padding: 6em 0;
+`
 
-  & > a {
-    margin: 0 4em;
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-gap: 40px;
+  margin: 0 auto;
+  width: min-content;
 
-    & svg {
-      width: 80px;
-      height: 50px;
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(2, 120px);
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0;
     }
   }
+}
 `
 
 const InnerContainer = MaxWidthContainer.extend`
