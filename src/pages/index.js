@@ -30,7 +30,6 @@ import {
   AudienceColumn,
 } from '../components/Audience'
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
-import PriceTable from '../components/PriceTable'
 import MaxWidthContainer from '../components/shared/MaxWidthContainer'
 
 const StudiosIcon: any = require('../assets/studios.svg')
@@ -55,19 +54,7 @@ const HomePage = () => (
           teaching, and practice for visible impact in communities.
         </p>
 
-        <h2>
-          <Kicker>Got a case?</Kicker>
-          Make it shine at Galaxy 2018!
-        </h2>
-        <p>
-          The driving force of Galaxy is an intensive, three-day, hands-on Case
-          Innovation Studio. Improve your existing case studies with innovative
-          tools for learning design, media curation and production, and
-          communicating complexity. Social events each evening will expand your
-          networks and spark meaningful relationships.
-        </p>
-
-        <CenteredCallToActionButton />
+      {/*<CenteredCallToActionButton />*/}
       </TaglineInnerSection>
     </TaglineSection>
 
@@ -114,13 +101,13 @@ const HomePage = () => (
       </Stream>
     </StreamSection>
 
-    <MaxWidthContainer style={{ display: 'flex' }}>
+    {/*<MaxWidthContainer style={{ display: 'flex' }}>
       <CenteredCallToActionButton text="Learn More" to="/studio" />
-    </MaxWidthContainer>
+    </MaxWidthContainer>*/}
 
     {/* ---~~~===~~~--- */}
 
-    <PremierSection>
+    {/*<PremierSection>
       <PremierInnerSection>
         <Premier>
           <PremierIcon thin>
@@ -170,7 +157,7 @@ const HomePage = () => (
           </PremierInfo>
         </Premier>
       </PremierInnerSection>
-    </PremierSection>
+    </PremierSection>*/}
 
     {/* ---~~~===~~~--- */}
 
@@ -208,7 +195,6 @@ const HomePage = () => (
           </p>
         </AudienceColumn>
       </AudienceColumns>
-      <PriceTable />
     </AudienceSection>
   </main>
 )
