@@ -19,16 +19,14 @@ const BaseHorizontalLogo: any = require('../../assets/galaxy-2019-logo-h.svg')
 type Props = { full: boolean }
 const Header = ({ full }: Props) => (
   <Container full={full}>
-    {/*
-      <MainNavigation
-        links={{
-          '': 'Home',
-          about: 'About',
-          schedule: 'Schedule',
-          logistics: 'Location'
-        }}
-      />
-    */}
+    <MainNavigation
+      links={{
+        '': 'Home',
+        about: 'About',
+        schedule: 'Schedule',
+        logistics: 'Location'
+      }}
+    />
     {full ? (
       <InnerContainer>
         <ShadowLink to="/">
