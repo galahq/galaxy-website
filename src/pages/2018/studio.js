@@ -5,15 +5,15 @@
 
 import React from 'react'
 
-import StreamOverview from '../components/streams/Overview'
-import StreamPeople from '../components/streams/People'
-import { StreamLogistics, TitleSection } from '../components/streams/shared'
+import StreamOverview from '../../components/streams/Overview'
+import StreamPeople from '../../components/streams/People'
+import { StreamLogistics, TitleSection } from '../../components/streams/shared'
 import MaxWidthContainer, {
   RunningTextContainer,
   UnpaddedRunningTextContainer
-} from '../components/shared/MaxWidthContainer'
+} from '../../components/shared/MaxWidthContainer'
 
-const StudiosIcon: any = require('../assets/studios.svg')
+const StudiosIcon: any = require('../../assets/studios.svg')
 
 const StudioPage = () => (
   <main>
@@ -100,7 +100,7 @@ const StudioPage = () => (
               in STEM education.
             </span>
           ),
-          photoUrl: require('../assets/people/cynthia.jpg'),
+          photoUrl: require('../../assets/people/cynthia.jpg'),
           links: [
             {
               text: 'LinkedIn',
@@ -121,7 +121,7 @@ const StudioPage = () => (
               love of science.
             </span>
           ),
-          photoUrl: require('../assets/people/meghan.jpg'),
+          photoUrl: require('../../assets/people/meghan.jpg'),
           links: [
             {
               text: 'LinkedIn',
@@ -142,7 +142,7 @@ const StudioPage = () => (
               expertise, and technical skill together for media co-production.
             </span>
           ),
-          photoUrl: require('../assets/people/ed.jpg'),
+          photoUrl: require('../../assets/people/ed.jpg'),
           links: [
             {
               text: 'LinkedIn',
@@ -164,7 +164,7 @@ const StudioPage = () => (
               justice issues.
             </span>
           ),
-          photoUrl: require('../assets/people/leana.jpg'),
+          photoUrl: require('../../assets/people/leana.jpg'),
           links: [
             {
               text: 'LinkedIn',
@@ -185,7 +185,7 @@ const StudioPage = () => (
               minimal equipment.
             </span>
           ),
-          photoUrl: require('../assets/people/ryan.png')
+          photoUrl: require('../../assets/people/ryan.png')
         }
       ]}
     />

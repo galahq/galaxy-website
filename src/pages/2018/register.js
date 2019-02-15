@@ -6,17 +6,17 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TitleSection from '../components/shared/TitleSection'
+import TitleSection from '../../components/shared/TitleSection'
 import MaxWidthContainer, {
   UnpaddedRunningTextContainer,
   RunningTextContainer,
   PaddedRunningTextContainer,
-} from '../components/shared/MaxWidthContainer'
-import PriceTable from '../components/PriceTable'
-import BaseCallToActionButton from '../components/CallToActionButton'
+} from '../../components/shared/MaxWidthContainer'
+import PriceTable from '../../components/PriceTable'
+import BaseCallToActionButton from '../../components/CallToActionButton'
 
-import irisLogin from '../assets/iris-login.png'
-import addToCart from '../assets/add-to-cart.png'
+import irisLogin from '../../assets/iris-login.png'
+import addToCart from '../../assets/add-to-cart.png'
 
 const LogisticsPage = () => (
   <main>
