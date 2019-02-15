@@ -22,11 +22,11 @@ const Footer = () => (
         <Stars />
         <Info>
           <span>Ann Arbor, MI</span>
-          <span>June 7–9, 2018</span>
+          <span>June 20 & 21, 2019</span>
         </Info>
         <CallToActionButton big text="Register for Galaxy" />
-        <a href="mailto:galaxy-2018@umich.edu">
-          Email galaxy-2018@umich.edu for questions.
+        <a href="mailto:galaxy-info@umich.edu">
+          Email galaxy-info@umich.edu for questions.
         </a>
         <a href="http://eepurl.com/di7gKv">
           Join our mailing list for updates.
