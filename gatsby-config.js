@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Galaxy 2018'
+    title: 'Galaxy 2019'
   },
   plugins: [
     'gatsby-plugin-react-helmet',

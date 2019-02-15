@@ -33,7 +33,7 @@ const Header = ({ full }: Props) => (
       <InnerContainer>
         <ShadowLink to="/">
           <VerticalLogo />
-          <LabelForScreenReaders>Galaxy 2018</LabelForScreenReaders>
+          <LabelForScreenReaders>Galaxy 2019</LabelForScreenReaders>
         </ShadowLink>
         <Subtitle>Ann Arbor, MI</Subtitle>
         <Subtitle>June 20 & 21</Subtitle>

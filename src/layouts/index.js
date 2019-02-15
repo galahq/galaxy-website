@@ -9,12 +9,12 @@ import './index.css'
 const TemplateWrapper = ({ location, children }) => (
   <div>
     <Helmet
-      title="Galaxy 2018"
+      title="Galaxy 2019"
       meta={[
         {
           name: 'description',
           content:
-            'Information about the 2018 Galaxy sustainability learning exchange.'
+            'Information about the Galaxy sustainability learning exchange.'
         },
         { name: 'keywords', content: 'Galaxy, sustainaiblity, conference' },
         { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' }
