@@ -13,7 +13,7 @@ import MaxWidthContainer from '../shared/MaxWidthContainer'
 import { LabelForScreenReaders } from '../shared/A11y'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
 
-const BaseVerticalLogo: any = require('../../assets/galaxy-v.svg')
+const BaseVerticalLogo: any = require('../../assets/galaxy-2019-logo-v.svg')
 const BaseHorizontalLogo: any = require('../../assets/galaxy-h.svg')
 
 type Props = { full: boolean }
