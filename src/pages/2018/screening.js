@@ -9,16 +9,18 @@ import styled from 'styled-components'
 import {
   TitleSection,
   Quotation as BaseQuotation,
-} from '../components/streams/shared'
+} from '../../components/streams/shared'
+import Galaxy2018Tag from '../../components/shared/Galaxy2018Tag'
 import BaseStreamOverview, {
   IconContainer,
-} from '../components/streams/Overview'
-import { RunningTextContainer } from '../components/shared/MaxWidthContainer'
-import { ExternalButton } from '../components/shared/Link'
+} from '../../components/streams/Overview'
+import { RunningTextContainer } from '../../components/shared/MaxWidthContainer'
+import { ExternalButton } from '../../components/shared/Link'
 
 const PremierePage = () => (
   <main>
     <TitleSection>
+      <Galaxy2018Tag />
       <StreamOverview
         title="Documentary Film Screening"
         tagline="Thirst for Justice"
@@ -31,9 +33,6 @@ const PremierePage = () => (
               our water for the future.
             </p>
             <p>Friday, June 8 from 4–6 PM at the Michigan Theater</p>
-            <ExternalButton href="https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=374642~32b7c91a-bad8-4291-a5b6-85f27f20501a&epguid=0159a9a3-f678-45c0-979b-ab3326c7383b&">
-              Purchase Tickets
-            </ExternalButton>
           </div>
         }
         icon={<Billboard />}
@@ -109,7 +108,7 @@ const PremierePage = () => (
 
       <p>Friday, June 8 from 4–6 PM at the Michigan Theater</p>
       <ExternalButton href="https://prod3.agileticketing.net/websales/pages/info.aspx?evtinfo=374642~32b7c91a-bad8-4291-a5b6-85f27f20501a&epguid=0159a9a3-f678-45c0-979b-ab3326c7383b&">
-        Purchase Tickets
+        Info on Cinetopia Site
       </ExternalButton>
     </RunningTextContainer>
   </main>
@@ -125,7 +124,7 @@ const StreamOverview = styled(BaseStreamOverview)`
 `
 
 const Billboard = styled.div`
-  background-image: url(${require('../assets/premiere/spray.png')});
+  background-image: url(${require('../../assets/premiere/spray.png')});
   background-position: -70px 0px;
   background-size: cover;
   height: 100%;
@@ -149,7 +148,7 @@ const ProtestPicture = styled.div`
   background-blend-mode: luminosity;
   background-color: #35526f;
   opacity: 0.2;
-  background-image: url(${require('../assets/premiere/protest.png')});
+  background-image: url(${require('../../assets/premiere/protest.png')});
   background-size: cover;
   height: 314px;
   position: absolute;

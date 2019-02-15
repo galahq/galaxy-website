@@ -6,13 +6,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import TitleSection from '../components/shared/TitleSection'
+import TitleSection from '../../components/shared/TitleSection'
 import MaxWidthContainer, {
   RunningTextContainer,
   PaddedRunningTextContainer,
-} from '../components/shared/MaxWidthContainer'
-import { ExternalLink } from '../components/shared/Link'
-import BaseButton from '../components/shared/Button'
+} from '../../components/shared/MaxWidthContainer'
+import { ExternalLink } from '../../components/shared/Link'
+import BaseButton from '../../components/shared/Button'
 
 const ScholarshipPage = () => (
   <main>

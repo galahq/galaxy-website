@@ -14,21 +14,19 @@ import { LabelForScreenReaders } from '../shared/A11y'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
 
 const BaseVerticalLogo: any = require('../../assets/galaxy-2019-logo-v.svg')
-const BaseHorizontalLogo: any = require('../../assets/galaxy-h.svg')
+const BaseHorizontalLogo: any = require('../../assets/galaxy-2019-logo-h.svg')
 
 type Props = { full: boolean }
 const Header = ({ full }: Props) => (
   <Container full={full}>
-    {/*
-      <MainNavigation
-        links={{
-          '': 'Home',
-          about: 'About',
-          schedule: 'Schedule',
-          logistics: 'Location'
-        }}
-      />
-    */}
+    <MainNavigation
+      links={{
+        '': 'Home',
+        about: 'About',
+        schedule: 'Schedule',
+        logistics: 'Location'
+      }}
+    />
     {full ? (
       <InnerContainer>
         <ShadowLink to="/">

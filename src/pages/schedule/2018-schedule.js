@@ -1,5 +1,5 @@
 /**
- * @providesModule SchedulePage
+ * @providesModule Schedule2018Page
  * @flow
  */
 
@@ -7,10 +7,10 @@ import React from 'react'
 import Link from 'gatsby-link'
 import styled, { css } from 'styled-components'
 
-import TitleSection from '../components/shared/TitleSection'
+import TitleSection from '../../components/shared/TitleSection'
 import MaxWidthContainer, {
   RunningTextContainer,
-} from '../components/shared/MaxWidthContainer'
+} from '../../components/shared/MaxWidthContainer'
 
 const colors = {
   purple: '#7F5FDC',
@@ -141,7 +141,7 @@ const schedule: {
         times: '4–6 PM',
         duration: 2,
         color: 'green',
-        to: '/screening',
+        to: '/2018/screening',
       },
       {
         name: 'Dinner while enjoying the Ann Arbor Mayor’s Green Fair',
@@ -189,7 +189,7 @@ const schedule: {
         location: 'Assembly Hall, Rackham',
         duration: 3,
         color: 'green',
-        to: '/charrette',
+        to: '/2018/charrette',
       },
       { duration: 1 },
       {
@@ -202,11 +202,11 @@ const schedule: {
   },
 ]
 
-const SchedulePage = () => (
+const Schedule2018Page = () => (
   <main>
     <TitleSection>
       <RunningTextContainer>
-        <h1>Schedule</h1>
+        <h1>Galaxy 2018 Schedule</h1>
       </RunningTextContainer>
     </TitleSection>
 
@@ -249,7 +249,7 @@ const SchedulePage = () => (
   </main>
 )
 
-export default SchedulePage
+export default Schedule2018Page
 
 const ScheduleContainer = styled.div`
   display: grid;
