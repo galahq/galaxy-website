@@ -24,7 +24,7 @@ const Footer = () => (
           <span>Ann Arbor, MI</span>
           <span>June 20 & 21, 2019</span>
         </Info>
-        <CallToActionButton big text="Register for Galaxy" />
+        <CallToActionButton big text="Join Mailing List" href="http://eepurl.com/di7gKv"/>
         <a href="mailto:galaxy-info@umich.edu">
           Email galaxy-info@umich.edu for questions.
         </a>

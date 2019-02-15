@@ -44,7 +44,7 @@ const Header = ({ full }: Props) => (
         </Link>
       </InnerContainer>
     )}
-    {full && <OpticallyCenteredCallToActionButton />}
+    {full && <OpticallyCenteredCallToActionButton text="Join Mailing List" href="http://eepurl.com/di7gKv"/>}
 
     <PoissonDiscDistribution key={full ? 'true' : 'false'} />
   </Container>
@@ -146,7 +146,7 @@ const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   z-index: 1;
 
   @media (min-width: 843px) {
-    margin-left: 27px;
+    margin-left: 4px;
   }
 `
 
