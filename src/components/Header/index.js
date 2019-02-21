@@ -43,7 +43,7 @@ const Header = ({ full }: Props) => (
         </Link>
       </InnerContainer>
     )}
-    {full && <OpticallyCenteredCallToActionButton text="Join Mailing List" href="http://eepurl.com/di7gKv"/>}
+    {full && <OpticallyCenteredCallToActionButton text="Submit an Abstract" href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019" target="_blank" rel="noopener noreferrer"/>}
 
     <PoissonDiscDistribution key={full ? 'true' : 'false'} />
   </Container>
