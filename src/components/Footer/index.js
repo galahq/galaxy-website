@@ -24,7 +24,13 @@ const Footer = () => (
           <span>Ann Arbor, MI</span>
           <span>June 20 & 21, 2019</span>
         </Info>
-        <CallToActionButton big text="Join Mailing List" href="http://eepurl.com/di7gKv" target="_blank" rel="noopener noreferrer"/>
+        <CallToActionButton
+          big
+          text="Register"
+          href="https://www.eventbrite.com/e/galaxy-2019-a-sustainability-learning-exchange-tickets-57524141255"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
         <a href="mailto:galaxy-info@umich.edu">
           Email galaxy-info@umich.edu for questions.
         </a>
@@ -102,7 +108,7 @@ const InnerContainer = MaxWidthContainer.extend`
 
 const Info = styled.p`
   margin-top: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   text-align: center;
 
   & > span {
