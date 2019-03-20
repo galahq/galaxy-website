@@ -24,7 +24,7 @@ const Header = ({ full }: Props) => (
         '': 'Home',
         about: 'About',
         schedule: 'Schedule',
-        logistics: 'Location'
+        logistics: 'Location',
       }}
     />
     {full ? (
@@ -43,8 +43,21 @@ const Header = ({ full }: Props) => (
         </Link>
       </InnerContainer>
     )}
-    {full && <OpticallyCenteredCallToActionButton text="Submit an Abstract" href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019" target="_blank" rel="noopener noreferrer"/>}
-
+    {full && (
+      <OpticallyCenteredCallToActionButton
+        text="Register"
+        href="https://www.eventbrite.com/e/galaxy-2019-a-sustainability-learning-exchange-tickets-57524141255"
+        target="_blank"
+        rel="noopener noreferrer"
+      />
+    )}
+    <HeaderLink
+      href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Submit an Abstract
+    </HeaderLink>
     <PoissonDiscDistribution key={full ? 'true' : 'false'} />
   </Container>
 )
@@ -61,10 +74,10 @@ const Container = styled.div`
   ${p =>
     p.full
       ? css`
-          padding: 7rem 0 5rem;
+          padding: 5rem 0 3rem;
 
           @media (max-width: 843px) {
-            padding: 6rem 0 4rem;
+            padding: 4rem 0 3rem;
           }
         `
       : css`
@@ -139,7 +152,7 @@ const Subtitle = styled.p`
 
 const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   big: true,
-  primary: true
+  primary: true,
 })`
   margin-top: 22px;
   z-index: 1;
@@ -147,6 +160,15 @@ const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   @media (min-width: 843px) {
     margin-left: 4px;
   }
+`
+
+const HeaderLink = styled.a`
+  font-weight: 500;
+  margin-top: 1em;
+  color: #cbbdf2;
+  font-size: 1.1em;
+  z-index: 1;
+  margin-left: 0.08em;
 `
 
 const SmallText = styled.p`
