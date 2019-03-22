@@ -127,7 +127,6 @@ const schedule = [
         times: '3:00–5:30 PM',
         duration: 4,
         color: 'stripe',
-        to: '/2018/screening',
       },
       { duration: 1 },
       {
