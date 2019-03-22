@@ -51,13 +51,15 @@ const Header = ({ full }: Props) => (
         rel="noopener noreferrer"
       />
     )}
-    <HeaderLink
-      href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Submit an Abstract
-    </HeaderLink>
+    {full && (
+      <HeaderLink
+        href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Submit an Abstract
+      </HeaderLink>
+    )}
     <PoissonDiscDistribution key={full ? 'true' : 'false'} />
   </Container>
 )
