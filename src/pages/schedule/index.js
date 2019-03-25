@@ -256,7 +256,7 @@ const ConcurrentSessions = styled.div`
   margin-top: 0.3em;
 `
 
-const ConcurrentSession = styled.p`
+const ConcurrentSession = styled.div`
   background-color: #6f4fca;
   display: flex;
   flex-direction: column;
