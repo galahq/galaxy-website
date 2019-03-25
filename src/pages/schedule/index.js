@@ -228,7 +228,7 @@ const Day = styled.section`
   }
 `
 
-const Minimal = styled.p`
+const Minimal = styled.div`
   font-size: 0.7rem;
   font-weight: 400;
   margin: 0;
@@ -252,12 +252,8 @@ const ConcurrentSessions = styled.div`
   display: grid;
   flex: 1;
   grid-gap: 0.3rem;
-  margin-top: 0.3em;
-
   grid-template-columns: repeat(2, 1fr);
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
+  margin-top: 0.3em;
 `
 
 const ConcurrentSession = styled.p`
