@@ -36,45 +36,50 @@ const schedule = [
     date: 'Thursday, June 20',
     events: [
       {
-        name: 'Check-in & Coffee',
+        name: 'Check-in & Poster Set-up',
         location: 'Rackham Building',
         times: '8:00–9:00 AM',
         duration: 1,
         color: 'purple',
       },
       {
-        name: 'Welcome; Gala Intro & Updates',
+        name: 'Welcome, Gala Intro & Updates',
         location: 'Rackham Building',
-        times: '9:00 AM–9:30 AM',
+        times: '9:00–9:30 AM',
         duration: 1,
         color: 'purple',
       },
       { duration: 0.25 },
       {
         name: 'Master Classes',
+        sessions: [
+          'Cross-Sector Collaboration for Sustainability',
+          'Water in Ecosystem and Human Health',
+        ],
         location: 'Rackham Building',
         times: '9:45–12:15 PM',
-        duration: 3.5,
+        duration: 2.25,
         color: 'purple',
       },
       { duration: 0.25 },
       {
-        name: 'Lunch / Posters',
+        name: 'Lunch, Networking, and Poster Session',
         times: '12:30–2:00 PM',
-        duration: 1.5,
+        duration: 1.25,
         color: 'green',
       },
       { duration: 0.25 },
       {
         name: 'Master Classes',
+        sessions: ['Climate Adaptation in Cities', 'Landscape Management'],
         location: 'Rackham Building',
         times: '2:15–4:45 PM',
-        duration: 3.5,
+        duration: 2.25,
         color: 'purple',
       },
       { duration: 0.25 },
       {
-        name: 'Wrap-up',
+        name: 'Wrap-up of Learning',
         times: '5:00–5:30 PM',
         duration: 1,
         color: 'purple',
@@ -86,7 +91,7 @@ const schedule = [
     date: 'Friday, June 21',
     events: [
       {
-        name: 'Check-in & Poster Set-up',
+        name: 'Check-in & Coffee',
         location: 'Rackham Building',
         times: '8:00–9:00 AM',
         duration: 1,
@@ -95,7 +100,7 @@ const schedule = [
       {
         name: 'Lightning Talks / Media Showcase',
         location: 'Rackham Building',
-        times: '9:00 AM–10:45 AM',
+        times: '9:00–10:45 AM',
         duration: 2,
         color: 'purple',
       },
@@ -103,36 +108,29 @@ const schedule = [
       {
         name: 'Pocket Production',
         location: 'Rackham Building',
-        times: '11:00–11:30 AM',
+        times: '11:00–12:00 PM',
         duration: 1,
         color: 'purple',
       },
       {
-        name: 'Awards Ceremony',
-        location: 'Rackham Building',
-        times: '11:30–12:00 PM',
+        name: 'Lunch',
+        times: '12:00 PM',
         duration: 1,
-        color: 'gold',
+        color: 'green',
       },
-      {
-        name: 'Lunch Break',
-        subtitle: 'Box lunch provided',
-        times: '12:00–3:00 PM',
-        duration: 3,
-      },
+      { duration: 2 },
       {
         name: 'The Last Animals',
         subtitle: 'Film Screening & Panel Discussion',
         location: 'Michigan Theater',
         times: '3:00–5:30 PM',
-        duration: 4,
-        color: 'stripe',
+        duration: 2.5,
+        color: 'gold',
       },
-      { duration: 1 },
       {
-        name: 'Reception',
-        times: '6:30–8:00 PM',
-        duration: 1.5,
+        name: 'Reception and Awards Ceremony',
+        times: '5:30–7:00 PM',
+        duration: 1,
         color: 'gold',
       },
     ],
@@ -143,77 +141,96 @@ const SchedulePage = () => (
   <main>
     <TitleSection>
       <RunningTextContainer>
-        <h1>Schedule</h1>
+        <h1>Tentative Schedule</h1>
       </RunningTextContainer>
     </TitleSection>
 
-    <MaxWidthContainer>
+    <Container>
       <ScheduleContainer>
         {schedule.map(({ date, events }) => (
           <Day key={date}>
             <h2>{date}</h2>
+
             {events.map(
-              ({ name, times, duration, color, subtitle, location, to }) => (
+              ({
+                color,
+                duration,
+                location,
+                name,
+                sessions,
+                subtitle,
+                times,
+                to,
+              }) => (
                 <Event key={times} color={color} span={duration} to={to}>
-                  <Times>
+                  <Minimal>
                     {times}
                     {location && `: ${location}`}
-                  </Times>
+                  </Minimal>
+
                   <Name>{name}</Name>
+
                   {subtitle && <Subtitle>{subtitle}</Subtitle>}
+
+                  {sessions && (
+                    <ConcurrentSessions>
+                      {sessions.map((session, i) => (
+                        <ConcurrentSession>
+                          <Minimal>Session {i + 1}</Minimal>
+                          {session}
+                        </ConcurrentSession>
+                      ))}
+                    </ConcurrentSessions>
+                  )}
                 </Event>
               )
             )}
           </Day>
         ))}
       </ScheduleContainer>
-    </MaxWidthContainer>
-    <RunningTextContainer>
-      <p>
-        <Block color="purple" />
-        <Block color="green" />
-        <Block color="gold" />
-        <Block color="stripe" />
-        <span> Included with Galaxy registration</span>
-      </p>
-      <p>
-        <Block color="stripe" />
-        <span> Open to the public</span>
-      </p>
-    </RunningTextContainer>
+    </Container>
   </main>
 )
 
 export default SchedulePage
 
+const Container = styled(MaxWidthContainer)`
+  max-width: 740px;
+`
+
 const ScheduleContainer = styled.div`
   display: grid;
   grid-gap: 1.5em;
-  grid-template-columns: repeat(2, 1fr);
   margin: 1em 0 3em;
 
-  @media (max-width: 843px) {
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
 `
 
 const Day = styled.section`
   display: grid;
-  grid-auto-rows: 1.85em;
   grid-gap: 0.25em;
+
+  grid-auto-rows: 0.8em;
+  @media (max-width: 600px) {
+    grid-auto-rows: 1em;
+  }
 
   h2 {
     border-top: 3px solid rgba(255, 255, 255, 0.6);
     font-family: tenso;
     font-size: 1rem;
-    grid-row: span 3;
+    grid-row: span 6;
     letter-spacing: 0.2px;
     padding-top: 1em;
   }
 `
 
-const Times = styled.p`
-  font-size: 0.7em;
+const Minimal = styled.p`
+  font-size: 0.7rem;
+  font-weight: 400;
   margin: 0;
   opacity: 0.8;
 `
@@ -228,6 +245,30 @@ const Subtitle = styled.p`
   font-size: 0.8em;
   line-height: 1.1;
   margin: 0;
+  white-space: pre-line;
+`
+
+const ConcurrentSessions = styled.div`
+  display: grid;
+  flex: 1;
+  grid-gap: 0.3rem;
+  margin-top: 0.3em;
+
+  grid-template-columns: repeat(2, 1fr);
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+`
+
+const ConcurrentSession = styled.p`
+  background-color: #6f4fca;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8em;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0.6em;
   white-space: pre-line;
 `
 
@@ -248,7 +289,9 @@ const BaseEvent = styled.div`
   box-shadow: 0 0 0 1px rgba(16, 22, 26, 0.15), 0 0 0 rgba(16, 22, 26, 0),
     0 0 0 rgba(16, 22, 26, 0);
   color: ${p => (p.color === 'gold' ? 'black' : 'inherit')};
-  grid-row: span ${p => p.span * 2 || 2};
+  display: flex;
+  flex-direction: column;
+  grid-row: span ${p => p.span * 4 || 4};
   line-height: 1.1;
   padding: 0.4em 0.6em;
   transition: box-shadow 0.2s cubic-bezier(0.4, 1, 0.75, 0.9);

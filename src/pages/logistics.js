@@ -23,7 +23,7 @@ const LogisticsPage = () => (
     </TitleSection>
 
     <UnpaddedRunningTextContainer>
-      <h2>Location</h2>
+      <h2 />
       <p>
         Galaxy takes place in three gorgeously restored historic buildings, the
         Michigan Theater, the art deco Rackham Auditorium, and the School for
