@@ -53,8 +53,8 @@ const schedule = [
       {
         name: 'Master Classes',
         sessions: [
-          'Cross-Sector Collaboration for Sustainability',
-          'Water in Ecosystem and Human Health',
+          'Cross-Sector Collaboration for Intervention in Complex Urban Systems',
+          'International Communities of Practice for Environmental Management',
         ],
         location: 'Rackham Building',
         times: '9:45–12:15 PM',
@@ -71,7 +71,10 @@ const schedule = [
       { duration: 0.25 },
       {
         name: 'Master Classes',
-        sessions: ['Climate Adaptation in Cities', 'Landscape Management'],
+        sessions: [
+          'Building Networks to Scale Climate Adaptation Strategies',
+          'Linking Classrooms with Professionals for Landscape Management',
+        ],
         location: 'Rackham Building',
         times: '2:15–4:45 PM',
         duration: 2.25,
