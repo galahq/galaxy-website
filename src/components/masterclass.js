@@ -20,7 +20,7 @@ export const ClassInnerSection = MaxWidthContainer.extend`
 `
 export const ClassInfoSection = styled.div`
   display: flex;
-  margin-bottom: 3rem;
+
 `
 
 export const ClassInfo = styled.div`
