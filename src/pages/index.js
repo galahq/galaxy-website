@@ -12,33 +12,18 @@ import Tagline, {
   TaglineInnerSection,
   CallToAction,
 } from '../components/Tagline'
-import {
-  Stream,
-  StreamSection,
-  StreamInnerSection,
+import Stream, {
   StreamTitle,
-  StreamImg,
+  StreamSection,
+  StreamIcon,
 } from '../components/Stream'
-import {
+import Premier, {
   PremierSection,
   PremierInnerSection,
-  Premier,
+  PremierIcon,
   PremierInfo,
-  PremierImg,
 } from '../components/Premier'
-import {
-  ClassSection,
-  ClassInnerSection,
-  ClassInfoSection,
-  ClassThemesSection,
-  ClassInfo,
-  ClassVid,
-  ClassVidBox,
-  ClassTheme,
-  ClassThemeImage,
-} from '../components/masterclass'
 import { ExternalLink } from '../components/shared/Link'
-
 import {
   AudienceSection,
   AudienceColumns,
@@ -47,17 +32,11 @@ import {
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import MaxWidthContainer from '../components/shared/MaxWidthContainer'
 
-const ClassVideo: any = require('../assets/galaxy2.mp4')
-const InclusiveImg: any = require('../assets/inclusive.png')
-const ToolsImg: any = require('../assets/tools.png')
-const ActiveImg: any = require('../assets/active.png')
-const AwardeesImg: any = require('../assets/awardees.png')
-const ScreeningImg: any = require('../assets/Screening.png')
-const ClassVidThumb: any = require('../assets/classvidthumb.png')
-const Theme1: any = require('../assets/sarah.png')
-const Theme2: any = require('../assets/missy.png')
-const Theme3: any = require('../assets/sheila.png')
-const Theme4: any = require('../assets/ling.png')
+const StudiosIcon: any = require('../assets/studios.svg')
+const CharrettesIcon: any = require('../assets/charrettes.svg')
+const DesignSprintIcon: any = require('../assets/design-sprint.svg')
+const Moon: any = require('../assets/moon.svg')
+const Trophy: any = require('../assets/trophy.svg')
 
 const HomePage = () => (
   <main>
@@ -68,144 +47,72 @@ const HomePage = () => (
           Organized around{' '}
           <ExternalLink href="https://www.learngala.com/">
             real-world case studies
-          </ExternalLink>, Galaxy is a lively interactive convergence of
-          professionals, educators, innovators, concerned citizens, and
-          scientists. The gathering is ideal for constructive exchange,
-          collaboration, and networking across sectors and individuals that are
-          typically separate. It is a space to share best practices in
-          communication, learning, and teaching; to present sustainability work
-          in progress; and to explore opportunities to unite teaching, research,
-          and practice.
+          </ExternalLink>, Galaxy will convene environmentally-minded people
+          from all backgrounds. Together, we will integrate sustainability
+          science and knowledge from different fields, make sustainability
+          solutions and decision-making more inclusive, and connect research,
+          teaching, and practice for visible impact in communities.
         </p>
+
+      {/*<CenteredCallToActionButton />*/}
       </TaglineInnerSection>
     </TaglineSection>
 
     {/* ---~~~===~~~--- */}
 
     <StreamSection>
-      <StreamInnerSection>
-        <Stream>
-          <StreamImg src={ActiveImg} />
-          <StreamTitle>Active Exchange</StreamTitle>
-          <p>
-            Our format involves dynamic peer learning. Our sessions are not
-            organized as panels; we move around and find ways around common
-            obstacles in our work for sustainable systems.
-          </p>
-        </Stream>
+      <Stream>
+        <StreamIcon animation="coalesce">
+          <CharrettesIcon />
+        </StreamIcon>
+        <StreamTitle>Illuminate the Issue</StreamTitle>
+        <p>
+          Acquire powerful tools to deepen understanding, reveal nuance,
+          illustrate relevance, and promote substantive exchange on specific
+          issues.
+        </p>
+      </Stream>
 
-        <Stream>
-          {/* <StreamIcon animation="transit">
+      <Stream>
+        <StreamIcon animation="transit">
           <StudiosIcon />
-        </StreamIcon> */}
+        </StreamIcon>
+        <StreamTitle>Expand the Toolbox</StreamTitle>
+        <p>
+          Discover the full functionality of the open access{' '}
+          <ExternalLink href="https://www.learngala.com/">
+            Gala platform
+          </ExternalLink>{' '}
+          for collaborative learning, integrated multimedia, and outcome
+          assessment.
+        </p>
+      </Stream>
 
-          <StreamImg src={InclusiveImg} />
-          <StreamTitle>Inclusive Community</StreamTitle>
-          <p>
-            Galaxy draws environmentally-minded people from all backgrounds. By
-            building sessions around living issues, we create spaces for people
-            with unique perspectives to connect.
-          </p>
-        </Stream>
-
-        <Stream>
-          {/* <StreamIcon animation="irradiate">
+      <Stream>
+        <StreamIcon animation="irradiate">
           <DesignSprintIcon />
-        </StreamIcon> */}
-          <StreamImg src={ToolsImg} />
-          <StreamTitle>Powerful Tools</StreamTitle>
-          <p>
-            Discover the full functionality of the open access{' '}
-            <ExternalLink href="https://www.learngala.com/">
-              Gala platform
-            </ExternalLink>{' '}
-            for collaborative learning. Practice techniques for nimble
-            multimedia production and exchange with participants.
-          </p>
-        </Stream>
-      </StreamInnerSection>
+        </StreamIcon>
+        <StreamTitle>Amplify the Impact</StreamTitle>
+        <p>
+          Engage with stakeholder networks, advance policy agendas, build
+          learning communities, and communicate complex science to diverse
+          audiences.
+        </p>
+      </Stream>
     </StreamSection>
 
-    <ClassSection>
-      <ClassInnerSection>
-        <ClassInfoSection>
-          <ClassInfo>
-            <h2>Master Classes</h2>
-            <p>
-              Master classes convene participants around a theme or concept with
-              a critical role in advancing sustainability to share best
-              practices, network, and collaborate. Sessions are led by
-              sustainability teachers, researchers, and professionals who are
-              often case authors. They are complemented by presentations from
-              Galaxy participants and conclude with group discussion and/or
-              problem solving.
-            </p>
-          </ClassInfo>
-          <ClassVidBox>
-            <ClassVid src={ClassVideo} controls poster={ClassVidThumb} />
-          </ClassVidBox>
-        </ClassInfoSection>
-        {/* <ClassThemesSection>
-          <ClassTheme>
-            <ClassThemeImage src={Theme1} />
-            <h3>
-              Cross-sector collaboration for intervention in complex urban
-              systems
-            </h3>
-            <p>
-              {' '}
-              with{' '}
-              <ExternalLink href="https://www.fs.fed.us/research/people/profile.php?alias=shines">
-                Sarah Hines
-              </ExternalLink>
-            </p>
-            <p />
-          </ClassTheme>
-          <ClassTheme>
-            <ClassThemeImage src={Theme2} />
-            <h3>Building networks to scale climate adaptation strategies</h3>
-            <p>
-              with{' '}
-              <ExternalLink href="https://www.linkedin.com/in/melissa-stults-959a348">
-                {' '}
-                Melissa 'Missy' Stults
-              </ExternalLink>
-            </p>
-          </ClassTheme>
-          <ClassTheme>
-            <ClassThemeImage src={Theme3} />
-            <h3>
-              Linking classrooms with professionals and researchers for
-              landscape management
-            </h3>
-            <p>
-              with{' '}
-              <ExternalLink href="https://seas.umich.edu/research/faculty/sheila_schueller">
-                Sheila Schueller
-              </ExternalLink>
-            </p>
-          </ClassTheme>
-          <ClassTheme>
-            <ClassThemeImage src={Theme4} />
-            <h3>
-              Creating international communities of practice for better
-              environmental management
-            </h3>
-            <p>with Mu Ling</p>
-          </ClassTheme>
-        </ClassThemesSection> */}
-      </ClassInnerSection>
-    </ClassSection>
+    {/*<MaxWidthContainer style={{ display: 'flex' }}>
+      <CenteredCallToActionButton text="Learn More" to="/studio" />
+    </MaxWidthContainer>*/}
 
     {/* ---~~~===~~~--- */}
 
-    <PremierSection>
+    {/*<PremierSection>
       <PremierInnerSection>
         <Premier>
-          {/* <PremierIcon thin>
+          <PremierIcon thin>
             <Moon />
-          </PremierIcon> */}
-          <PremierImg src={ScreeningImg} />
+          </PremierIcon>
           <PremierInfo>
             <h2>
               <Link to="/premiere">Film Screening</Link>
@@ -222,32 +129,39 @@ const HomePage = () => (
               and the{' '}
               <ExternalLink href="http://www.michtheater.org/about">
                 Michigan Theater Foundation
-              </ExternalLink>
-              , Galaxy brings you a screening of a documentary film on a
-              critical sustainability issue, followed by a panel discussion with
-              filmakers, experts, and community members.
+              </ExternalLink>{' '}
+              (with their festival{' '}
+              <ExternalLink href="http://www.cinetopiafestival.org/">
+                Cinetopia
+              </ExternalLink>), Galaxy brings you a rough cut screening of a
+              documentary film about water issues.
             </p>
           </PremierInfo>
         </Premier>
 
         <Premier>
+          <PremierIcon thin>
+            <Trophy />
+          </PremierIcon>
           <PremierInfo>
-            <h2>Gala Case Awards Ceremony</h2>
+            <h2>The Gala Awards Ceremony & Dinner</h2>
             <p>
-              Our annual case awards ceremony recognizes exemplary
-              sustainability case studies, published over the past year on the
-              Gala platform, that stand out for their contribution to the areas
-              of Inclusion, Innovation, and Impact.
+              Galaxy culminates with a complimentary dinner on the roof of the
+              gorgeously restored art deco Rackham Auditorium. Overlooking the
+              live music and dancing of the{' '}
+              <ExternalLink href="https://www.a2sf.org/">
+                Ann Arbor Summer Festival
+              </ExternalLink>, we will present “best-of” awards for innovative
+              cases currently in use on our platform.
             </p>
           </PremierInfo>
-          <PremierImg src={AwardeesImg} />
         </Premier>
       </PremierInnerSection>
-    </PremierSection>
+    </PremierSection>*/}
 
     {/* ---~~~===~~~--- */}
 
-    {/* <AudienceSection>
+    <AudienceSection>
       <h2>Join us!</h2>
       <AudienceColumns>
         <AudienceColumn>
@@ -281,7 +195,7 @@ const HomePage = () => (
           </p>
         </AudienceColumn>
       </AudienceColumns>
-    </AudienceSection> */}
+    </AudienceSection>
   </main>
 )
 
