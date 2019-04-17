@@ -7,17 +7,6 @@ import styled, { css } from 'styled-components'
 
 import MaxWidthContainer from '../components/shared/MaxWidthContainer'
 
-const Premier = styled.div`
-  display: flex;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-
-  &:nth-child(2n) {
-    justify-content: flex-end;
-  }
-`
-export default Premier
-
 export const PremierSection = styled.section`
   padding: 1rem 0;
   background-color: #f9a825;
@@ -28,80 +17,29 @@ export const PremierInnerSection = MaxWidthContainer.extend`
   padding-bottom: 0;
 `
 
-export const PremierIcon = styled.figure`
-  margin: 0 0 0 2rem;
+export const Premier = styled.div`
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &:nth-child(2n) {
+    justify-content: flex-end;
+  }
+`
+
+export const PremierImg = styled.img`
+  display: block;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+  width: 180px;
+  height: 152px;
 
   @media (max-width: 430px) {
-    margin: 0 -2rem 0 1rem;
+    width: 70px;
   }
-
-  & > svg {
-    width: 120px;
-    height: 120px;
-    opacity: 0.85;
-
-    @media (max-width: 430px) {
-      width: 70px;
-      height: 70px;
-    }
-
-    & path,
-    & polygon,
-    & polyline {
-      stroke: #02294b;
-      stroke-width: 0.5px;
-
-      @media (max-width: 430px) {
-        stroke-width: 0.75px;
-      }
-    }
-  }
-
-
-  ${p =>
-    p.thin &&
-    css`
-      margin: 0 -1rem 0 3rem;
-
-      @media (max-width: 430px) {
-        margin: 0 -3rem 0 0.5rem;
-      }
-    `}
-
-  ${
-    ''
-    /* prettier-ignore */
-  }${Premier}:nth-child(2n) & {
-    margin: 0 2rem 0 0;
-    order: 2;
-
-    @media (max-width: 430px) {
-      margin: 0 1rem 0 -1rem;
-    }
-
-
-    ${p =>
-      p.thin &&
-      css`
-        margin: 0 4rem 0 -2rem;
-
-        @media (max-width: 430px) {
-          margin: 0 0.5rem 0 -3rem;
-        }
-      `}
-  }
-
 `
 
 export const PremierInfo = styled.div`
   margin-left: 4rem;
-  max-width: 590px;
-
-  & h2 {
-    margin-top: 0rem;
-
-    font-style: italic;
-  }
 
   ${
     ''
@@ -109,7 +47,11 @@ export const PremierInfo = styled.div`
   }${Premier}:nth-child(2n) & {
     margin-left: 0;
     margin-right: 4rem;
-
     text-align: right;
+  }
+
+  & h2 {
+    margin-top: 0rem;
+    font-style: italic;
   }
 `
