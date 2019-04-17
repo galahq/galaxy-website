@@ -26,7 +26,7 @@ export default class People extends React.Component<
 > {
   state = { selectedIndex: 0, rotating: true }
 
-  render() {
+  render () {
     const { people } = this.props
     const { selectedIndex } = this.state
     const selectedPerson = people[selectedIndex]
@@ -75,7 +75,7 @@ class Person extends React.Component<{
 }> {
   ref: ?HTMLButtonElement
 
-  componentDidUpdate() {
+  componentDidUpdate () {
     if (!this.props.active) return
 
     if (this.ref == null) return
@@ -92,7 +92,7 @@ class Person extends React.Component<{
     }
   }
 
-  render() {
+  render () {
     const { active, onClick, person } = this.props
     return (
       <PersonButton
