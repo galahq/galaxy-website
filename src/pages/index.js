@@ -48,7 +48,7 @@ const InclusiveImg: any = require('../assets/inclusive.png')
 const ToolsImg: any = require('../assets/tools.png')
 const ActiveImg: any = require('../assets/active.png')
 const AwardeesImg: any = require('../assets/awardees.png')
-const ScreeningImg: any = require('../assets/Screening.png')
+const ScreeningImg: any = require('../assets/screening.png')
 const ClassVidThumb: any = require('../assets/classvidthumb.png')
 
 const HomePage = () => (
