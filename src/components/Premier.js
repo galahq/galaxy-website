@@ -15,6 +15,9 @@ export const PremierSection = styled.section`
 
 export const PremierInnerSection = MaxWidthContainer.extend`
   padding-bottom: 0;
+  @media (max-width: 843px) {
+    max-width: 45em;
+  }
 `
 
 export const Premier = styled.div`
@@ -39,14 +42,14 @@ export const PremierImg = styled.img`
 `
 
 export const PremierInfo = styled.div`
-  margin-left: 4rem;
+  margin-left: 2.5rem;
 
   ${
     ''
     /* prettier-ignore */
   }${Premier}:nth-child(2n) & {
     margin-left: 0;
-    margin-right: 4rem;
+    margin-right: 2.5rem;
     text-align: right;
   }
 

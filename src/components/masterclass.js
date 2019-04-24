@@ -13,6 +13,14 @@ export const ClassInnerSection = MaxWidthContainer.extend`
   margin-top: 2rem;
   margin-bottom: 2rem;
 
+  & h2 {
+    font-style: italic;
+  }
+
+  @media (max-width: 843px) {
+    max-width: 45em;
+  }
+
   @media (max-width: 843px) {
     flex-direction: column;
     align-items: center;
@@ -20,21 +28,28 @@ export const ClassInnerSection = MaxWidthContainer.extend`
 `
 export const ClassInfoSection = styled.div`
   display: flex;
+  @media (max-width: 843px) {
+    display: block;
+  }
 
+  align-items: center;
+  margin-bottom: 2rem;
 `
 
 export const ClassInfo = styled.div`
-  max-width: 500px;
+  margin-right: 2.5em;
+
+  @media (max-width: 843px) {
+    margin-right: inherit;
+  }
 
   & h2 {
     margin-top: 0rem;
-
     font-style: italic;
   }
 `
 
 export const ClassVidBox = styled.div`
-  padding-top: 3.2rem;
   height: 100%;
   width: 100%;
 `
