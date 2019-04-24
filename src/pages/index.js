@@ -10,7 +10,6 @@ import Link from 'gatsby-link'
 import Tagline, {
   TaglineSection,
   TaglineInnerSection,
-  CallToAction,
 } from '../components/Tagline'
 import {
   Stream,
@@ -35,7 +34,6 @@ import {
   ClassVid,
   ClassVidBox,
   ClassTheme,
-  ClassThemeImage,
 } from '../components/masterclass'
 import { ExternalLink } from '../components/shared/Link'
 
@@ -44,8 +42,6 @@ import {
   AudienceColumns,
   AudienceColumn,
 } from '../components/Audience'
-import { CenteredCallToActionButton } from '../components/CallToActionButton'
-import MaxWidthContainer from '../components/shared/MaxWidthContainer'
 
 const ClassVideo: any = require('../assets/galaxy2.mp4')
 const InclusiveImg: any = require('../assets/inclusive.png')
@@ -54,10 +50,6 @@ const ActiveImg: any = require('../assets/active.png')
 const AwardeesImg: any = require('../assets/awardees.png')
 const ScreeningImg: any = require('../assets/Screening.png')
 const ClassVidThumb: any = require('../assets/classvidthumb.png')
-const Theme1: any = require('../assets/sarah.png')
-const Theme2: any = require('../assets/missy.png')
-const Theme3: any = require('../assets/sheila.png')
-const Theme4: any = require('../assets/ling.png')
 
 const HomePage = () => (
   <main>
@@ -128,13 +120,13 @@ const HomePage = () => (
 
     <ClassSection>
       <ClassInnerSection>
+        <h2>Sustainability Clinic</h2>
         <ClassInfoSection>
           <ClassInfo>
-            <h2>Master Classes</h2>
             <p>
-              Master classes convene participants around a theme or concept with
-              a critical role in advancing sustainability to share best
-              practices, network, and collaborate. Sessions are led by
+              The Sustainability Clinic convenes participants around a theme or
+              concept with a critical role in advancing sustainability to share
+              best practices, network, and collaborate. Sessions are led by
               sustainability teachers, researchers, and professionals who are
               often case authors. They are complemented by presentations from
               Galaxy participants and conclude with group discussion and/or
@@ -147,7 +139,6 @@ const HomePage = () => (
         </ClassInfoSection>
         {/* <ClassThemesSection>
           <ClassTheme>
-            <ClassThemeImage src={Theme1} />
             <h3>
               Cross-sector collaboration for intervention in complex urban
               systems
@@ -162,7 +153,6 @@ const HomePage = () => (
             <p />
           </ClassTheme>
           <ClassTheme>
-            <ClassThemeImage src={Theme2} />
             <h3>Building networks to scale climate adaptation strategies</h3>
             <p>
               with{' '}
@@ -173,7 +163,6 @@ const HomePage = () => (
             </p>
           </ClassTheme>
           <ClassTheme>
-            <ClassThemeImage src={Theme3} />
             <h3>
               Linking classrooms with professionals and researchers for
               landscape management
@@ -185,14 +174,6 @@ const HomePage = () => (
               </ExternalLink>
             </p>
           </ClassTheme>
-          <ClassTheme>
-            <ClassThemeImage src={Theme4} />
-            <h3>
-              Creating international communities of practice for better
-              environmental management
-            </h3>
-            <p>with Mu Ling</p>
-          </ClassTheme>
         </ClassThemesSection> */}
       </ClassInnerSection>
     </ClassSection>
@@ -202,30 +183,21 @@ const HomePage = () => (
     <PremierSection>
       <PremierInnerSection>
         <Premier>
-          {/* <PremierIcon thin>
-            <Moon />
-          </PremierIcon> */}
           <PremierImg src={ScreeningImg} />
           <PremierInfo>
-            <h2>
-              <Link to="/premiere">Film Screening</Link>
-            </h2>
+            <h2>Film Screening</h2>
             <p>
               Presented in concert with{' '}
               <ExternalLink href="http://www.teachmsc.org">
-                Michigan Sustainability Cases
+                Michigan Sustainability Cases{' '}
               </ExternalLink>
-              , the{' '}
-              <ExternalLink href="https://www.a2gov.org/departments/systems-planning/planning-areas/climate-sustainability/Pages/GreenFair.aspx">
-                Ann Arbor Mayor’s Green Fair
-              </ExternalLink>{' '}
               and the{' '}
               <ExternalLink href="http://www.michtheater.org/about">
                 Michigan Theater Foundation
               </ExternalLink>
               , Galaxy brings you a screening of a documentary film on a
               critical sustainability issue, followed by a panel discussion with
-              filmakers, experts, and community members.
+              filmmakers, experts, and community members.
             </p>
           </PremierInfo>
         </Premier>
@@ -247,7 +219,7 @@ const HomePage = () => (
 
     {/* ---~~~===~~~--- */}
 
-    {/* <AudienceSection>
+    <AudienceSection>
       <h2>Join us!</h2>
       <AudienceColumns>
         <AudienceColumn>
@@ -281,7 +253,7 @@ const HomePage = () => (
           </p>
         </AudienceColumn>
       </AudienceColumns>
-    </AudienceSection> */}
+    </AudienceSection>
   </main>
 )
 

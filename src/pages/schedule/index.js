@@ -51,11 +51,7 @@ const schedule = [
       },
       { duration: 0.25 },
       {
-        name: 'Master Classes',
-        sessions: [
-          'Cross-Sector Collaboration for Intervention in Complex Urban Systems',
-          'International Communities of Practice for Environmental Management',
-        ],
+        name: 'Sustainability Clinic',
         location: 'Rackham Building',
         times: '9:45–12:15 PM',
         duration: 2.25,
@@ -70,11 +66,7 @@ const schedule = [
       },
       { duration: 0.25 },
       {
-        name: 'Master Classes',
-        sessions: [
-          'Building Networks to Scale Climate Adaptation Strategies',
-          'Linking Classrooms with Professionals for Landscape Management',
-        ],
+        name: 'Sustainability Clinic',
         location: 'Rackham Building',
         times: '2:15–4:45 PM',
         duration: 2.25,
