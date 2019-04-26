@@ -11,8 +11,7 @@ export const ClassSection = styled.section``
 
 export const ClassInnerSection = MaxWidthContainer.extend`
   margin-top: 2rem;
-  margin-bottom: 2rem;
-
+ 
   & h2 {
     font-style: italic;
   }
@@ -33,7 +32,7 @@ export const ClassInfoSection = styled.div`
   }
 
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 `
 
 export const ClassInfo = styled.div`
