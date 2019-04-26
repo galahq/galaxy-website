@@ -203,6 +203,7 @@ const HomePage = () => (
         </Premier>
 
         <Premier>
+          <PremierImg src={AwardeesImg} />
           <PremierInfo>
             <h2>Gala Case Awards Ceremony</h2>
             <p>
@@ -212,7 +213,6 @@ const HomePage = () => (
               of Inclusion, Innovation, and Impact.
             </p>
           </PremierInfo>
-          <PremierImg src={AwardeesImg} />
         </Premier>
       </PremierInnerSection>
     </PremierSection>
