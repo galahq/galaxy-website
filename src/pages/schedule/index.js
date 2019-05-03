@@ -51,9 +51,8 @@ const schedule = [
       },
       { duration: 0.25 },
       {
-        name: 'Sustainability Clinic',
-        location: 'Rackham Building',
-        times: '9:45–12:15 PM',
+        name:
+          'Master Class: Cross-sector collaboration for intervention in complex urban systems',
         duration: 2.25,
         color: 'purple',
       },
@@ -66,7 +65,10 @@ const schedule = [
       },
       { duration: 0.25 },
       {
-        name: 'Sustainability Clinic',
+        name:
+          'Working Group: Linking classrooms with professionals and researchers for landscape management',
+        location: 'Rackham Building',
+        times: '9:45–12:15 PM',
         location: 'Rackham Building',
         times: '2:15–4:45 PM',
         duration: 2.25,
@@ -74,7 +76,7 @@ const schedule = [
       },
       { duration: 0.25 },
       {
-        name: 'Wrap-up of Learning',
+        name: 'Wrap-up',
         times: '5:00–5:30 PM',
         duration: 1,
         color: 'purple',
@@ -93,20 +95,14 @@ const schedule = [
         color: 'purple',
       },
       {
-        name: 'Lightning Talks / Media Showcase',
+        name: 'Case Exchange',
         location: 'Rackham Building',
-        times: '9:00–10:45 AM',
-        duration: 2,
+        times: '9:00–11:45 AM',
+        duration: 3,
         color: 'purple',
       },
       { duration: 0.25 },
-      {
-        name: 'Pocket Production',
-        location: 'Rackham Building',
-        times: '11:00–12:00 PM',
-        duration: 1,
-        color: 'purple',
-      },
+
       {
         name: 'Lunch',
         times: '12:00 PM',
