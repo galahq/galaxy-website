@@ -80,6 +80,7 @@ export const CallToAction = styled.div`
     }
 
     &:last-of-type {
+      margin-top: 1rem;
       margin-bottom: 1.25rem;
     }
   }

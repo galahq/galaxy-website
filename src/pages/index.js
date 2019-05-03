@@ -30,13 +30,14 @@ import {
   ClassInnerSection,
   ClassInfoSection,
   ClassThemesSection,
+  ClassImage,
   ClassInfo,
   ClassVid,
   ClassVidBox,
   ClassTheme,
 } from '../components/masterclass'
 import { ExternalLink } from '../components/shared/Link'
-
+import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import {
   AudienceSection,
   AudienceColumns,
@@ -62,12 +63,8 @@ const HomePage = () => (
             real-world case studies
           </ExternalLink>, Galaxy is a lively interactive convergence of
           professionals, educators, innovators, concerned citizens, and
-          scientists. The gathering is ideal for constructive exchange,
-          collaboration, and networking across sectors and individuals that are
-          typically separate. It is a space to share best practices in
-          communication, learning, and teaching; to present sustainability work
-          in progress; and to explore opportunities to unite teaching, research,
-          and practice.
+          scientists. The gathering is ideal for collaboration, and networking
+          across sectors and individuals that are typically separate.
         </p>
       </TaglineInnerSection>
     </TaglineSection>
@@ -76,16 +73,6 @@ const HomePage = () => (
 
     <StreamSection>
       <StreamInnerSection>
-        <Stream>
-          <StreamImg src={ActiveImg} />
-          <StreamTitle>Active Exchange</StreamTitle>
-          <p>
-            Our format involves dynamic peer learning. Our sessions are not
-            organized as panels; we move around and find ways around common
-            obstacles in our work for sustainable systems.
-          </p>
-        </Stream>
-
         <Stream>
           {/* <StreamIcon animation="transit">
           <StudiosIcon />
@@ -99,7 +86,15 @@ const HomePage = () => (
             with unique perspectives to connect.
           </p>
         </Stream>
-
+        <Stream>
+          <StreamImg src={ActiveImg} />
+          <StreamTitle>Active Exchange</StreamTitle>
+          <p>
+            Our format involves dynamic peer learning. Our sessions are not
+            organized as panels; we move around and find ways around common
+            obstacles in our work for sustainable systems.
+          </p>
+        </Stream>
         <Stream>
           {/* <StreamIcon animation="irradiate">
           <DesignSprintIcon />
@@ -120,23 +115,62 @@ const HomePage = () => (
 
     <ClassSection>
       <ClassInnerSection>
-        <h2>Sustainability Clinic</h2>
         <ClassInfoSection>
-          <ClassInfo>
-            <p>
-              The Sustainability Clinic convenes participants around a theme or
-              concept with a critical role in advancing sustainability to share
-              best practices, network, and collaborate. Sessions are led by
-              sustainability teachers, researchers, and professionals who are
-              often case authors. They are complemented by presentations from
-              Galaxy participants and conclude with group discussion and/or
-              problem solving.
-            </p>
-          </ClassInfo>
-          <ClassVidBox>
-            <ClassVid src={ClassVideo} controls poster={ClassVidThumb} />
-          </ClassVidBox>
+          <h2>Sessions</h2>
         </ClassInfoSection>
+        <ClassThemesSection>
+          <ClassTheme>
+            <h3>
+              Master Class: Cross-sector collaboration for intervention in
+              complex urban systems
+            </h3>
+            <p>
+              Master Classes are an opportunity for engaged learning informed by
+              teachers, researchers, and professionals, working in a promising
+              area of interest.
+            </p>
+            <p>
+              with{' '}
+              <ExternalLink href="https://www.fs.fed.us/research/people/profile.php?alias=shines">
+                Sarah Hines
+              </ExternalLink>
+            </p>
+          </ClassTheme>
+          <ClassTheme>
+            <h3>Case Exchange</h3>
+            <p>
+              Join our growing sustainability case community! Featuring short
+              presentations and activities, the case exchange is a space to
+              share promising practices in learning, teaching, and communicating
+              with case studies; to present work in progress; and to explore
+              opportunities to unite teaching, research, and practice.
+            </p>
+            <p>
+              <ExternalLink href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019">
+                Submit an abstract
+              </ExternalLink>
+            </p>
+          </ClassTheme>
+          <ClassTheme>
+            <h3>
+              Working Group: Linking classrooms with professionals and
+              researchers for landscape management
+            </h3>
+            <p>
+              Working sessions convene participants around current challenges in
+              advancing sustainability education to share best practices,
+              network, and collaborate. The session is open to all interested
+              stakeholders and focuses on group discussion and emphasize problem
+              solving.
+            </p>
+            <p>
+              with{' '}
+              <ExternalLink href="https://seas.umich.edu/research/faculty/sheila_schueller">
+                Sheila Schueller
+              </ExternalLink>
+            </p>
+          </ClassTheme>
+        </ClassThemesSection>
         {/* <ClassThemesSection>
           <ClassTheme>
             <h3>
@@ -147,21 +181,16 @@ const HomePage = () => (
               {' '}
               with{' '}
               <ExternalLink href="https://www.fs.fed.us/research/people/profile.php?alias=shines">
-                Sarah Hines
-              </ExternalLink>
+                Sarah Hines */}
+        {/* <ExternalLink href="https://www.linkedin.com/in/melissa-stults-959a348">
+                  {' '}
+                  Melissa 'Missy' Stults
+                </ExternalLink> */}
+        {/* </ExternalLink>
             </p>
             <p />
           </ClassTheme>
-          <ClassTheme>
-            <h3>Building networks to scale climate adaptation strategies</h3>
-            <p>
-              with{' '}
-              <ExternalLink href="https://www.linkedin.com/in/melissa-stults-959a348">
-                {' '}
-                Melissa 'Missy' Stults
-              </ExternalLink>
-            </p>
-          </ClassTheme>
+
           <ClassTheme>
             <h3>
               Linking classrooms with professionals and researchers for
@@ -185,7 +214,7 @@ const HomePage = () => (
         <Premier>
           <PremierImg src={ScreeningImg} />
           <PremierInfo>
-            <h2>Film Screening</h2>
+            <h2>Film Screening: The Last Animals</h2>
             <p>
               Presented in concert with{' '}
               <ExternalLink href="http://www.teachmsc.org">
@@ -195,9 +224,12 @@ const HomePage = () => (
               <ExternalLink href="http://www.michtheater.org/about">
                 Michigan Theater Foundation
               </ExternalLink>
-              , Galaxy brings you a screening of a documentary film on a
-              critical sustainability issue, followed by a panel discussion with
-              filmmakers, experts, and community members.
+              . At this year's film screening, Galaxy brings you Kate Brooks'
+              film, The Last Animals, which explores "the conservationists,
+              scientists and activists battling poachers and criminal networks
+              to protect elephants and rhinos." The screening will be followed
+              by a panel discussion with researchers, conservationists, and
+              community members.
             </p>
           </PremierInfo>
         </Premier>
@@ -219,7 +251,7 @@ const HomePage = () => (
 
     {/* ---~~~===~~~--- */}
 
-    <AudienceSection>
+    {/* <AudienceSection>
       <h2>Join us!</h2>
       <AudienceColumns>
         <AudienceColumn>
@@ -253,7 +285,7 @@ const HomePage = () => (
           </p>
         </AudienceColumn>
       </AudienceColumns>
-    </AudienceSection>
+    </AudienceSection> */}
   </main>
 )
 

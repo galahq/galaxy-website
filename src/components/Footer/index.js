@@ -19,6 +19,7 @@ const Footer = () => (
   <footer>
     <LightContainer>
       <InnerContainer>
+        <h2>Join us!</h2>
         <Stars />
         <Info>
           <span>Ann Arbor, MI</span>
