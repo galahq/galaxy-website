@@ -34,9 +34,9 @@ export default function MasterClassPage () {
               will present their experience designing &amp; implementing a
               system that employs formerly incarcerated citizens to deconstruct
               blighted homes and supply this urban wood as lumber for the
-              high-end furniture market. Master Classes are an opportunity for
-              engaged learning informed by teachers, researchers, and
-              professionals, working in a promising area of interest.
+              high-end furniture market. This Master Classes will teach
+              participants to map sustainability systems and identify
+              intervention and leverage points.
             </p>
             <Image src={coverImage} />
           </Row>

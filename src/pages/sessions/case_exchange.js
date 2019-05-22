@@ -44,7 +44,7 @@ export default function MasterClassPage () {
           <p>
             Dr. Selcer works &amp; teaches at the intersections of environmental
             history, history of science, and international relations, utilizing
-            cased-based learning extensively in his courses. His first major
+            case-based learning extensively in his courses. His first major
             research project culminated in{' '}
             <a href="https://cup.columbia.edu/book/the-postwar-origins-of-the-global-environment/9780231166485">
               The Postwar Origins of the Global Environment: How the United
@@ -56,13 +56,13 @@ export default function MasterClassPage () {
           <Image src={perrinImage} />
         </Row>
 
-        <h3>Nancy Love, UM Civil & Environmental Engineering</h3>
+        <h3>Nancy Love, UM Civil &amp; Environmental Engineering</h3>
         <Row>
           <p>
-            Nancy Love, UM Civil & Environmental Engineering Dr. Love works at
-            the interface of water, infrastructure, and both public and
+            Nancy Love, UM Civil &amp; Environmental Engineering Dr. Love works
+            at the interface of water, infrastructure, and both public and
             environmental health in domestic and global settings. In
-            collaboration with students & practitioners, she is currently
+            collaboration with students &amp; practitioners, she is currently
             authoring two Michigan Sustainability Cases,{' '}
             <em>
               Fecal sludge: What is the best fecal waste management system for

@@ -90,7 +90,9 @@ export default function WorkingGroupPage () {
           <Image src={johnImage} />
         </Row>
 
-        <h3>Ling Mu, Tsinghua University School of Public Policy</h3>
+        <h3>
+          Ling Mu, Tsinghua University School of Public Policy &amp; Management
+        </h3>
         <Row>
           <p>
             Ling is an Assistant Professor at the School of Public Policy at
@@ -103,14 +105,14 @@ export default function WorkingGroupPage () {
         </Row>
 
         <h3>
-          David Krueger, Baldwin Wallace University Sustainability ClinicTM
+          David Krueger, Baldwin Wallace University Sustainability Clinic™️
         </h3>
         <Row>
           <p>
             As the Charles E. Spahr Chair in Managerial and Corporate Ethics,
             Dr. Krueger directs the Institute for Sustainable Business
             Practices, co-directs BW’s new sustainability major, and leads the
-            BW’s Sustainability ClinicTM.  Prior to Dr. Krueger’s work at BW, he
+            BW’s Sustainability Clinic™️.  Prior to Dr. Krueger’s work at BW, he
             was executive director of the Center for Ethics and Corporate Policy
             in Chicago.
           </p>

@@ -210,6 +210,21 @@ const HomePage = () => (
     <PremierSection>
       <PremierInnerSection>
         <Premier>
+          <PremierImg src={AwardeesImg} />
+          <PremierInfo>
+            <h2>Gala Case Awards Ceremony</h2>
+            <p>
+              Galaxy 2019 will culminate in our annual case awards ceremony
+              recognizing exemplary sustainability case studies, published over
+              the past year on the Gala platform, that stand out for their
+              contribution to the areas of Innovation, Inclusion, and Impact.
+              Join us as last year’s winners present the award in their category
+              – especially if you’ve used Gala to publish a case this year!
+            </p>
+          </PremierInfo>
+        </Premier>
+
+        <Premier>
           <PremierImg src={ScreeningImg} />
           <PremierInfo>
             <h2>Film Screening: The Last Animals</h2>
@@ -222,25 +237,12 @@ const HomePage = () => (
               <ExternalLink href="http://www.michtheater.org/about">
                 Michigan Theater Foundation
               </ExternalLink>
-              . At this year's film screening, Galaxy brings you Kate Brooks'
-              film, The Last Animals, which explores "the conservationists,
+              . At this year’s film screening, Galaxy brings you Kate Brooks’
+              film, The Last Animals, which explores “the conservationists,
               scientists and activists battling poachers and criminal networks
-              to protect elephants and rhinos." The screening will be followed
+              to protect elephants and rhinos.” The screening will be followed
               by a panel discussion with researchers, conservationists, and
               community members.
-            </p>
-          </PremierInfo>
-        </Premier>
-
-        <Premier>
-          <PremierImg src={AwardeesImg} />
-          <PremierInfo>
-            <h2>Gala Case Awards Ceremony</h2>
-            <p>
-              Our annual case awards ceremony recognizes exemplary
-              sustainability case studies, published over the past year on the
-              Gala platform, that stand out for their contribution to the areas
-              of Inclusion, Innovation, and Impact.
             </p>
           </PremierInfo>
         </Premier>
