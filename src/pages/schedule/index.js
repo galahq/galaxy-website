@@ -9,13 +9,13 @@ import styled, { css } from 'styled-components'
 
 import TitleSection from '../../components/shared/TitleSection'
 import MaxWidthContainer, {
-  RunningTextContainer,
+  RunningTextContainer
 } from '../../components/shared/MaxWidthContainer'
 
 const colors = {
   purple: '#7F5FDC',
   gold: '#F9A825CC',
-  green: '#539b71',
+  green: '#539b71'
 }
 const greenStripes = css`
   background-image: linear-gradient(
@@ -36,52 +36,56 @@ const schedule = [
     date: 'Thursday, June 20',
     events: [
       {
-        name: 'Check-in & Poster Set-up',
+        name: 'Check-in & Coffee',
         location: 'Rackham Building',
         times: '8:00–9:00 AM',
         duration: 1,
-        color: 'purple',
+        color: 'purple'
       },
+
       {
         name: 'Welcome, Gala Intro & Updates',
-        location: 'Rackham Building',
-        times: '9:00–9:30 AM',
+        times: '9:00–9:45 AM',
         duration: 1,
-        color: 'purple',
+        color: 'purple'
       },
       { duration: 0.25 },
       {
         name:
-          'Master Class: Cross-sector collaboration for intervention in complex urban systems',
-        duration: 2.25,
-        color: 'purple',
+          'Master Class: Cross-Sector Collaboration for Intervention in Complex Urban Systems',
+        to: '/sessions/master_class',
+        times: '10:00 AM–12:30 PM',
+        duration: 2.5,
+        color: 'purple'
       },
-      { duration: 0.25 },
       {
         name: 'Lunch, Networking, and Poster Session',
-        times: '12:30–2:00 PM',
-        duration: 1.25,
-        color: 'green',
+        times: '12:30–1:30 PM',
+        duration: 1,
+        color: 'green'
       },
-      { duration: 0.25 },
       {
         name:
-          'Working Group: Linking classrooms with professionals and researchers for landscape management',
-        location: 'Rackham Building',
-        times: '9:45–12:15 PM',
-        location: 'Rackham Building',
-        times: '2:15–4:45 PM',
-        duration: 2.25,
-        color: 'purple',
+          'Civic–Campus Working Group: Linking Classrooms with Professionals & Researchers',
+        to: '/sessions/working_group',
+        times: '1:30–4:30 PM',
+        duration: 3,
+        color: 'purple'
       },
       { duration: 0.25 },
       {
         name: 'Wrap-up',
-        times: '5:00–5:30 PM',
+        times: '4:30–5:00 PM',
         duration: 1,
-        color: 'purple',
+        color: 'purple'
       },
-    ],
+      {
+        name: 'Celebration with the Ann Arbor Summer Festival',
+        times: '5:00 PM',
+        duration: 1.25,
+        color: 'gold'
+      }
+    ]
   },
 
   {
@@ -92,40 +96,47 @@ const schedule = [
         location: 'Rackham Building',
         times: '8:00–9:00 AM',
         duration: 1,
-        color: 'purple',
+        color: 'purple'
       },
       {
         name: 'Case Exchange',
         location: 'Rackham Building',
-        times: '9:00–11:45 AM',
+        to: '/sessions/case_exchange',
+        times: '9:00 AM–12:00 AM',
         duration: 3,
-        color: 'purple',
+        color: 'purple'
       },
-      { duration: 0.25 },
-
       {
         name: 'Lunch',
         times: '12:00 PM',
         duration: 1,
-        color: 'green',
+        color: 'green'
       },
       { duration: 2 },
+      {
+        name: 'Red Carpet & Awards Ceremony',
+        location: 'Michigan Theater',
+        times: '2:00–3:00 PM',
+        duration: 1,
+        color: 'gold'
+      },
       {
         name: 'The Last Animals',
         subtitle: 'Film Screening & Panel Discussion',
         location: 'Michigan Theater',
-        times: '3:00–5:30 PM',
-        duration: 2.5,
-        color: 'gold',
+        times: '3:00–5:00 PM',
+        duration: 2,
+        color: 'gold'
       },
       {
-        name: 'Reception and Awards Ceremony',
-        times: '5:30–7:00 PM',
+        name: 'Reception',
+        location: 'Michigan Theater',
+        times: '5:00–6:00 PM',
         duration: 1,
-        color: 'gold',
-      },
-    ],
-  },
+        color: 'gold'
+      }
+    ]
+  }
 ]
 
 const SchedulePage = () => (
@@ -151,7 +162,7 @@ const SchedulePage = () => (
                 sessions,
                 subtitle,
                 times,
-                to,
+                to
               }) => (
                 <Event key={times} color={color} span={duration} to={to}>
                   <Minimal>
