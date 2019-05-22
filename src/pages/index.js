@@ -9,21 +9,21 @@ import Link from 'gatsby-link'
 
 import Tagline, {
   TaglineSection,
-  TaglineInnerSection,
+  TaglineInnerSection
 } from '../components/Tagline'
 import {
   Stream,
   StreamSection,
   StreamInnerSection,
   StreamTitle,
-  StreamImg,
+  StreamImg
 } from '../components/Stream'
 import {
   PremierSection,
   PremierInnerSection,
   Premier,
   PremierInfo,
-  PremierImg,
+  PremierImg
 } from '../components/Premier'
 import {
   ClassSection,
@@ -34,14 +34,14 @@ import {
   ClassInfo,
   ClassVid,
   ClassVidBox,
-  ClassTheme,
+  ClassTheme
 } from '../components/masterclass'
 import { ExternalLink } from '../components/shared/Link'
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import {
   AudienceSection,
   AudienceColumns,
-  AudienceColumn,
+  AudienceColumn
 } from '../components/Audience'
 
 const ClassVideo: any = require('../assets/galaxy2.mp4')
