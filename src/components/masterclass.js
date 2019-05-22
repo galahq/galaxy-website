@@ -3,7 +3,8 @@
  * @flow
  */
 
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 import MaxWidthContainer from '../components/shared/MaxWidthContainer'
 
@@ -58,43 +59,43 @@ export const ClassVid = styled.video`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `
 export const ClassThemesSection = styled.div`
-  max-width: 42em;
   display: block;
   margin-left: auto;
   margin-right: auto;
 `
 
-export const ClassTheme = styled.div`
+export const ClassTheme = styled(Link)`
   background-color: #4e6d8a;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.19), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
   border-radius: 2px;
+  display: grid;
   font-size: 0.9rem;
+  grid-gap: 32px;
+  grid-template-columns: auto auto min-content;
   margin-bottom: 1rem;
-  padding: .3rem 1.6rem .8rem 1.6rem;
+  padding: 32px;
+  text-decoration: none;
 
-  &:nth-child(2n) {
-    background: #657686;
+  &::after {
+    align-self: center;
+    color: #a8cdef;
+    content: '›';
+    font-size: 40px;
   }
 
-  & h3 {
-   font-size: 1.2rem;
+  h3 {
+    font-size: 1.2rem;
     margin-top: 0;
-    padding-top: 1rem;
     font-style: normal;
     text-align left;
     line-height: 1.2;
   }
 
-  & p {
-    margin-left: .5rem;
-    margin-right: .5rem;
-  }
-
-  & p:nth-of-type(2) {
-    margin-top: .8rem;
-    font-size: 0.9rem;
-    font-style: italic;
-    text-align: right;
+  img {
+    align-self: center;
+    height: 180px;
+    margin-bottom: 0;
+    width: auto;
   }
 `
 export const ClassImage = ``

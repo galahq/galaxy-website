@@ -5,7 +5,6 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Link from 'gatsby-link'
 
 import Tagline, {
   TaglineSection,
@@ -51,6 +50,10 @@ const ActiveImg: any = require('../assets/active.png')
 const AwardeesImg: any = require('../assets/awardees.png')
 const ScreeningImg: any = require('../assets/screening.png')
 const ClassVidThumb: any = require('../assets/classvidthumb.png')
+
+const masterClassImage = require('../assets/master_class/cover.png')
+const workingGroupImage = require('../assets/working_group/cover.png')
+const caseExchangeImage = require('../assets/case_exchange/cover.png')
 
 const HomePage = () => (
   <main>
@@ -119,56 +122,51 @@ const HomePage = () => (
           <h2>Sessions</h2>
         </ClassInfoSection>
         <ClassThemesSection>
-          <ClassTheme>
-            <h3>
-              Master Class: Cross-sector collaboration for intervention in
-              complex urban systems
-            </h3>
-            <p>
-              Master Classes are an opportunity for engaged learning informed by
-              teachers, researchers, and professionals, working in a promising
-              area of interest.
-            </p>
-            <p>
-              with{' '}
-              <ExternalLink href="https://www.fs.fed.us/research/people/profile.php?alias=shines">
-                Sarah Hines
-              </ExternalLink>
-            </p>
+          <ClassTheme to="/sessions/master_class">
+            <img src={masterClassImage} />
+            <div>
+              <h3>
+                Master Class: Cross-sector collaboration for intervention in
+                complex urban systems
+              </h3>
+              <p>
+                Master Classes are an opportunity for engaged learning informed
+                by teachers, researchers, and professionals, working in a
+                promising area of interest.
+              </p>
+            </div>
           </ClassTheme>
-          <ClassTheme>
-            <h3>Case Exchange</h3>
-            <p>
-              Join our growing sustainability case community! Featuring short
-              presentations and activities, the case exchange is a space to
-              share promising practices in learning, teaching, and communicating
-              with case studies; to present work in progress; and to explore
-              opportunities to unite teaching, research, and practice.
-            </p>
-            <p>
-              <ExternalLink href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019">
-                Submit an abstract
-              </ExternalLink>
-            </p>
+
+          <ClassTheme to="/sessions/case_exchange">
+            <img src={caseExchangeImage} />
+            <div>
+              <h3>Case Exchange</h3>
+              <p>
+                Join our growing sustainability case community! Featuring short
+                presentations and activities, the case exchange is a space to
+                share promising practices in learning, teaching, and
+                communicating with case studies; to present work in progress;
+                and to explore opportunities to unite teaching, research, and
+                practice.
+              </p>
+            </div>
           </ClassTheme>
-          <ClassTheme>
-            <h3>
-              Working Group: Linking classrooms with professionals and
-              researchers for landscape management
-            </h3>
-            <p>
-              Working sessions convene participants around current challenges in
-              advancing sustainability education to share best practices,
-              network, and collaborate. The session is open to all interested
-              stakeholders and focuses on group discussion and emphasize problem
-              solving.
-            </p>
-            <p>
-              with{' '}
-              <ExternalLink href="https://seas.umich.edu/research/faculty/sheila_schueller">
-                Sheila Schueller
-              </ExternalLink>
-            </p>
+
+          <ClassTheme to="/sessions/working_group">
+            <img src={workingGroupImage} />
+            <div>
+              <h3>
+                Working Group: Linking classrooms with professionals and
+                researchers for landscape management
+              </h3>
+              <p>
+                Working sessions convene participants around current challenges
+                in advancing sustainability education to share best practices,
+                network, and collaborate. The session is open to all interested
+                stakeholders and focuses on group discussion and emphasize
+                problem solving.
+              </p>
+            </div>
           </ClassTheme>
         </ClassThemesSection>
         {/* <ClassThemesSection>

@@ -26,6 +26,11 @@ export const Row = styled.div`
   grid-gap: 32px;
   grid-template-columns: auto auto;
 
+  ${Image} {
+    height: auto;
+    max-width: 200px;
+  }
+
   @media (max-width: 843px) {
     grid-gap: 0;
     grid-template-columns: auto;
@@ -34,6 +39,7 @@ export const Row = styled.div`
       grid-row: 1 / span 1;
       margin-left: auto;
       margin-right: auto;
+      max-width: 100%;
     }
   }
 `
