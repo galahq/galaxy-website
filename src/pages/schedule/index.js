@@ -59,7 +59,7 @@ const schedule = [
         color: 'purple'
       },
       {
-        name: 'Lunch, Networking, and Poster Session',
+        name: 'Networking Lunch',
         times: '12:30–1:30 PM',
         duration: 1,
         color: 'green'
