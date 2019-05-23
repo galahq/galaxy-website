@@ -24,9 +24,10 @@ const Header = ({ full }: Props) => (
         '': 'Home',
         about: 'About',
         schedule: 'Schedule',
-        logistics: 'Location',
+        logistics: 'Location'
       }}
     />
+
     {full ? (
       <InnerContainer>
         <ShadowLink to="/">
@@ -43,6 +44,7 @@ const Header = ({ full }: Props) => (
         </Link>
       </InnerContainer>
     )}
+
     {full && (
       <OpticallyCenteredCallToActionButton
         text="Register"
@@ -51,7 +53,9 @@ const Header = ({ full }: Props) => (
         rel="noopener noreferrer"
       />
     )}
-    {full && (
+
+    {/*
+    full && (
       <HeaderLink
         href="https://teachmsc.submittable.com/submit/135656/abstract-submission-for-galaxy-2019"
         target="_blank"
@@ -59,7 +63,9 @@ const Header = ({ full }: Props) => (
       >
         Submit an Abstract
       </HeaderLink>
-    )}
+    )
+    */}
+
     <PoissonDiscDistribution key={full ? 'true' : 'false'} />
   </Container>
 )
@@ -154,7 +160,7 @@ const Subtitle = styled.p`
 
 const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   big: true,
-  primary: true,
+  primary: true
 })`
   margin-top: 22px;
   z-index: 1;
