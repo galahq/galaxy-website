@@ -29,12 +29,15 @@ export default function WorkingGroupPage () {
 
           <Row>
             <p>
-              After lunch, we’ll convene an interactive roundtable allowing on
-              University of Michigan and other campus partners to
-              collaboratively benchmark their innovations in experiential
-              learning &amp; community partnerships for sustainability
-              education. Open to all interested stakeholders and focused on
-              discussion &amp; problem solving.
+              After lunch, we’ll convene an interactive roundtable allowing
+              University of Michigan and other campus partners to focus on
+              “Different modes for linking students with sustainability practice
+              – How do we meet both learning goals and practitioner needs?”
+              We’ll discuss issues of best practice in the spectrum of
+              engagement, including ongoing classroom collaborations through
+              cases, client-based capstone masters projects, and formalized
+              clinics offering student-led services. Open to all interested
+              stakeholders and focused on discussion &amp; problem solving.
             </p>
             <Image src={coverImage} />
           </Row>
