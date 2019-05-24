@@ -87,7 +87,10 @@ export const ClassTheme = styled(Link)`
     color: #a8cdef;
     content: '›';
     font-size: 40px;
-    grid-area: arrow;
+
+    @media (max-width: 843px) {
+      grid-area: arrow;
+    }
   }
 
   h3 {
