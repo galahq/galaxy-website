@@ -110,7 +110,7 @@ const schedule = [
         name: 'Case Exchange',
         location: 'Rackham Building',
         to: '/sessions/case_exchange',
-        times: '9:00 AM–12:00 AM',
+        times: '9:00 AM–12:00 PM',
         duration: 3,
         color: 'purple'
       },
