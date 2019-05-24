@@ -76,11 +76,18 @@ export const ClassTheme = styled(Link)`
   padding: 32px;
   text-decoration: none;
 
+  @media (max-width: 843px) {
+    grid-template-columns: auto min-content;
+    grid-template-areas: "image arrow" "text arrow";
+    padding: 16px;
+  }
+
   &::after {
     align-self: center;
     color: #a8cdef;
     content: '›';
     font-size: 40px;
+    grid-area: arrow;
   }
 
   h3 {
