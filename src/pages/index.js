@@ -219,8 +219,11 @@ const HomePage = () => (
               recognizing exemplary sustainability case studies, published over
               the past year on the Gala platform, that stand out for their
               contribution to the areas of Innovation, Inclusion, and Impact.
-              Join us as last year’s winners present the award in their category
-              – especially if you’ve used Gala to publish a case this year!
+            </p>
+            <p>
+              <Link to="/sessions/awards_ceremony">
+                More information about the awards and the ceremony
+              </Link>
             </p>
           </PremierInfo>
         </Premier>
@@ -239,7 +242,7 @@ const HomePage = () => (
             </p>
             <p>
               <Link to="/sessions/film_screening">
-                More information about film and the panelists
+                More information about the film and the panelists
               </Link>
             </p>
           </PremierInfo>

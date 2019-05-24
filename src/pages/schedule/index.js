@@ -129,7 +129,8 @@ const schedule = [
         location: 'Michigan Theater',
         times: '2:00–3:00 PM',
         duration: 1,
-        color: 'gold'
+        color: 'gold',
+        to: '/sessions/awards_ceremony'
       },
 
       {
