@@ -49,7 +49,9 @@ const schedule = [
         duration: 1,
         color: 'purple'
       },
+
       { duration: 0.25 },
+
       {
         name:
           'Master Class: Cross-Sector Collaboration for Intervention in Complex Urban Systems',
@@ -58,12 +60,14 @@ const schedule = [
         duration: 2.5,
         color: 'purple'
       },
+
       {
         name: 'Networking Lunch',
         times: '12:30–1:30 PM',
         duration: 1,
         color: 'green'
       },
+
       {
         name:
           'Civic–Campus Working Group: Linking Classrooms with Professionals & Researchers',
@@ -72,13 +76,16 @@ const schedule = [
         duration: 3,
         color: 'purple'
       },
+
       { duration: 0.25 },
+
       {
         name: 'Wrap-up',
         times: '4:30–5:00 PM',
         duration: 1,
         color: 'purple'
       },
+
       {
         name: 'Celebration with the Ann Arbor Summer Festival',
         times: '5:00 PM',
@@ -98,6 +105,7 @@ const schedule = [
         duration: 1,
         color: 'purple'
       },
+
       {
         name: 'Case Exchange',
         location: 'Rackham Building',
@@ -106,13 +114,16 @@ const schedule = [
         duration: 3,
         color: 'purple'
       },
+
       {
         name: 'Lunch',
         times: '12:00 PM',
         duration: 1,
         color: 'green'
       },
+
       { duration: 2 },
+
       {
         name: 'Red Carpet & Awards Ceremony',
         location: 'Michigan Theater',
@@ -120,14 +131,17 @@ const schedule = [
         duration: 1,
         color: 'gold'
       },
+
       {
         name: 'The Last Animals',
         subtitle: 'Film Screening & Panel Discussion',
         location: 'Michigan Theater',
         times: '3:00–5:00 PM',
         duration: 2,
-        color: 'gold'
+        color: 'gold',
+        to: '/sessions/film_screening'
       },
+
       {
         name: 'Reception',
         location: 'Michigan Theater',

@@ -5,6 +5,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 import Tagline, {
   TaglineSection,
@@ -229,20 +230,17 @@ const HomePage = () => (
           <PremierInfo>
             <h2>Film Screening: The Last Animals</h2>
             <p>
-              Presented in concert with{' '}
-              <ExternalLink href="http://www.teachmsc.org">
-                Michigan Sustainability Cases{' '}
-              </ExternalLink>
-              and the{' '}
-              <ExternalLink href="http://www.michtheater.org/about">
-                Michigan Theater Foundation
-              </ExternalLink>
-              . At this year’s film screening, Galaxy brings you Kate Brooks’
+              At this year’s film screening, Galaxy brings you Kate Brooks’
               film, The Last Animals, which explores “the conservationists,
               scientists and activists battling poachers and criminal networks
               to protect elephants and rhinos.” The screening will be followed
               by a panel discussion with researchers, conservationists, and
               community members.
+            </p>
+            <p>
+              <Link to="/sessions/film_screening">
+                More information about film and the panelists
+              </Link>
             </p>
           </PremierInfo>
         </Premier>
