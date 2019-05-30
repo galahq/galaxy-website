@@ -157,8 +157,8 @@ const HomePage = () => (
             <img src={workingGroupImage} />
             <div>
               <h3>
-                Working Group: Linking classrooms with professionals and
-                researchers for landscape management
+                Working Group: Linking Classrooms with Professionals &amp;
+                Researchers
               </h3>
               <p>
                 Working sessions convene participants around current challenges
