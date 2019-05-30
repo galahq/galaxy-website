@@ -11,7 +11,7 @@ import { Title, Kicker, Image, Row } from '../../components/Sessions.js'
 const coverImage = require('../../assets/film_screening/cover.png')
 const kateImage = require('../../assets/film_screening/kate.png')
 const emmanuelImage = require('../../assets/film_screening/emmanuel.png')
-const jamieImage = require('../../assets/film_screening/jamie.png')
+const irinaImage = require('../../assets/film_screening/irina.png')
 const bilalImage = require('../../assets/film_screening/bilal.png')
 const johnImage = require('../../assets/film_screening/john.png')
 
@@ -79,17 +79,15 @@ export default function FilmScreeningPage () {
           <Image src={emmanuelImage} />
         </Row>
 
-        <h3>Jamie Buchanan-Dunlop, Digital Explorer</h3>
+        <h3>Irina Prentice, Encounter Edu</h3>
         <Row>
           <p>
-            An experienced educator, Jamie has worked both in the classroom and
-            designed and managed education projects around the world, including
-            both polar regions, the Great Barrier Reef, the Middle East and
-            North Africa. Jamie has also worked at a policy level, successfully
-            campaigning for the oceans to be included in the National
-            Curriculum.
+            Irina is the Communications &amp; Partnerships Director at Encounter
+            Edu. She brings 17 years of experience working with the UN and as a
+            journalist covering conflicts, humanitarian crises and current
+            events in the Middle East, USA and Europe.
           </p>
-          <Image src={jamieImage} />
+          <Image src={irinaImage} />
         </Row>
 
         <h3>Bilal Butt, UM School for Environment &amp; Sustainability</h3>
