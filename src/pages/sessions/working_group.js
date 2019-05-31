@@ -13,11 +13,11 @@ const coverImage = require('../../assets/working_group/cover.png')
 const sheilaImage = require('../../assets/working_group/sheila.png')
 const claireImage = require('../../assets/working_group/claire.png')
 const johnImage = require('../../assets/working_group/john.png')
-const lingImage = require('../../assets/working_group/ling.png')
+const belindaImage = require('../../assets/working_group/belinda.png')
 const davidImage = require('../../assets/working_group/david.png')
 const mariaImage = require('../../assets/working_group/maria.png')
 
-export default function WorkingGroupPage () {
+export default function WorkingGroupPage() {
   return (
     <main>
       <TitleSection>
@@ -93,18 +93,23 @@ export default function WorkingGroupPage () {
           <Image src={johnImage} />
         </Row>
 
-        <h3>
-          Ling Mu, Tsinghua University School of Public Policy &amp; Management
-        </h3>
+        <h3>Belinda Bardwell, West Michigan Environmental Action Council</h3>
         <Row>
           <p>
-            Ling is an Assistant Professor at the School of Public Policy at
-            Tsinghua University in Beijing, China and Director of the China Case
-            Center for Public Policy &amp; Management. She is currently using
-            cases in training and continuing education for civic leaders. Her
-            research focuses on public budgeting.
+            Belinda Bardwell is a commissioner for the Grand Rapids Community
+            Relations Commission, as well as a board member for the West
+            Michigan Environmental Action Council. She has served as project
+            coordinator and spokesperson for the "Gi-gikinomaage-min (We are all
+            teachers): Defend Our History, Unlock Your Spirit" initiative since
+            its launch in 2014. She is also a member of the Gi-gikinomaage-min
+            Advisory Council, serving as the project's lead oral historian, and
+            a proud citizen of the Little Traverse Bay Bands of Odawa Indians.
+            She recently traveled to Montreal with WMEAC leadership and Rebecca
+            Hardin (Michigan Sustainability Cases' Director), as a
+            representative to the North American Dialogue on Biocultural
+            Diversity.
           </p>
-          <Image src={lingImage} />
+          <Image src={belindaImage} />
         </Row>
 
         <h3>
