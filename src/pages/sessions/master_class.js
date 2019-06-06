@@ -14,7 +14,7 @@ const shaunImage = require('../../assets/master_class/shaun.png')
 const jeffImage = require('../../assets/master_class/jeff.png')
 const steveImage = require('../../assets/master_class/steve.png')
 
-export default function MasterClassPage () {
+export default function MasterClassPage() {
   return (
     <main>
       <TitleSection>
@@ -99,11 +99,16 @@ export default function MasterClassPage () {
         <h3>Steve Freeman, Room &amp; Board</h3>
         <Row>
           <p>
-            As Vendor Resource Manager at Room &amp; Board Steve has contributed
-            to the environmentally-focused philosophies and practices of the
-            company in his 27-year career. A lifelong Minnesotan, he is inspired
-            by canoeing in Northern Minnesota, showing his Keeshond dogs at AKC
-            shows with his wife, and working on his 5 acres of woodland.
+            As Vendor Resource Manager at Room & Board Steve has contributed to
+            the environmentally-focused philosophies and practices of the
+            company and its Vendor Partners over his 39-year career with the
+            furniture retailer. A lifelong Minnesotan, he is inspired by
+            wilderness canoeing in the Boundary Waters Canoe Area Wilderness
+            (BWCAW) of Northern Minnesota as well as the far more remote
+            wilderness areas of northern Canada. Steve and his wife Betsy split
+            time between a home situated on 5 acres of woodland outside of
+            Minneapolis and a small cottage in Ely, Minnesota right next to the
+            BWCAW.
           </p>
           <Image src={steveImage} />
         </Row>
