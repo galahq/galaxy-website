@@ -12,9 +12,7 @@ import { Title, Kicker, Image, Row } from '../../components/Sessions.js'
 const coverImage = require('../../assets/working_group/cover.png')
 const sheilaImage = require('../../assets/working_group/sheila.png')
 const claireImage = require('../../assets/working_group/claire.png')
-const johnImage = require('../../assets/working_group/john.png')
 const belindaImage = require('../../assets/working_group/belinda.png')
-const davidImage = require('../../assets/working_group/david.png')
 const mariaImage = require('../../assets/working_group/maria.png')
 
 export default function WorkingGroupPage() {
@@ -80,19 +78,6 @@ export default function WorkingGroupPage() {
           <Image src={claireImage} />
         </Row>
 
-        <h3>John Knox, Wake Forest University School of Law</h3>
-        <Row>
-          <p>
-            John Knox is an internationally recognized expert on human rights
-            law and international environmental law. From 2012 to 2015, he
-            served as the first United Nations Independent Expert, and from 2015
-            to 2018, as its first Special Rapporteur, on the issue of human
-            rights obligations relating to the enjoyment of a safe, clean,
-            healthy and sustainable environment.
-          </p>
-          <Image src={johnImage} />
-        </Row>
-
         <h3>Belinda Bardwell, West Michigan Environmental Action Council</h3>
         <Row>
           <p>
@@ -110,21 +95,6 @@ export default function WorkingGroupPage() {
             Diversity.
           </p>
           <Image src={belindaImage} />
-        </Row>
-
-        <h3>
-          David Krueger, Baldwin Wallace University Sustainability Clinic™️
-        </h3>
-        <Row>
-          <p>
-            As the Charles E. Spahr Chair in Managerial and Corporate Ethics,
-            Dr. Krueger directs the Institute for Sustainable Business
-            Practices, co-directs BW’s new sustainability major, and leads the
-            BW’s Sustainability Clinic™️.  Prior to Dr. Krueger’s work at BW, he
-            was executive director of the Center for Ethics and Corporate Policy
-            in Chicago.
-          </p>
-          <Image src={davidImage} />
         </Row>
 
         <h3>
