@@ -14,6 +14,8 @@ const sheilaImage = require('../../assets/working_group/sheila.png')
 const claireImage = require('../../assets/working_group/claire.png')
 const belindaImage = require('../../assets/working_group/belinda.png')
 const mariaImage = require('../../assets/working_group/maria.png')
+const emmanuelImage = require('../../assets/film_screening/emmanuel.png')
+const irinaImage = require('../../assets/film_screening/irina.png')
 
 export default function WorkingGroupPage() {
   return (
@@ -109,6 +111,28 @@ export default function WorkingGroupPage() {
             Lakes Integrated Sciences and Assessments Program (GLISA).
           </p>
           <Image src={mariaImage} />
+        </Row>
+        <h3>Emmanuel Jal, Musician &amp; Ambassador</h3>
+        <Row>
+          <p>
+            From his start as a child soldier in the war-torn region of Southern
+            Sudan, Emmanuel has emerged a successful and acclaimed
+            recording artist and peace ambassador. He has released five award
+            nominated studio albums and works alongside Amnesty International as
+            a spokesperson.
+          </p>
+          <Image src={emmanuelImage} />
+        </Row>
+
+        <h3>Irina Prentice, Encounter Edu</h3>
+        <Row>
+          <p>
+            Irina is the Communications &amp; Partnerships Director at Encounter
+            Edu. She brings 17 years of experience working with the UN and as a
+            journalist covering conflicts, humanitarian crises and current
+            events in the Middle East, USA and Europe.
+          </p>
+          <Image src={irinaImage} />
         </Row>
       </RunningTextContainer>
 
