@@ -9,21 +9,21 @@ import Link from 'gatsby-link'
 
 import Tagline, {
   TaglineSection,
-  TaglineInnerSection
+  TaglineInnerSection,
 } from '../components/Tagline'
 import {
   Stream,
   StreamSection,
   StreamInnerSection,
   StreamTitle,
-  StreamImg
+  StreamImg,
 } from '../components/Stream'
 import {
   PremierSection,
   PremierInnerSection,
   Premier,
   PremierInfo,
-  PremierImg
+  PremierImg,
 } from '../components/Premier'
 import {
   ClassSection,
@@ -34,14 +34,14 @@ import {
   ClassInfo,
   ClassVid,
   ClassVidBox,
-  ClassTheme
+  ClassTheme,
 } from '../components/masterclass'
 import { ExternalLink } from '../components/shared/Link'
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import {
   AudienceSection,
   AudienceColumns,
-  AudienceColumn
+  AudienceColumn,
 } from '../components/Audience'
 
 const ClassVideo: any = require('../assets/galaxy2.mp4')
@@ -65,10 +65,11 @@ const HomePage = () => (
           Organized around{' '}
           <ExternalLink href="https://www.learngala.com/">
             real-world case studies
-          </ExternalLink>, Galaxy is a lively interactive convergence of
-          professionals, educators, innovators, concerned citizens, and
-          scientists. The gathering is ideal for collaboration, and networking
-          across sectors and individuals that are typically separate.
+          </ExternalLink>
+          , Galaxy is a lively interactive convergence of professionals,
+          educators, innovators, concerned citizens, and scientists. The
+          gathering is ideal for collaboration, and networking across sectors
+          and individuals that are typically separate.
         </p>
       </TaglineInnerSection>
     </TaglineSection>
@@ -131,9 +132,12 @@ const HomePage = () => (
                 complex urban systems
               </h3>
               <p>
-                Master Classes are an opportunity for engaged learning informed
-                by teachers, researchers, and professionals, working in a
-                promising area of interest.
+                Lead by the team behind the{' '}
+                <Link to="https://www.learngala.com/cases/urbanwood">
+                  Reclaiming Wood, Lives, and Communities
+                </Link>{' '}
+                case, participants will learn to map sustainability systems and
+                identify intervention and leverage points.
               </p>
             </div>
           </ClassTheme>
