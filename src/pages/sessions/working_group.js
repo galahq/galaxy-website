@@ -12,10 +12,11 @@ import { Title, Kicker, Image, Row } from '../../components/Sessions.js'
 const coverImage = require('../../assets/working_group/cover.png')
 const sheilaImage = require('../../assets/working_group/sheila.png')
 const claireImage = require('../../assets/working_group/claire.png')
+const susanImage = require('../../assets/working_group/susan.png')
 const belindaImage = require('../../assets/working_group/belinda.png')
 const mariaImage = require('../../assets/working_group/maria.png')
 const emmanuelImage = require('../../assets/film_screening/emmanuel.png')
-const irinaImage = require('../../assets/film_screening/irina.png')
+const irinaImage = require('../../assets/film_screening/Irina.png')
 
 export default function WorkingGroupPage() {
   return (
@@ -71,15 +72,29 @@ export default function WorkingGroupPage() {
         <Row>
           <p>
             Dr. Dancz’s expertise lies in developing active,
-            experiential-learning activities on UN Sustainable Development
-            Goals. As a Kolbe™ Certified Consultant, she specializes in
-            assessment of student-learning outcomes to empower individuals with
-            diverse problem-solving instincts to improve productivity,
-            communication, leadership, and impact.
+            experiential-learning activities for sustainable engineering,
+            including NAE Grand Challenges for Engineering and UN Sustainable
+            Development Goals. She emphasizes the roles of teamwork and
+            leadership to creatively illustrate the connections between
+            sustainable engineering and other disciplines, including emergency
+            management.
           </p>
           <Image src={claireImage} />
         </Row>
-
+        <h3>
+          Susan McKenzie Reeves, Clemson University Watt Family Innovation
+          Center
+        </h3>
+        <Row>
+          <p>
+            Susan is the Academic Director of Clemson’s Emergency Management
+            Operation Center. Her vision and leadership has been responsible for
+            the development of Clemson’s first center to bring together
+            emergency management practitioners and academics to collaborate on
+            real-world challenges across the region.
+          </p>
+          <Image src={susanImage} />
+        </Row>
         <h3>Belinda Bardwell, West Michigan Environmental Action Council</h3>
         <Row>
           <p>
