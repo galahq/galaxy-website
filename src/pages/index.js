@@ -133,9 +133,9 @@ const HomePage = () => (
               </h3>
               <p>
                 Lead by the team behind the{' '}
-                <Link to="https://www.learngala.com/cases/urbanwood">
+                <ExternalLink to="https://www.learngala.com/cases/urbanwood">
                   Reclaiming Wood, Lives, and Communities
-                </Link>{' '}
+                </ExternalLink>{' '}
                 case, participants will learn to map sustainability systems and
                 identify intervention and leverage points.
               </p>
