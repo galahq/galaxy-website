@@ -14,7 +14,7 @@ const nancyImage = require('../../assets/case_exchange/nancy.png')
 const markImage = require('../../assets/case_exchange/mark.png')
 const zhaoxueImage = require('../../assets/case_exchange/zhaoxue.png')
 
-export default function MasterClassPage () {
+export default function MasterClassPage() {
   return (
     <main>
       <TitleSection>
@@ -42,7 +42,7 @@ export default function MasterClassPage () {
         <h3>Perrin Selcer, UM History</h3>
         <Row>
           <p>
-            Dr. Selcer works &amp; teaches at the intersections of environmental
+            Dr. Selcer works and teaches at the intersections of environmental
             history, history of science, and international relations, utilizing
             case-based learning extensively in his courses. His first major
             research project culminated in{' '}
@@ -59,9 +59,8 @@ export default function MasterClassPage () {
         <h3>Nancy Love, UM Civil &amp; Environmental Engineering</h3>
         <Row>
           <p>
-            Nancy Love, UM Civil &amp; Environmental Engineering Dr. Love works
-            at the interface of water, infrastructure, and both public and
-            environmental health in domestic and global settings. In
+            Dr. Love works at the interface of water, infrastructure, and both
+            public and environmental health in domestic and global settings. In
             collaboration with students &amp; practitioners, she is currently
             authoring two Michigan Sustainability Cases,{' '}
             <em>
@@ -80,7 +79,7 @@ export default function MasterClassPage () {
         <h3>Mark Lindquist, UM Landscape Architecture</h3>
         <Row>
           <p>
-            Dr. Lindquist’s focuses on the design and evaluation of
+            Dr. Lindquist’s work focuses on the design and evaluation of
             high-performance landscapes with an emphasis on multifunctional
             green infrastructure in urban areas. He is pioneering virtual
             reality approaches and 3D modeling of neighborhoods in his courses

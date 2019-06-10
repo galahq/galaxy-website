@@ -7,6 +7,7 @@ import * as React from 'react'
 import TitleSection from '../../components/shared/TitleSection'
 import { RunningTextContainer } from '../../components/shared/MaxWidthContainer'
 import { Title, Kicker, Image, Row } from '../../components/Sessions.js'
+import { ExternalLink } from '../../components/shared/Link.js'
 
 const coverImage = require('../../assets/film_screening/cover.png')
 const kateImage = require('../../assets/film_screening/kate.png')
@@ -15,7 +16,7 @@ const irinaImage = require('../../assets/film_screening/irina.png')
 const bilalImage = require('../../assets/film_screening/bilal.png')
 const johnImage = require('../../assets/film_screening/john.png')
 
-export default function FilmScreeningPage () {
+export default function FilmScreeningPage() {
   return (
     <main>
       <TitleSection>
@@ -34,15 +35,16 @@ export default function FilmScreeningPage () {
               and the{' '}
               <a href="https://www.michtheater.org/">
                 Michigan Theater Foundation
-              </a>. At this year’s film screening, Galaxy brings you Kate
-              Brooks’ film,{' '}
+              </a>
+              . At this year’s film screening, Galaxy brings you Kate Brooks’
+              film,{' '}
               <a href="https://thelastanimals.com/">
                 <em>The Last Animals</em>
-              </a>, which explores “the conservationists, scientist and
-              activists battling poachers and criminal networks to protect
-              elephants and rhinos.” The screening will be followed by a panel
-              discussion with researchers, conservationists, and community
-              members.
+              </a>
+              , which explores “the conservationists, scientist and activists
+              battling poachers and criminal networks to protect elephants and
+              rhinos.” The screening will be followed by a panel discussion with
+              researchers, conservationists, and community members.
             </p>
             <Image src={coverImage} />
           </Row>
@@ -70,9 +72,15 @@ export default function FilmScreeningPage () {
         <h3>Emmanuel Jal, Musician &amp; Ambassador</h3>
         <Row>
           <p>
-            From his start as a child soldier in the war-torn region of Southern
-            Sudan, Emmanuel has emerged a successful and acclaimed
-            recording artist and peace ambassador. He has released five award
+            Emmanuel has helped youth in refugee camps and throughout the
+            shattered school systems of South Sudan to retain focus and ambition
+            amidst suffering. He consults to international organizations and
+            conducts leadership seminars around the world for those, youth and
+            adult, seeking to hone their sense of purpose for their life's work
+            and meet the needs of non traditional or formerly traumatized
+            learners. He has won numerous peace awards for the positive work
+            accomplished not only by his music but also, increasingly, his
+            public speaking and philanthropy. He has released five award
             nominated studio albums and works alongside Amnesty International as
             a spokesperson.
           </p>
@@ -82,10 +90,16 @@ export default function FilmScreeningPage () {
         <h3>Irina Prentice, Encounter Edu</h3>
         <Row>
           <p>
-            Irina is the Communications &amp; Partnerships Director at Encounter
-            Edu. She brings 17 years of experience working with the UN and as a
-            journalist covering conflicts, humanitarian crises and current
-            events in the Middle East, USA and Europe.
+            Irina leads communication at{' '}
+            <ExternalLink href="https://encounteredu.com/">
+              encounteredu.com
+            </ExternalLink>
+            , an innovative digital media enhancement service for face-to-face
+            classrooms that brings to life a teaching-as-research approach even
+            for younger and under-resourced learners. She brings 17 years of
+            experience working with the UN and as a journalist covering
+            conflicts, humanitarian crises and current events in the Middle
+            East, USA and Europe.
           </p>
           <Image src={irinaImage} />
         </Row>
