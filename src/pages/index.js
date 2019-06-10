@@ -132,12 +132,9 @@ const HomePage = () => (
                 complex urban systems
               </h3>
               <p>
-                Lead by the team behind the{' '}
-                <ExternalLink to="https://www.learngala.com/cases/urbanwood">
-                  Reclaiming Wood, Lives, and Communities
-                </ExternalLink>{' '}
-                case, participants will learn to map sustainability systems and
-                identify intervention and leverage points.
+                Lead by the team behind the Reclaiming Wood, Lives, and
+                Communities case, participants will learn to map sustainability
+                systems and identify intervention and leverage points.
               </p>
             </div>
           </ClassTheme>
