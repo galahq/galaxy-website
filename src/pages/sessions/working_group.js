@@ -16,7 +16,7 @@ const susanImage = require('../../assets/working_group/susan.png')
 const belindaImage = require('../../assets/working_group/belinda.png')
 const mariaImage = require('../../assets/working_group/maria.png')
 const emmanuelImage = require('../../assets/film_screening/emmanuel.png')
-const irinaImage = require('../../assets/film_screening/Irina.png')
+const irinaImage = require('../../assets/film_screening/irina.png')
 
 export default function WorkingGroupPage() {
   return (
