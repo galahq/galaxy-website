@@ -12,7 +12,7 @@ const coverImage = require('../../assets/case_exchange/cover.png')
 const perrinImage = require('../../assets/case_exchange/perrin.png')
 const nancyImage = require('../../assets/case_exchange/nancy.png')
 const markImage = require('../../assets/case_exchange/mark.png')
-const zhaoxueImage = require('../../assets/case_exchange/zhaoxue.png')
+const xuehuaImage = require('../../assets/case_exchange/xuehua.png')
 
 export default function MasterClassPage() {
   return (
@@ -89,17 +89,19 @@ export default function MasterClassPage() {
           <Image src={markImage} />
         </Row>
 
-        <h3>Zhaoxue Tian, Tsinghua University School of Environment</h3>
+        <h3>Xuehua Liu, Tsinghua University School of Environment</h3>
         <Row>
           <p>
-            Dr. Tian is a postdoc in Beijing, China currently writing a Michigan
-            Sustainability Case on the effects of tourism on panda habitat in
-            the Qinling Mountains. Her research analyzes the concentration of
-            heavy metals in atmosphere, soil, bamboo, and fecal samples in order
-            to assess ecological risk in the habitat and health risks to giant
-            pandas.
+            Dr. Xuehua Liu is an associate professor in the School of
+            Environment at Tsinghua University, with expertise in wildlife
+            conservation and habitat assessment as well as the application of
+            GIS to landscape ecology. She is working with a team at the
+            University of Michigan to produce a case about the challenge of
+            balancing economic development and the protection of giant panda
+            habitat in the Wolong National Nature Reserve in China's Sichuan
+            province.
           </p>
-          <Image src={zhaoxueImage} />
+          <Image src={xuehuaImage} />
         </Row>
       </RunningTextContainer>
     </main>
