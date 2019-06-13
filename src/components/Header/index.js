@@ -24,7 +24,7 @@ const Header = ({ full }: Props) => (
         '': 'Home',
         about: 'About',
         schedule: 'Schedule',
-        logistics: 'Location'
+        logistics: 'Location',
       }}
     />
 
@@ -45,14 +45,14 @@ const Header = ({ full }: Props) => (
       </InnerContainer>
     )}
 
-    {full && (
+    {/* {full && (
       <OpticallyCenteredCallToActionButton
         text="Register"
         href="https://www.eventbrite.com/e/galaxy-2019-a-sustainability-learning-exchange-tickets-57524141255"
         target="_blank"
         rel="noopener noreferrer"
       />
-    )}
+    )} */}
 
     {/*
     full && (
@@ -160,7 +160,7 @@ const Subtitle = styled.p`
 
 const OpticallyCenteredCallToActionButton = styled(CallToActionButton).attrs({
   big: true,
-  primary: true
+  primary: true,
 })`
   margin-top: 22px;
   z-index: 1;

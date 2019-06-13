@@ -30,13 +30,17 @@ import {
   ClassInnerSection,
   ClassInfoSection,
   ClassThemesSection,
-  ClassImage,
-  ClassInfo,
-  ClassVid,
-  ClassVidBox,
   ClassTheme,
 } from '../components/masterclass'
 import { ExternalLink } from '../components/shared/Link'
+import {
+  PromoBannerSection,
+  PromoBannerInnerSection,
+  PromoBannerContent,
+  PromoBannerImg,
+  PromoBannerInfo,
+  PromoVidContainer,
+} from '../components/PromoBanner'
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
 import {
   AudienceSection,
@@ -44,13 +48,11 @@ import {
   AudienceColumn,
 } from '../components/Audience'
 
-const ClassVideo: any = require('../assets/galaxy2.mp4')
 const InclusiveImg: any = require('../assets/inclusive.png')
 const ToolsImg: any = require('../assets/tools.png')
 const ActiveImg: any = require('../assets/active.png')
 const AwardeesImg: any = require('../assets/awardees.png')
 const ScreeningImg: any = require('../assets/screening.png')
-const ClassVidThumb: any = require('../assets/classvidthumb.png')
 
 const masterClassImage = require('../assets/master_class/cover.png')
 const workingGroupImage = require('../assets/working_group/cover.png')
@@ -58,6 +60,59 @@ const caseExchangeImage = require('../assets/case_exchange/cover.png')
 
 const HomePage = () => (
   <main>
+    <PromoBannerSection>
+      <PromoBannerInnerSection>
+        <h2>The Last Animals Screening with Emmanuel Jal Live</h2>{' '}
+        <p>
+          <em>
+            Registration for Galaxy 2019 is now closed, but you can still join
+            us on Friday, June 21st!
+          </em>
+        </p>
+        <PromoBannerContent>
+          <PromoVidContainer>
+            <iframe
+              width="360"
+              height="203"
+              src="https://www.youtube.com/embed/8VToxlkKH1A"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </PromoVidContainer>
+        </PromoBannerContent>
+        <PromoBannerContent>
+          <p>
+            Friday, June 21st, Galaxy brings you <em>The Last Animals</em>,
+            which explores the conservationists, scientists and activists
+            battling poachers and criminal networks to protect elephants and
+            rhinos. Featuring a performance in honor of UN World Refugee Day
+            (June 20) by musician & activist Emmanuel Jal and Q & A with
+            Director Kate Brooks.
+          </p>
+          <p>
+            Tickets are $15 and a percentage of your ticket purchase proceeds
+            will benefit{' '}
+            <ExternalLink href="https://thelastanimals.org/">
+              The Last Animals Foundation
+            </ExternalLink>
+            . (Also available day of at the Michigan Theater. Documentary. 92
+            min. NR.)
+          </p>
+          <p>
+            <Link to="/sessions/film_screening">
+              More information about the film and the panelists
+            </Link>
+          </p>
+        </PromoBannerContent>
+        <CenteredCallToActionButton
+          text="Get Tickets"
+          href="https://www.eventbrite.com/e/galaxy-2019-a-sustainability-learning-exchange-tickets-57524141255"
+          target="_blank"
+          rel="noopener noreferrer"
+        />
+      </PromoBannerInnerSection>
+    </PromoBannerSection>
     <TaglineSection>
       <TaglineInnerSection>
         <Tagline>A sustainability learning exchange</Tagline>

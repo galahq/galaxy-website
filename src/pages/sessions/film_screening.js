@@ -80,7 +80,7 @@ export default function FilmScreeningPage() {
             and meet the needs of non traditional or formerly traumatized
             learners. He has won numerous peace awards for the positive work
             accomplished not only by his music but also, increasingly, his
-            public speaking and philanthropy. He has released five award
+            public speaking and philanthropy. He has released five award
             nominated studio albums and works alongside Amnesty International as
             a spokesperson.
           </p>

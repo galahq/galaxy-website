@@ -469,6 +469,7 @@ noscript {
   margin-bottom: 1.45rem;
 }
 iframe {
+  border: none;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
