@@ -15,9 +15,17 @@ const sheilaImage = require('../../assets/working_group/sheila.png')
 const claireImage = require('../../assets/working_group/claire.png')
 const susanImage = require('../../assets/working_group/susan.png')
 const belindaImage = require('../../assets/working_group/belinda.png')
-const mariaImage = require('../../assets/working_group/maria.png')
-const emmanuelImage = require('../../assets/film_screening/emmanuel.png')
 const irinaImage = require('../../assets/film_screening/irina.png')
+const ellenImage = require('../../assets/working_group/ellen.png')
+const chrisImage = require('../../assets/working_group/chris.png')
+const clairenImage = require('../../assets/working_group/clairen.png')
+const paulfImage = require('../../assets/working_group/paulf.png')
+const richardImage = require('../../assets/working_group/richard.png')
+const paulsImage = require('../../assets/working_group/pauls.png')
+const neerajaImage = require('../../assets/working_group/neeraja.png')
+const johnhImage = require('../../assets/working_group/johnh.png')
+const nateImage = require('../../assets/working_group/nate.png')
+const rebeccaImage = require('../../assets/working_group/rebecca.png')
 
 export default function WorkingGroupPage() {
   return (
@@ -65,7 +73,18 @@ export default function WorkingGroupPage() {
           </p>
           <Image src={sheilaImage} />
         </Row>
-
+        <h3>Ellen Kuhn, UM Academic Innovation</h3>
+        <Row>
+          <p>
+            At the University of Michigan's Academic Innovation initiative,
+            Ellen works collaboratively with individuals and groups around the
+            University to build on existing efforts and envision new directions
+            for public engagement in the future. Ellen is particularly
+            interested in fostering models of engagement that are grounded in
+            mutual trust, reciprocity, and empathy.
+          </p>
+          <Image src={ellenImage} />
+        </Row>
         <h3>
           Claire Dancz, Clemson University Civil Engineering &amp; Science
           Education
@@ -96,6 +115,125 @@ export default function WorkingGroupPage() {
           </p>
           <Image src={susanImage} />
         </Row>
+        <h3>Chris Mueller, UM Ross School of Business </h3>
+        <Row>
+          <p>
+            A lecturer at Um Ross, Chris Mueller coordinates the MAP program at
+            the UM Ross School of Business, a capstone experience that fosters
+            student engagement with national and international clients (ranging
+            from NGOs to technology startups to consumer packaged goods
+            suppliers)..
+          </p>
+          <Image src={chrisImage} />
+        </Row>
+        <h3>Claire Nuttall, Ross School of Business</h3>
+        <Row>
+          <p>
+            Claire Nuttall is Curricular Support Coordinator for the MAP program
+            at the UM Ross School of Business, a capstone experience that
+            fosters student engagement with national and international clients
+            (ranging from NGOs to technology startups to consumer packaged goods
+            suppliers).
+          </p>
+          <Image src={clairenImage} />
+        </Row>
+        <h3>Paul Fontaine, UM Urban & Regional Planning Program</h3>
+        <Row>
+          <p>
+            Paul Fontaine is a lecturer in Urban Planning, as well as Program
+            Manager of the Michigan Engaging Community through the Classroom
+            (MECC) Initiative. His research and professional practice focus is
+            civic and professional engagement in the urban revitalization
+            process. He is also founding member of Fontaine Urban Design that
+            specializes in complex brown field and infill sites requiring public
+            and private partnerships.
+          </p>
+          <Image src={paulfImage} />
+        </Row>
+        <h3>
+          Richard Norton, UM Urban & Regional Planning Program &amp; Program in
+          the Environment{' '}
+        </h3>
+        <Row>
+          <p>
+            Richard K. Norton is a Professor of Urban and Regional Planning,
+            Taubman College of Architecture + Urban Planning. He also holds a
+            joint appointment as Professor with the University of Michigan's
+            Program in the Environment. Dr. Norton teaches and conducts research
+            in the areas of planning law, sustainable development, land use and
+            environmental planning, and coastal area management.
+          </p>
+          <Image src={richardImage} />
+        </Row>
+        <h3>Paul Seelbach, UM School for Environment &amp; Sustainability</h3>
+        <Row>
+          <p>
+            Professor Seelbach's experiences bridge the academic study of
+            aquatic ecosystems to its application across a range of resource
+            management agencies. He currently serves the Michigan Department of
+            Natural Resources, Office of the Great Lakes, as Senior Fellow and
+            has helped with major initiatives regarding watershed assessment and
+            management, ecological flows and water allocation policy, water
+            resources monitoring, coastal zone management, and revitalization of
+            Areas of Concern.
+          </p>
+          <Image src={paulsImage} />
+        </Row>
+        <h3>
+          Neeraja Aravamudan, Ginsberg Center for Community Service and Learning
+        </h3>
+        <Row>
+          <p>
+            Neeraja leads the Ginsberg Center's work with academic partners,
+            supporting faculty, academic program staff, and graduate students
+            who want to integrate community engagement into their courses,
+            research, and programs. She administers the Ginsberg Center's
+            Faculty Grants program, serves on the editorial team for the
+            Michigan Journal for Community Service Learning, and supervises 15
+            doctoral students from across the University. She currently serves
+            as a member of the Advisory Board for Michigan Engaging Communities
+            through the Classroom (MECC), a DEI facilitator in U of M's
+            Facilitator Engagement Program through Organizational Learning, and
+            an IDI (Intercultural Development Inventory) Qualified
+            Administrator.
+          </p>
+          <Image src={neerajaImage} />
+        </Row>
+        <h3>Rebecca Hardin, UM School for Environment &amp; Sustainability</h3>
+        <Row>
+          <p>
+            Dr. Hardin is the Director of the Michigan Sustainability Cases
+            initiative. Her current work includes research in educational
+            innovation and environmental management, especially forest and water
+            management for environmental justice and health in Kenya, Gabon, New
+            England, and the upper Midwest.
+          </p>
+          <Image src={rebeccaImage} />
+        </Row>
+        <h3>John Hoinville, Alfa Jango</h3>
+        <Row>
+          <p>
+            John is Director of Operations for Alfa Jango, an Ann Arbor software
+            company specializing in design and development for startups. He has
+            authored educational texts, such as “the Ruby on Rails bible” and
+            founded initiativesto make tech skills accessible, affordable and
+            adapted the needs of young people and small businesses.
+          </p>
+          <Image src={johnhImage} />
+        </Row>
+        <h3>
+          Nate Phipps, Center for Educational Design, Evaluation and Research
+          (UM School of Education)
+        </h3>
+        <Row>
+          <p>
+            Nate is managing director of the Center for Education Design,
+            Evaluation, and Research (CEDER) where he manages a wide range of
+            professional development activities offered by the School of
+            Education faculty across all programs in SOE.
+          </p>
+          <Image src={nateImage} />
+        </Row>
         <h3>Belinda Bardwell, West Michigan Environmental Action Council</h3>
         <Row>
           <p>
@@ -113,37 +251,6 @@ export default function WorkingGroupPage() {
             Diversity.
           </p>
           <Image src={belindaImage} />
-        </Row>
-
-        <h3>
-          Maria Carmen Lemos, UM School for Environment &amp; Sustainability
-        </h3>
-        <Row>
-          <p>
-            Dr. Lemos is Associate Dean for Research at the University of
-            Michigan School for Environment &amp; Sustainability. Her broad
-            research interests are related to the human dimensions of global
-            change and social studies of science. She also co-directs the Great
-            Lakes Integrated Sciences and Assessments Program (GLISA).
-          </p>
-          <Image src={mariaImage} />
-        </Row>
-        <h3>Emmanuel Jal, Musician &amp; Ambassador</h3>
-        <Row>
-          <p>
-            Emmanuel has helped youth in refugee camps and throughout the
-            shattered school systems of South Sudan to retain focus and ambition
-            amidst suffering. He consults to international organizations and
-            conducts leadership seminars around the world for those, youth and
-            adult, seeking to hone their sense of purpose for their life's work
-            and meet the needs of non traditional or formerly traumatized
-            learners. He has won numerous peace awards for the positive work
-            accomplished not only by his music but also, increasingly, his
-            public speaking and philanthropy. He has released five award
-            nominated studio albums and works alongside Amnesty International as
-            a spokesperson.
-          </p>
-          <Image src={emmanuelImage} />
         </Row>
 
         <h3>Irina Prentice, Encounter Edu</h3>

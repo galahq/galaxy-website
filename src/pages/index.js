@@ -95,9 +95,9 @@ const HomePage = () => (
             will benefit{' '}
             <ExternalLink href="https://thelastanimals.org/">
               The Last Animals Foundation
-            </ExternalLink>
-            . (Also available day of at the Michigan Theater. Documentary. 92
-            min. NR.)
+            </ExternalLink>{' '}
+            (also available day of at the Michigan Theater.) Documentary. 92
+            min. NR.
           </p>
           <p>
             <Link to="/sessions/film_screening">
