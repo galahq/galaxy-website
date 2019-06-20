@@ -10,9 +10,10 @@ import { Title, Image, Row } from '../../components/Sessions.js'
 
 const coverImage = require('../../assets/case_exchange/cover.png')
 const perrinImage = require('../../assets/case_exchange/perrin.png')
-const nancyImage = require('../../assets/case_exchange/nancy.png')
+const michaelImage = require('../../assets/case_exchange/michael.png')
 const markImage = require('../../assets/case_exchange/mark.png')
 const xuehuaImage = require('../../assets/case_exchange/xuehua.png')
+const karenImage = require('../../assets/case_exchange/karen.png')
 
 export default function MasterClassPage() {
   return (
@@ -56,24 +57,30 @@ export default function MasterClassPage() {
           <Image src={perrinImage} />
         </Row>
 
-        <h3>Nancy Love, UM Civil &amp; Environmental Engineering</h3>
+        <h3>
+          Michael W Everett, Department of Community Sustainability, Michigan
+          State University
+        </h3>
         <Row>
           <p>
-            Dr. Love works at the interface of water, infrastructure, and both
-            public and environmental health in domestic and global settings. In
-            collaboration with students &amp; practitioners, she is currently
-            authoring two Michigan Sustainability Cases,{' '}
-            <em>
-              Fecal sludge: What is the best fecal waste management system for
-              Addis Ababa?
-            </em>{' '}
-            and{' '}
-            <em>
-              Urine diversion: Will university communities embrace urine
-              diversion and reuse as fertilizer?
-            </em>
+            Dr. Everett is a Professor of Practice, Adviser, and Internship
+            Coordinator within the Department of Community Sustainability at
+            Michigan State University.
           </p>
-          <Image src={nancyImage} />
+          <Image src={michaelImage} />
+        </Row>
+        <h3>Karen Alofs, UM School for Environment &amp; Sustainability</h3>
+        <Row>
+          <p>
+            Assistant Professor Alofs studies how ecological concepts can be
+            used to address conservation concerns in freshwater environments.
+            Her recent work, as a postdoctoral fellow with the National Science
+            Foundation International Research Fellowship Program, focused on the
+            impacts of climate-facilitated range expansions on lake fish
+            communities. An early adopter of the Gala platform, she has produced
+            a suite of teaching cases about the Great Lakes.
+          </p>
+          <Image src={karenImage} />
         </Row>
 
         <h3>Mark Lindquist, UM Landscape Architecture</h3>
