@@ -42,6 +42,7 @@ import {
   PromoVidContainer,
 } from '../components/PromoBanner'
 import { CenteredCallToActionButton } from '../components/CallToActionButton'
+
 import {
   AudienceSection,
   AudienceColumns,
@@ -57,60 +58,32 @@ const ScreeningImg: any = require('../assets/screening.png')
 const masterClassImage = require('../assets/master_class/cover.png')
 const workingGroupImage = require('../assets/working_group/cover.png')
 const caseExchangeImage = require('../assets/case_exchange/cover.png')
+const thanksImage = require('../assets/galaxy2019-workinggroup-row-small.jpg')
 
 const HomePage = () => (
   <main>
     <PromoBannerSection>
       <PromoBannerInnerSection>
-        <h2>The Last Animals Screening with Emmanuel Jal Live</h2>{' '}
-        <p>
-          <em>
-            Registration for Galaxy 2019 is now closed, but you can still join
-            us on Friday, June 21st!
-          </em>
-        </p>
         <PromoBannerContent>
-          <PromoVidContainer>
-            <iframe
-              width="360"
-              height="203"
-              src="https://www.youtube.com/embed/8VToxlkKH1A"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            />
-          </PromoVidContainer>
-        </PromoBannerContent>
-        <PromoBannerContent>
+          <h2>Join us in making the case(s) for sustainability!</h2>
           <p>
-            Friday, June 21st, Galaxy brings you <em>The Last Animals</em>,
-            which explores the conservationists, scientists and activists
-            battling poachers and criminal networks to protect elephants and
-            rhinos. Featuring a performance in honor of UN World Refugee Day
-            (June 20) by musician & activist Emmanuel Jal and Q & A with
-            Director Kate Brooks.
-          </p>
-          <p>
-            Tickets are $15 and a percentage of your ticket purchase proceeds
-            will benefit{' '}
-            <ExternalLink href="https://thelastanimals.org/">
-              The Last Animals Foundation
+            Thank you to all who attended Galaxy 2019. <br />
+            You can find a{' '}
+            <ExternalLink href="https://www.teachmsc.org/msc/milestones/galaxy-2019">
+              full writeup of the exchange here
             </ExternalLink>{' '}
-            (also available day of at the Michigan Theater.) Documentary. 92
-            min. NR.
+            and{' '}
+            <ExternalLink href="https://photos.google.com/share/AF1QipNmr4N3Dd1U-ra6hkxSZFog63KGgtfVKlL_MsBgBH7VPqIRO67nrex2wAlIF102PQ?key=R3FTdzlpR1hURGJYZ2ozR25kVGczZ0VBNFByYm5R">
+              more photos here.
+            </ExternalLink>
           </p>
+          <PromoBannerImg src={thanksImage}></PromoBannerImg>{' '}
           <p>
-            <Link to="/sessions/film_screening">
-              More information about the film and the panelists
-            </Link>
-          </p>
+            Galaxy will reconvene June 18th & 19th, 2020 in Ann Arbor, Michigan.
+            <br />
+            Stay tuned for our call for presentations.
+          </p>{' '}
         </PromoBannerContent>
-        <CenteredCallToActionButton
-          text="Get Tickets"
-          href="https://www.eventbrite.com/e/galaxy-2019-a-sustainability-learning-exchange-tickets-57524141255"
-          target="_blank"
-          rel="noopener noreferrer"
-        />
       </PromoBannerInnerSection>
     </PromoBannerSection>
     <TaglineSection>
@@ -134,10 +107,6 @@ const HomePage = () => (
     <StreamSection>
       <StreamInnerSection>
         <Stream>
-          {/* <StreamIcon animation="transit">
-          <StudiosIcon />
-        </StreamIcon> */}
-
           <StreamImg src={InclusiveImg} />
           <StreamTitle>Inclusive Community</StreamTitle>
           <p>
@@ -156,9 +125,6 @@ const HomePage = () => (
           </p>
         </Stream>
         <Stream>
-          {/* <StreamIcon animation="irradiate">
-          <DesignSprintIcon />
-        </StreamIcon> */}
           <StreamImg src={ToolsImg} />
           <StreamTitle>Powerful Tools</StreamTitle>
           <p>
@@ -173,7 +139,7 @@ const HomePage = () => (
       </StreamInnerSection>
     </StreamSection>
 
-    <ClassSection>
+    {/* <ClassSection>
       <ClassInnerSection>
         <ClassInfoSection>
           <h2>Sessions</h2>
@@ -225,8 +191,8 @@ const HomePage = () => (
               </p>
             </div>
           </ClassTheme>
-        </ClassThemesSection>
-        {/* <ClassThemesSection>
+        </ClassThemesSection> */}
+    {/* <ClassThemesSection>
           <ClassTheme>
             <h3>
               Cross-sector collaboration for intervention in complex urban
@@ -237,11 +203,11 @@ const HomePage = () => (
               with{' '}
               <ExternalLink href="https://www.fs.fed.us/research/people/profile.php?alias=shines">
                 Sarah Hines */}
-        {/* <ExternalLink href="https://www.linkedin.com/in/melissa-stults-959a348">
+    {/* <ExternalLink href="https://www.linkedin.com/in/melissa-stults-959a348">
                   {' '}
                   Melissa 'Missy' Stults
                 </ExternalLink> */}
-        {/* </ExternalLink>
+    {/* </ExternalLink>
             </p>
             <p />
           </ClassTheme>
@@ -259,12 +225,12 @@ const HomePage = () => (
             </p>
           </ClassTheme>
         </ClassThemesSection> */}
-      </ClassInnerSection>
-    </ClassSection>
+    {/* </ClassInnerSection>
+    </ClassSection> */}
 
     {/* ---~~~===~~~--- */}
 
-    <PremierSection>
+    {/* <PremierSection>
       <PremierInnerSection>
         <Premier>
           <PremierImg src={AwardeesImg} />
@@ -304,7 +270,7 @@ const HomePage = () => (
           </PremierInfo>
         </Premier>
       </PremierInnerSection>
-    </PremierSection>
+    </PremierSection> */}
 
     {/* ---~~~===~~~--- */}
 

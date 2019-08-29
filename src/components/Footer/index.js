@@ -23,7 +23,7 @@ const Footer = () => (
         <Stars />
         <Info>
           <span>Ann Arbor, MI</span>
-          <span>June 20 & 21, 2019</span>
+          <span>June 20 & 21, 2020</span>
         </Info>
         <CallToActionButton
           big

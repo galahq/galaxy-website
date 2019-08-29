@@ -15,6 +15,7 @@ export const PromoBannerSection = styled.section`
 
 export const PromoBannerInnerSection = MaxWidthContainer.extend`
   padding-bottom: 0;
+  text-align: center;
   @media (max-width: 843px) {
     max-width: 45em;
   }
@@ -36,6 +37,7 @@ export const PromoBannerContent = styled.div`
 export const PromoVidContainer = styled.div`
   float: right;
   margin-left: 2.5rem;
+  padding-top: 1rem;
   @media (max-width: 600px) {
     margin: 0;
     align-self: center;
@@ -44,11 +46,10 @@ export const PromoVidContainer = styled.div`
 `
 
 export const PromoBannerImg = styled.img`
-  display: block;
+  display: inline;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
-  width: 180px;
-  height: 152px;
-
+  width: 800px;
+  margin-top: 1rem;
   @media (max-width: 430px) {
     width: 80%;
     height: auto;

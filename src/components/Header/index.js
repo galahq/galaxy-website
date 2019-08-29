@@ -13,8 +13,8 @@ import MaxWidthContainer from '../shared/MaxWidthContainer'
 import { LabelForScreenReaders } from '../shared/A11y'
 import PoissonDiscDistribution from './PoissonDiscDistribution'
 
-const BaseVerticalLogo: any = require('../../assets/galaxy-2019-logo-v.svg')
-const BaseHorizontalLogo: any = require('../../assets/galaxy-2019-logo-h.svg')
+const BaseVerticalLogo: any = require('../../assets/galaxy-2020-logo-v.svg')
+const BaseHorizontalLogo: any = require('../../assets/galaxy-2020-logo-h.svg')
 
 type Props = { full: boolean }
 const Header = ({ full }: Props) => (
@@ -23,7 +23,7 @@ const Header = ({ full }: Props) => (
       links={{
         '': 'Home',
         about: 'About',
-        schedule: 'Schedule',
+        // schedule: 'Schedule',
         logistics: 'Location',
       }}
     />
@@ -32,10 +32,10 @@ const Header = ({ full }: Props) => (
       <InnerContainer>
         <ShadowLink to="/">
           <VerticalLogo />
-          <LabelForScreenReaders>Galaxy 2019</LabelForScreenReaders>
+          <LabelForScreenReaders>Galaxy 2020</LabelForScreenReaders>
         </ShadowLink>
         <Subtitle>Ann Arbor, MI</Subtitle>
-        <Subtitle>June 20 & 21</Subtitle>
+        <Subtitle>June 18 & 19</Subtitle>
       </InnerContainer>
     ) : (
       <InnerContainer>
