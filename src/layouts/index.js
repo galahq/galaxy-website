@@ -9,15 +9,15 @@ import './index.css'
 const TemplateWrapper = ({ location, children }) => (
   <div>
     <Helmet
-      title="Galaxy 2019"
+      title="Galaxy 2020"
       meta={[
         {
           name: 'description',
           content:
-            'Information about the Galaxy sustainability learning exchange.'
+            'Information about the Galaxy sustainability learning exchange.',
         },
         { name: 'keywords', content: 'Galaxy, sustainaiblity, conference' },
-        { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' }
+        { name: 'viewport', content: 'initial-scale=1, viewport-fit=cover' },
       ]}
     >
       <html lang="en" />
@@ -30,7 +30,7 @@ const TemplateWrapper = ({ location, children }) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.func,
 }
 
 export default TemplateWrapper
