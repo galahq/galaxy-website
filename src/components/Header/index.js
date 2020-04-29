@@ -35,7 +35,7 @@ const Header = ({ full }: Props) => (
           <LabelForScreenReaders>Galaxy 2020</LabelForScreenReaders>
         </ShadowLink>
         <Subtitle>Ann Arbor, MI</Subtitle>
-        <Subtitle>June 18 & 19</Subtitle>
+        <Subtitle>June 19th</Subtitle>
       </InnerContainer>
     ) : (
       <InnerContainer>

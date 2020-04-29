@@ -79,7 +79,7 @@ const HomePage = () => (
           </p>
           <PromoBannerImg src={thanksImage}></PromoBannerImg>{' '}
           <p>
-            Galaxy will reconvene June 18th & 19th, 2020 in Ann Arbor, Michigan.
+            Galaxy will reconvene June 19th, 2020 in Ann Arbor, Michigan.
             <br />
             Stay tuned for our call for presentations.
           </p>{' '}
